@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<testscenario xmlns="www.pushtotest.com/tm5" version="0.0">
+    <basics>
+        <name>Demosite_New_Latest.3autocorrelated.scenario</name>
+        <defaultdirectory></defaultdirectory>
+    </basics>
+    <resources>
+        <resource cache="false" name="Demosite_New_Latest_second3.har" path="{scenario}/Demosite_New_Latest_second3.har" type="har"/>
+    </resources>
+    <testnodes>
+        <node location="http://localhost:8080/TMServer/ws/TestNode" locationName="localhost" name="localhost"/>
+    </testnodes>
+    <bundles>
+        <bundle name="apc" version="1.0"/>
+        <bundle name="mysql" version="5.1.39"/>
+        <bundle name="hibernate" version="3.0"/>
+        <bundle name="tool" version="1.0"/>
+        <bundle name="oracle" version="10.2.0.5"/>
+        <bundle name="htmlunit" version="2.15.2648"/>
+        <bundle name="har" version="2.0"/>
+    </bundles>
+    <datasources>
+        <dpl langtype="java" method="setup" name="ArrayGenerator" type="ArrayGenerator"/>
+        <dpl langtype="java" method="setup" name="LocalWhiteboard" type="LocalWhiteboard"/>
+    </datasources>
+    <options>
+        <options type="selenium">
+            <opt name="rc" value="false"/>
+            <opt name="synchronized" value="false"/>
+        </options>
+        <options type="apc">
+            <opt name="RampDownUsers" value="0"/>
+            <opt name="MaxRampUpTime" value="0"/>
+            <opt name="MaxRampDownTime" value="0"/>
+            <opt name="PercentageLogsSaved" value="100"/>
+            <opt name="MinSleepTime" value="0"/>
+            <opt name="testnode_concurrent_users" value="0"/>
+            <opt name="maxSizeReponseSavings" value="false"/>
+            <opt name="RampDownSeconds" value="0"/>
+            <opt name="SleepTime" value="0"/>
+            <opt name="FixedSleepTime" value="0"/>
+            <opt name="MaxSleepTime" value="0"/>
+            <opt name="SummaryStepIsEmpty" value="false"/>
+            <opt name="AlwaysSaveLogOnFailure" value="true"/>
+            <opt name="StandardDeviation" value="0"/>
+            <opt name="ThinkTimeMax" value="0"/>
+            <opt name="FixedThinkTime" value="0"/>
+            <opt name="tolerance" value="0"/>
+            <opt name="ThinkTime" value="default"/>
+            <opt name="sizeValueResponseSavings" value="0"/>
+            <opt name="IntervalTime" value="0"/>
+            <opt name="RampUpUsers" value="0"/>
+            <opt name="ThinkTimeMin" value="0"/>
+            <opt name="FixedIntervalTime" value="0"/>
+            <opt name="ReportThinkTime" value="false"/>
+            <opt name="MinIntervalTime" value="0"/>
+            <opt name="AddThinkTimeToStep" value="false"/>
+            <opt name="RampUpSeconds" value="0"/>
+            <opt name="MaxIntervalTime" value="0"/>
+            <opt name="DynamicIpAddress" value="false"/>
+            <opt name="useJira" value="false"/>
+            <opt name="global_concurrent_users" value="0"/>
+            <opt name="EnableSavingLogs" value="true"/>
+        </options>
+        <options type="ds3">
+            <opt name="takeScriptSnapshot" value="false"/>
+            <opt name="optionsTimings" value="domComplete"/>
+            <opt name="failOnStatusCodes" value="true"/>
+            <opt name="takeSnapshotDS3" value="false"/>
+            <opt name="reuseBrowser" value="false"/>
+            <opt name="attachInstantReplay" value="false"/>
+            <opt name="saveRequestAndResponseDS3" value="true"/>
+            <opt name="attachDSFile" value="false"/>
+        </options>
+        <options type="lr">
+            <opt name="saveCompleteLrOutputLog" value="false"/>
+        </options>
+        <options type="har">
+            <opt name="doNotStopOnFailure" value="false"/>
+            <opt name="printDebugInfo" value="false"/>
+            <opt name="markRequestAsSteps" value="false"/>
+            <opt name="useHarResponses" value="false"/>
+            <opt name="connectionResetMarksTestcaseFailure" value="false"/>
+        </options>
+        <options type="global">
+            <opt name="trustAllSSLCertificates" value="true"/>
+            <opt name="EnableHttpTimingDetailsLogging" value="false"/>
+            <opt name="ntlmEnabled" value="false"/>
+            <opt name="ConsoleAsProxy" value="false"/>
+        </options>
+        <options type="sahi">
+            <opt name="replaceNextStepReady" value="true"/>
+            <opt name="ajaxTimeout" value="10"/>
+            <opt name="takeSnapshot" value="false"/>
+            <opt name="debugModeSahi" value="false"/>
+            <opt name="clearCache" value="true"/>
+            <opt name="domComplete" value="true"/>
+        </options>
+        <options type="seleniumrc">
+            <opt name="serverport" value="4444"/>
+        </options>
+        <options type="testng">
+            <opt name="TestNGtryToCompleteEntireSuite" value="false"/>
+        </options>
+        <options type="reporting">
+            <opt name="DynamicParameterList" value="[]"/>
+        </options>
+        <options type="commandline">
+            <opt name="async" value="false"/>
+        </options>
+    </options>
+    <templates>
+        <testcase importance="normal" name="Testcase1">
+            <test>
+                <run langtype="har" name="Untitled1" resource="Demosite_New_Latest_second3.har">
+                    <argument dpl="TheLocker" method="getData" name="Correlation"/>
+                </run>
+            </test>
+        </testcase>
+        <controller name="Iteration1">
+            <round iterations="1"/>
+        </controller>
+        <assertsuite name="Optional"/>
+        <storesuite name="Optional">
+            <storeentry request="\Qhttps://demosite.appvance.com:443/products/ruby-on-rails-tote\E" step="\Q1.1) Step1\E" testcase="Testcase1" type="Request">
+                <store format="html" name="correlation1570777517994_08" target="//div[@id='thumbnails']/ul/li[2]/a/img[1]/@src"/>
+            </storeentry>
+            <storeentry request="\Qhttps://demosite.appvance.com:443/products/ruby-on-rails-tote\E" step="\Q1.1) Step1\E" testcase="Testcase1" type="Request">
+                <store format="html" name="correlation1570777517994_10" target="raw/http[8]"/>
+            </storeentry>
+            <storeentry request="\Qhttps://demosite.appvance.com:443/orders/populate\E" step="\Q1.1) Step1\E" testcase="Testcase1" type="Request">
+                <store format="html" name="correlation1570777517996_16" target="//a[1]/@href"/>
+            </storeentry>
+            <storeentry request="\Qhttps://demosite.appvance.com:443/products?utf8=%E2%9C%93&amp;taxon=&amp;keywords=\E" step="\Q1.1) Step1\E" testcase="Testcase1" type="Request">
+                <store format="html" name="correlation1570777518004_33" target="raw/http[3]"/>
+            </storeentry>
+            <storeentry request="\Qhttps://demosite.appvance.com:443/t/rails\E" step="\Q1.1) Step1\E" testcase="Testcase1" type="Request">
+                <store format="html" name="correlation1570777518004_34" target="raw/http[8]"/>
+            </storeentry>
+            <storeentry request="\Qhttps://demosite.appvance.com:443/products?utf8=%E2%9C%93&amp;taxon=11&amp;keywords=\E" step="\Q1.1) Step1\E" testcase="Testcase1" type="Request">
+                <store format="html" name="correlation1570777518004_35" target="raw/http[8]"/>
+            </storeentry>
+            <storeentry request="\Qhttps://demosite.appvance.com:443/products/ruby-on-rails-tote?taxon_id=11\E" step="\Q1.1) Step1\E" testcase="Testcase1" type="Request">
+                <store format="html" name="correlation1570777518005_36" target="raw/http[8]"/>
+            </storeentry>
+            <storeentry request="\Qhttps://demosite.appvance.com:443/checkout/address\E" step="\Q1.1) Step1\E" testcase="Testcase1" type="Request">
+                <store format="html" name="correlation1570777518013_89" target="//a[1]/@href"/>
+            </storeentry>
+        </storesuite>
+    </templates>
+    <monitoring enablednodes="true"/>
+    <notifications/>
+    <execution subtype="functional" type="functionaltest">
+        <iteration controller="Iteration1" name="Iteration1">
+            <template/>
+            <testcase name="Testcase1" users="1"/>
+        </iteration>
+    </execution>
+    <logs/>
+    <integrations/>
+</testscenario>

@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+       Sample Blueprint Ant targets. Appvance Inc. 2019
+-->
+<project name="AppvanceCI" default="default" basedir=".">
+   <description>SAMPLE Blueprint CI/CD </description>
+   <!--
+        most of following values should be rewritten by CI tool job parameters
+    -->
+	      <tstamp>
+      <format property="TODAY_MY" pattern="yyyy-MM-dd HH:mm"  locale="en,UK" />
+   </tstamp>
+   <property name="lib" value="lib" />
+   <!-- folder to store the dependency RestClient.jar  -->
+   <!-- Dashboard related parameters -->
+   <property name="buildVersion" value="${TODAY_MY}" />
+   <!-- branch can be used to identify the environment  -->
+   <property name="projectName" value="NAME_OF_THE_PROJECT" />
+   <!-- projectName can be used to identify the product   -->
+   <property name="Bucket" value="NAME_OF_THE_BUCKET_WHERE_REPORTS_UPLOADED" />
+   <!--  si1edgwe7i S3 bucket where dashboard structure will be created  -->
+   <property name="product" value="APPLICATION_NAME_ON_DASHBOARD" />
+   <property name="MaxBuilds" value="50" />
+   <!-- max number of historic builds to maintain in dashboard  -->
+   <property name="customer" value="CUSTOMER_NAME" />
+   <!-- max number of historic builds to maintain in dashboard  -->
+   <!-- General access parameters -->
+   <property name="environment" value="ENVIRONMENT_WHERE_TESTS_WILL_RUN" />
+   <property name="aiqCreds" value="creds.json" />
+   <!-- AIQ server DNS and login creds  -->
+   <property name="consoleDetails" value="consoleDetails.json" />
+   <!--  json file created to write EC2 details once connected  -->
+   <property name="awsCredentials" value="ec2.creds" />
+   <!-- AWS credentials with permission solely to start and stop the EC2 instances to be used  -->
+   <property name="dataset" value="DPL_TO_BE_USED" />
+   <!-- and permission to upload to S3 the dashboard files  -->
+   <!-- Execute Scenario's parameters -->
+   <property name="dir" value="NAME_OF_SCENARIO_DIRECTORY" />
+   <!-- folder that contains scenario and resources needed by it  -->
+   <property name="scenario" value="SCENARIO_NAME" />
+   <!-- scenario to be executed by executeScenario  -->
+   <property name="stopOnFailure" value="false" />
+   <!-- when true will throw exception if all testcases in scenario fails  -->
+   <property name="scenarioResults" value="scenarioResults" />
+   <property name="blueprintResults" value="blueprintResults" />
+   <!-- folder where result junit xml files will be created after execution of scenario  -->
+   <!-- Blueprint parameters -->
+   <property name="scenarioReports" value="scenarioReports" />
+   <property name="blueprintReports" value="blueprintReports" />
+   <!-- blueprint reports temporary storage  -->
+   <property name="template" value="NAME_OF_TEMPLATE_TO_BE_RUN" />
+   <!-- blueprint template used to start the blueprint creation   -->
+   <property name="requestMaxDuration" value="2000" />
+   <!-- blueprint  setting for generating the slow requests report (timings report)  -->
+   <property name="reportStatusCode" value="300" />
+   <!-- blueprint setting for reporting requests that has this code or greater as response status code  -->
+   <!-- checkBlueprintResult parameters -->
+   <property name="maxFailingRequests" value="-1" />
+   <!-- failing requests by status code -->
+   <property name="minValidationRatio" value="-1" />
+   <!-- minimal validation success ratio -->
+   <property name="maxValidationFailures" value="-1" />
+   <!-- max number of allowed validation erros -->
+   <!-- checkScenarioResult parameters -->
+   <property name="maxAllowedFailures" value="10" />
+   <!-- max number of failing executions -->
+   <property name="minSucessRatio" value="95" />
+   <!-- min percentage of success scenarios -->
+   <!-- updateJira parameters -->
+   <property name="maxFailures" value="10" />
+   <property name="minSucessPercentage" value="90" />
+   <!-- AI Regression testing parameters -->
+   <property name="logsRemoteFolder" value="LOGS_FOLDER_TO_BE_USED" />
+   <!-- server logs that will be used by the AI test generation  process  -->
+   <property name="outputFolder" value="Output" />
+   <!-- folder where the AI generated scenario and scripts will be created  -->
+   <property name="fileConfig" value="Config files" />
+   <!-- parameters of the AI generation of scenario and scripts  -->
+   <property name="minActions" value="40" /> 
+   <!-- set the minimum expected actions in the blueprint  -->
+   <property name="minPages" value="30" />
+   <!-- set the minimum expected pages in the blueprint  -->
+<target name="init">
+       <path id="RestClientLibPath">
+           <pathelement location="${lib}/RestClient.jar"/>
+       </path>
+   </target>
+   <target name="info">
+      <echo message="SiriusXM AppvanceIQ Pipeline" />
+   </target>
+   <target name="deps" depends="init">
+      <mkdir dir="${lib}" />
+	  <get src="https://appvanceivy.s3-us-west-2.amazonaws.com/projects/AppvanceCIClientWithDeps/master/latest/ivy" dest="${lib}/RestClient.jar"/>
+      <taskdef resource="net/sf/antcontrib/antlib.xml">
+         <classpath>
+            <pathelement location="${basedir}/ant.lib/ant-contrib-1.0b3.jar" />
+         </classpath>
+      </taskdef>
+   </target>
+   <!--
+            BLUEPRINT RELATED TARGETS
+    -->
+   <target name="blueprintCreation" depends="deps">
+		<taskdef name="createBlueprint" classname="com.appvance.ci.CreateBlueprint">
+			<classpath refid="RestClientLibPath" />
+		</taskdef>
+		<createBlueprint 
+			template="${template}" 
+			aiqCreds="${aiqCreds}" 
+			buildVersion="${buildVersion}" 
+			outputFolder="${blueprintResults}" 
+			projectName="${projectName}" 
+			requestMaxDuration="4000" 
+			consoleDetails="${consoleDetails}" 
+			reportStatusCode="400" 
+			customer="${customer}" 
+			forceNewScan="true"
+            minPages="${minPages}"
+            minActions="${minActions}" 	/>
+   </target>
+   <target name="reportUpload" depends="blueprintCreation">
+   
+		<!-- HouseKeeping was moved here -->
+		<taskdef name="HouseKeeping" classname="com.appvance.ci.HouseKeeping">
+		 <classpath refid="RestClientLibPath" />
+		</taskdef>
+		<HouseKeeping 
+			credentials   = "${awsCredentials}" 
+			keep          = "${MaxBuilds}" 
+			bucketBase    = "${Bucket}" 
+			executionType = "blueprints" 
+			product       = "${product}" 
+			environment   = "${environment}" />
+   
+		<taskdef name="uploadReportToS3" classname="com.appvance.blueprint.UploadReportToS3">
+			<classpath refid="RestClientLibPath" />
+		</taskdef>
+		<uploadReportToS3 
+			buildVersion="${buildVersion}" 
+			credentials="${awsCredentials}" 
+			bucketBase="${Bucket}" 
+			executionType="blueprints" 
+			reportFolder="${blueprintResults}" 
+			environment="${environment}" 
+			product="${product}" />
+   </target>
+   
+   <target name="blueprintDashboard" depends="reportUpload">
+		<taskdef name="dashboard" classname="com.appvance.blueprint.BlueprintDashboard">
+			<classpath refid="RestClientLibPath" />
+		</taskdef>
+		<dashboard 
+			credentials="${awsCredentials}" 
+			customer="${customer}" 
+			bucketBase="${Bucket}" 
+			environment="${environment}" 
+			executionType="blueprints" 
+			product="${product}" />
+			
+		<taskdef name="ProductDashboard" classname="com.appvance.ci.ProductsDashboard">
+			<classpath refid="RestClientLibPath" />
+		</taskdef>
+		<ProductDashboard 
+			credentials="${awsCredentials}" 
+			bucketBase="${Bucket}" 
+			customer="${customer}" />
+			
+      <!--	<taskdef name="runJira" classname="com.appvance.ci.UpdateJiraTicket" >
+           <classpath refid="RestClientLibPath"/>
+        </taskdef>
+        <runJira maxFailures="${maxFailures}" 
+                reportFolder="${reports}"
+                minSuccessPercentage="${minSuccessPercentage}" 
+                jiraApiVersion="2"
+                jiraCreds="SiriusXM/jiraCreds.json" 
+                ticketId="SCEN-1"  />-->
+   </target>
+   
+   <taskdef name="consumeBlueprint" classname="com.appvance.ci.ConsumeBlueprint">
+        <classpath refid="RestClientLibPath" />
+</taskdef>
+<consumeBlueprint
+        aiqCreds="${aiqCreds}"
+        buildVersion="${buildVersion}"
+        outputFolder="${blueprintResults}"
+        projectName="${projectName}"
+        requestMaxDuration="4000"
+        consoleDetails="${consoleDetails}"
+        reportStatusCode="400"
+        customer="${customer}"  
+        minPages="${minPages}"
+        minActions="${minActions}" 
+/>
+
+   <target name="checkBlueprintResults" depends="deps">
+		<taskdef name="checkBPResults" classname="com.appvance.blueprint.CheckBlueprintResults">
+			<classpath refid="RestClientLibPath" />
+		</taskdef>
+		<checkBPResults 
+		    minPages="${minPages}"
+            minActions="${minActions}"
+			maxFailingRequests="${maxFailingRequests}" 
+			maxValidationFailures="${maxValidationFailures}" 
+			minValidationRatio="${minValidationRatio}" 
+			reportFolder="${reports}" />
+   </target>
+   <target name="generateRegressionScenario" depends="blueprintDashboard">
+		<taskdef name="genScenario" classname="com.appvance.ci.GenerateScenario">
+			<classpath refid="RestClientLibPath" />
+		</taskdef>
+		<genScenario 
+			fileConfig="${fileConfig}" 
+			aiqCreds="${aiqCreds}" 
+			consoleDetails="${consoleDetails}" 
+			logsRemoteFolder="${logsRemoteFolder}" 
+			projectName="${projectName}" 
+			outputFolder="${outputFolder}" />
+   </target>
+   <target name="startNode" depends="deps">
+      <taskdef name="startNode" classname="com.appvance.ci.StartNode">
+         <classpath refid="RestClientLibPath" />
+      </taskdef>
+      <startNode aiqCreds="${aiqCreds}" consoleDetails="${consoleDetails}" />
+   </target>
+   
+   <target name="setupEnvironment" depends="deps">
+      <echo message="Environment parameter environment set to ${environment}" />
+   </target>
+    <target name="executeScenario" depends="setupEnvironment">
+		<taskdef name="executeScenario" classname="com.appvance.ci.ExecuteScenario">
+			<classpath refid="RestClientLibPath" />
+		</taskdef>
+		 <!-- Give the Scenario to be run here in this section -->
+		<executeScenario aiqCreds="${aiqCreds}" dir="${dir}" scenario="Sample1.scenario" consoleDetails="${consoleDetails}" resultsFolder="${scenarioResults}" />
+		<executeScenario aiqCreds="${aiqCreds}" dir="${dir}" scenario="Sample2.scenario" 	consoleDetails="${consoleDetails}" resultsFolder="${scenarioResults}" />
+
+		<taskdef name="fetchScenarioResults" classname="com.appvance.ci.FetchScenarioResults">
+			<classpath refid="RestClientLibPath" />
+		</taskdef>
+		<fetchScenarioResults aiqCreds="${aiqCreds}" consoleDetails="${consoleDetails}" resultsFolder="${scenarioResults}" scenario="Sample1.scenario" stopOnFailure="${stopOnFailure}" />
+		<fetchScenarioResults aiqCreds="${aiqCreds}" consoleDetails="${consoleDetails}" resultsFolder="${scenarioResults}" scenario="Sample2.scenario" stopOnFailure="${stopOnFailure}" />
+   </target>
+   
+   <target name="stopNode" depends="deps">
+      <taskdef name="stopNode" classname="com.appvance.ci.StopNode">
+         <classpath refid="RestClientLibPath" />
+      </taskdef>
+      <stopNode aiqCreds="${aiqCreds}" consoleDetails="${consoleDetails}" />
+   </target>
+	<target name="createScenariosDashboard" depends="executeScenario">
+		<mkdir dir="IvyClassFolder" />
+		<touch file="IvyClassFolder/class.all" />
+		
+		<taskdef name="Report" classname="com.appvance.ci.Report">
+			<classpath refid="RestClientLibPath" />
+		</taskdef>
+		<mkdir dir="build" />
+		<Report 
+			projectName="${scenario}" 
+			resultsFolder="${scenarioResults}" 
+			reportFolder="${scenarioReports}" 
+			executionType="scenarios" 
+			environment="${environment}" 
+			consoleDetails="${consoleDetails}" 
+			product="${product}" 
+			buildVersion="${buildVersion}" 
+			bucketBase="${Bucket}" 
+			aiqCreds="${aiqCreds}"
+            credentials="${awsCredentials}"	/>
+			
+			<taskdef name="HouseKeeping" classname="com.appvance.ci.HouseKeeping">
+		 <classpath refid="RestClientLibPath" />
+		</taskdef>
+		<HouseKeeping 
+			credentials="${awsCredentials}" 
+			keep="${MaxBuilds}" 
+			bucketBase="${Bucket}" 
+			executionType="scenarios" 
+			product="${product}" 
+			environment="${environment}" />
+			
+		
+		<taskdef name="uploadToDashboard" classname="com.appvance.ci.UploadToDashboard">
+			<classpath refid="RestClientLibPath" />
+		</taskdef>
+		<uploadToDashboard 
+			bucketBase="${Bucket}" 
+			product="${product}" 
+			projectName="${scenario}" 
+			environment="${environment}" 
+			executionType="scenarios" 
+			credentials="${awsCredentials}" 
+			buildVersion="${buildVersion}" 
+			reportFolder="${scenarioReports}" 
+			consoleDetails="${consoleDetails}"
+			aiqCreds="${aiqCreds}" />
+
+		<taskdef name="HouseKeeping" classname="com.appvance.ci.HouseKeeping">
+		 <classpath refid="RestClientLibPath" />
+		</taskdef>
+		<HouseKeeping 
+			credentials="${awsCredentials}" 
+			keep="${MaxBuilds}" 
+			bucketBase="${Bucket}" 
+			executionType="scenarios" 
+			product="${product}" 
+			environment="${environment}" />
+	
+		<taskdef name="ProjectDashboard" classname="com.appvance.ci.ProjectDashboard">
+			<classpath refid="RestClientLibPath" />
+		</taskdef>	  
+		<ProjectDashboard 
+			credentials="${awsCredentials}" 
+			bucketBase="${Bucket}" 
+			customer="${customer}" 
+			product="${product}" 
+			environment="${environment}" 
+			buildVersion="${buildVersion}" 
+			executionType="scenarios" />
+			
+		<taskdef name="ProductDashboard" classname="com.appvance.ci.ProductsDashboard">
+			<classpath refid="RestClientLibPath" />
+		</taskdef>
+		<ProductDashboard 
+			credentials="${awsCredentials}" 
+			bucketBase="${Bucket}" 
+			customer="${customer}" />
+    
+   </target>
+   <!-- typically reportFile would be report/report.json  -->
+   <target name="checkScenarioResults" depends="deps">
+      <taskdef name="checkScenarioResult" classname="com.appvance.ci.CheckScenarioResults">
+         <classpath refid="RestClientLibPath" />
+      </taskdef>
+      <checkScenarioResult 
+		reportFile="${reportFile}" 
+		maxAllowedFailures="${maxAllowedFailures}" 
+		minSucessRatio="${minSucessRatio}" />
+   </target>
+</project>

@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase  name= '' description='' author='' version=''>
+<dpl filename='' exectype='' errorhandling='' type='null'/>
+<fallback useFallback='true'/>
+<step action='navigateTo' value='"https://demopageaiq.s3-us-west-2.amazonaws.com/v1/index.html#"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='link(&quot;Intro&quot;)' selected='true'/>
+   <accessor type='click' value='link(&quot;#intro&quot;)' selected='false'/>
+   <accessor type='click' value='link(0,_in(listItem(&quot;Intro&quot;)))' selected='false'/>
+   <accessor type='click' value='link(2)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='div(&quot;Close&quot;)' selected='true'/>
+   <accessor type='click' value='div(&quot;close&quot;)' selected='false'/>
+   <accessor type='click' value='div(0,_in(article(&quot;intro&quot;)))' selected='false'/>
+   <accessor type='click' value='div(0,_in(article(&quot;active&quot;)))' selected='false'/>
+   <accessor type='click' value='div(2)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='link(&quot;Work&quot;)' selected='true'/>
+   <accessor type='click' value='link(&quot;#work&quot;)' selected='false'/>
+   <accessor type='click' value='link(0,_in(listItem(&quot;Work&quot;)))' selected='false'/>
+   <accessor type='click' value='link(3)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='div(&quot;Close&quot;)' selected='true'/>
+   <accessor type='click' value='div(&quot;close&quot;)' selected='false'/>
+   <accessor type='click' value='div(0,_in(article(&quot;work&quot;)))' selected='false'/>
+   <accessor type='click' value='div(0,_in(article(&quot;active&quot;)))' selected='false'/>
+   <accessor type='click' value='div(2)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='link(&quot;About&quot;)' selected='true'/>
+   <accessor type='click' value='link(&quot;#about&quot;)' selected='false'/>
+   <accessor type='click' value='link(0,_in(listItem(&quot;is-middle&quot;)))' selected='false'/>
+   <accessor type='click' value='link(0,_in(listItem(&quot;About&quot;)))' selected='false'/>
+   <accessor type='click' value='link(4)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='div(&quot;Close&quot;)' selected='true'/>
+   <accessor type='click' value='div(&quot;close&quot;)' selected='false'/>
+   <accessor type='click' value='div(0,_in(article(&quot;about&quot;)))' selected='false'/>
+   <accessor type='click' value='div(0,_in(article(&quot;active&quot;)))' selected='false'/>
+   <accessor type='click' value='div(2)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='link(&quot;Contact&quot;)' selected='true'/>
+   <accessor type='click' value='link(&quot;#contact&quot;)' selected='false'/>
+   <accessor type='click' value='link(0,_in(listItem(&quot;Contact&quot;)))' selected='false'/>
+   <accessor type='click' value='link(5)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"N"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textbox(&quot;name&quot;)' selected='true'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;field half&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;Name&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"Email"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textbox(&quot;email&quot;)' selected='true'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;field half[1]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;Email&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(1)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"Message"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textarea(&quot;message&quot;)' selected='true'/>
+   <accessor type='setValue' value='textarea(0,_in(div(&quot;field&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textarea(0,_in(div(&quot;Message&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textarea(0)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='div(&quot;Close&quot;)' selected='true'/>
+   <accessor type='click' value='div(&quot;close&quot;)' selected='false'/>
+   <accessor type='click' value='div(4,_in(article(&quot;contact&quot;)))' selected='false'/>
+   <accessor type='click' value='div(4,_in(article(&quot;active&quot;)))' selected='false'/>
+   <accessor type='click' value='div(6)' selected='false'/>
+</dialect>
+</step>
+</testcase>

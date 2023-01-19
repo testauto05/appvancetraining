@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase  name= '' description='' author='' version=''>
+<dpl filename='' exectype='runstepbystep' errorhandling='' type='HashDPL'/>
+<fallback useFallback='false'/>
+<step action='navigateTo' value='"http://demosite.appvance.com"' type='web' desc='Navigate to Site' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='addToLocalWhiteboard' value='getText(link(&quot;Bags&quot;))' type='web' desc='Store in Whiteboard' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='addToLocalWhiteboard' value='"SearchTerm"' selected='true'/>
+   <accessor type='addToLocalWhiteboard' value='span(30)' selected='false'/>
+   <accessor type='addToLocalWhiteboard' value='span(&quot;201900286574&quot;)' selected='false'/>
+   <accessor type='addToLocalWhiteboard' value='_ds.span(&quot;[0]&quot;, _ds.near(_ds.label([&quot;Case #&quot;])))' selected='false'/>
+   <accessor type='addToLocalWhiteboard' value='span(&quot;[0]&quot;, _near(label([&quot;Case #&quot;])))' selected='false'/>
+   <accessor type='addToLocalWhiteboard' value='CaseNumber' selected='false'/>
+   <accessor type='addToLocalWhiteboard' value='"CaseNumber"' selected='false'/>
+   <accessor type='addToLocalWhiteboard' value='SearchTerm' selected='false'/>
+</dialect>
+</step>
+</testcase>

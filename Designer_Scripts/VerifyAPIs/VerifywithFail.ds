@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase  name= '' description='' author='' version=''>
+<dpl filename='' exectype='runstepbystep' errorhandling='' type='HashDPL'/>
+<fallback useFallback='false'/>
+<step action='navigateTo' value='"http://www.sahitest.com/"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='setVerifyType' value='"Fail"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setVerifyType' value='' selected='true'/>
+</dialect>
+</step>
+<step action='verifyContains' value='"demo"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='verifyContains' value='"_demo_"' selected='true'/>
+   <accessor type='verifyContains' value='' selected='false'/>
+</dialect>
+</step>
+<step action='verifyContainsText' value='"demoNaveen"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='verifyContainsText' value='link(&quot;/demo&quot;)' selected='true'/>
+   <accessor type='verifyContainsText' value='' selected='false'/>
+</dialect>
+</step>
+<step action='verifyDoesNotContain' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='verifyDoesNotContain' value='link(&quot;/demo0&quot;)' selected='true'/>
+   <accessor type='verifyDoesNotContain' value='' selected='false'/>
+</dialect>
+</step>
+<step action='verifyEqual' value='1' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='verifyEqual' value='1' selected='true'/>
+   <accessor type='verifyEqual' value='' selected='false'/>
+</dialect>
+</step>
+<step action='verifyFalse' value='1 == 0' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='verifyFalse' value='' selected='true'/>
+</dialect>
+</step>
+</testcase>

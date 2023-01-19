@@ -1,0 +1,36 @@
+Header1,MessageID,Header2,Transaction1,TransactionID,dyn3,dyn4,dyn5,Transaction2
+"<ase:aseXML xmlns:ase=""urn:aseXML:r39_p1"" xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"" xsi:schemaLocation=""urn:aseXML:r39_p1 http://www.nemmco.com.au/aseXML/schemas/r39_p1/aseXML_r39_p1.xsd"">
+<Header>
+<From description=""Origin Energy Electricity Ltd"">POWERCOR</From>
+<To description=""Australian Energy Market Operator"">NEMMCO</To>",,"<MessageDate>2021-09-29T13:43:05+10:00</MessageDate>
+<TransactionGroup>CATS</TransactionGroup>
+<Priority>Medium</Priority>
+<Market>NEM</Market>
+<!-- SourceSystemId=SAP -->
+</Header>","<Transactions>
+<Transaction",,,,,"transactionDate=""2021-09-29T13:43:05+10:00"">
+<CATSChangeRequest version=""r29"">
+<ChangeReasonCode>1000</ChangeReasonCode>
+<ProposedDate>2021-09-30</ProposedDate>
+<MeterReadTypeCode>RR</MeterReadTypeCode>
+<NMIStandingData version=""r36"" xsi:type=""ase:ElectricityStandingData"">
+<NMI checksum=""9"">6305121023</NMI>
+<MasterData>
+<JurisdictionCode>VIC</JurisdictionCode>
+<NMIClassificationCode>SMALL</NMIClassificationCode>
+</MasterData>
+<RoleAssignments>
+<RoleAssignment>
+<Party>POWERCOR</Party>
+<Role>FRMP</Role>
+</RoleAssignment>
+<RoleAssignment>
+<Party>EASTERN</Party>
+<Role>RP</Role>
+</RoleAssignment>
+</RoleAssignments>
+</NMIStandingData>
+</CATSChangeRequest>
+</Transaction>
+</Transactions>
+</ase:aseXML>"

@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase  name= '' description='' author='' version=''>
+<dpl filename='' exectype='runstepbystep' errorhandling='' type='HashDPL'/>
+<fallback useFallback='false'/>
+<step action='navigateTo' value='"http://sahitest.com/"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='link(&quot;/demo&quot;)' selected='true'/>
+   <accessor type='click' value='link(0,_in(body(&quot;demo&quot;)))' selected='false'/>
+   <accessor type='click' value='link(&quot;demo&quot;)' selected='false'/>
+   <accessor type='click' value='link(0)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='link(&quot;a x[1]&quot;)' selected='true'/>
+   <accessor type='click' value='link(&quot;formTest.htm&quot;)' selected='false'/>
+   <accessor type='click' value='link(&quot;Form Test&quot;)' selected='false'/>
+   <accessor type='click' value='link(1)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"test area1{{ENTER}}"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textarea(&quot;ta1&quot;)' selected='true'/>
+   <accessor type='setValue' value='textarea(0,_in(form(&quot;f1&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textarea(0)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"testarea2 "' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textarea(1,_in(form(&quot;f1&quot;)))' selected='true'/>
+   <accessor type='setValue' value='textarea(1)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"test1{{TAB}}"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textbox(&quot;bordercheck&quot;)' selected='true'/>
+   <accessor type='setValue' value='textbox(&quot;t1&quot;)' selected='false'/>
+   <accessor type='setValue' value='textbox(0)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"test2{{HOME}}"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textbox(6)' selected='true'/>
+   <accessor type='setValue' value='textbox(1)' selected='false'/>
+   <accessor type='setValue' value='textbox(3)' selected='false'/>
+   <accessor type='setValue' value='textbox(4)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"test2{{SHIFT+HOME+DELETE}}"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textbox(1)' selected='true'/>
+</dialect>
+</step>
+<step action='wait' value='4000' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='wait' value='' selected='true'/>
+</dialect>
+</step>
+</testcase>

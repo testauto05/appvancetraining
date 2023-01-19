@@ -1,0 +1,21 @@
+{
+	"customActions": [],
+	"validations": [
+		{
+			"triggerType": "manual",
+			"validationType": "element",
+			"disabled": false,
+			"passType": "pass",
+			"name": "MSN01",
+			"target": "byId(\"android:id/home\")"
+		},
+		{
+			"triggerType": "manual",
+			"validationType": "element",
+			"disabled": false,
+			"passType": "pass",
+			"name": "MSN02",
+			"target": "byId(\"com.microsoft.amp.apps.bingfinance:id/cont\")"
+		}
+	]
+}

@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase  name= '' description='' author='' version=''>
+<dpl filename='' exectype='' errorhandling='' type='HashDPL' locale='en_US'/>
+<fallback useFallback='true'/>
+<step action='navigateTo' value='"https://www.apple.com/"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='link(&quot;ac-gf-directory-column-section-link[48]&quot;)' selected='true'/>
+   <accessor type='click' value='link(&quot;/privacy/&quot;)' selected='false'/>
+   <accessor type='click' value='link(&quot;Privacy&quot;)' selected='false'/>
+   <accessor type='click' value='link(0,_in(listItem(&quot;ac-gf-directory-column-section-item[48]&quot;)))' selected='false'/>
+   <accessor type='click' value='link(0,_in(listItem(&quot;Privacy&quot;)))' selected='false'/>
+   <accessor type='click' value='link(117)' selected='false'/>
+</dialect>
+</step>
+<step action='navigateTo' value='"https://www.apple.com/legal/privacy/en-ww/"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='link(&quot;/legal/privacy/pdfs/apple-privacy-policy-en-ww.pdf&quot;)' selected='true'/>
+   <accessor type='click' value='link([&quot;Download a copy of this Privacy Pol&quot;])' selected='false'/>
+   <accessor type='click' value='link(0,_in(paragraph(&quot;center large-8 medium-10 small-12 typography-intro&quot;)))' selected='false'/>
+   <accessor type='click' value='link(0,_in(paragraph([&quot;Download a copy of this Privacy Pol&quot;])))' selected='false'/>
+   <accessor type='click' value='link(22)' selected='false'/>
+</dialect>
+</step>
+<step action='wait' value='5000' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='wait' value='' selected='true'/>
+</dialect>
+</step>
+<step action='include' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='include' value='"{ds}/2031(2).js"' selected='true'/>
+</dialect>
+</step>
+<step action='serviceSuite' value='"{ds}/demoCompareFinal.js"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='serviceSuite' value='' selected='true'/>
+</dialect>
+</step>
+</testcase>

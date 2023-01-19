@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase  name= '' description='' author='' version=''>
+<dpl filename='' exectype='runstepbystep' errorhandling='' type='HashDPL'/>
+<fallback useFallback='false'/>
+<step action='navigateTo' value='"http://demosite.appvance.com"' type='web' desc='Navigate to Site' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='getFromLocalWhiteboard' value='"SearchTerm"' type='web' desc='Retreive from Whiteboard' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='getFromLocalWhiteboard' value='TextSearch' selected='true'/>
+   <accessor type='getFromLocalWhiteboard' value='casenum' selected='false'/>
+   <accessor type='getFromLocalWhiteboard' value='SearchTerm' selected='false'/>
+   <accessor type='getFromLocalWhiteboard' value='"casenum"' selected='false'/>
+   <accessor type='getFromLocalWhiteboard' value='"TextSearch"' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='TextSearch' type='web' desc='Enter Text value in search' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='searchbox(&quot;form-control&quot;)' selected='true'/>
+   <accessor type='setValue' value='searchbox(&quot;keywords&quot;)' selected='false'/>
+   <accessor type='setValue' value='searchbox(0,_in(div(&quot;form-group[1]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='searchbox(0)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='Click on Search' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='submit(&quot;Search&quot;)' selected='true'/>
+   <accessor type='click' value='submit(0)' selected='false'/>
+   <accessor type='click' value='submit(&quot;btn btn-success&quot;)' selected='false'/>
+</dialect>
+</step>
+</testcase>

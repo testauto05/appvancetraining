@@ -1,0 +1,222 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase  name= '' description='' author='' version=''>
+<dpl filename='' exectype='runstepbystep' errorhandling='' type='HashDPL'/>
+<fallback useFallback='false'/>
+<step action='navigateTo' value='"https://demosite.appvance.com/"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='link(&quot;Bags&quot;)' selected='true'/>
+   <accessor type='click' value='link(&quot;/t/bags&quot;)' selected='false'/>
+   <accessor type='click' value='link(0,_in(div(&quot;list-group&quot;)))' selected='false'/>
+   <accessor type='click' value='link(0,_in(div(&quot;Bags Mugs Clothing&quot;)))' selected='false'/>
+   <accessor type='click' value='link(4)' selected='false'/>
+   <accessor type='click' value='link(&quot;list-group-item&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='readCSVArray' value='$var1' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='readCSVArray' value='"{ds}/DataEnable.csv"' selected='true'/>
+   <accessor type='readCSVArray' value='"{ds}/Demo_DataEnabled/DataEnable.csv"' selected='false'/>
+</dialect>
+</step>
+<step action='store' value='$var1.get(0).get(&quot;SearchKeyword&quot;)' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='store' value='$SearchKeyword' selected='true'/>
+</dialect>
+</step>
+<step action='store' value='$var1.get(0).get(&quot;Quantity&quot;)' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='store' value='$Quantity' selected='true'/>
+</dialect>
+</step>
+<step action='store' value='$var1.get(0).get(&quot;Email&quot;)' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='store' value='$Email' selected='true'/>
+</dialect>
+</step>
+<step action='store' value='$var1.get(0).get(&quot;FirstName&quot;)' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='store' value='$FirstName' selected='true'/>
+</dialect>
+</step>
+<step action='store' value='$var1.get(0).get(&quot;LastName&quot;)' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='store' value='$LastName' selected='true'/>
+</dialect>
+</step>
+<step action='store' value='$var1.get(0).get(&quot;Address&quot;)' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='store' value='$Address' selected='true'/>
+</dialect>
+</step>
+<step action='store' value='$var1.get(0).get(&quot;City&quot;)' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='store' value='$City' selected='true'/>
+</dialect>
+</step>
+<step action='store' value='$var1.get(0).get(&quot;State&quot;)' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='store' value='$State' selected='true'/>
+</dialect>
+</step>
+<step action='store' value='$var1.get(0).get(&quot;Zipcode&quot;)' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='store' value='$Zipcode' selected='true'/>
+</dialect>
+</step>
+<step action='store' value='$var1.get(0).get(&quot;Phone&quot;)' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='store' value='$Phone' selected='true'/>
+</dialect>
+</step>
+<step action='setValue' value='$SearchKeyword' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='searchbox(&quot;form-control&quot;)' selected='true'/>
+   <accessor type='setValue' value='searchbox(&quot;keywords&quot;)' selected='false'/>
+   <accessor type='setValue' value='searchbox(0,_in(div(&quot;form-group[1]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='searchbox(0)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='span(&quot;Spree Bag&quot;)' selected='true'/>
+   <accessor type='click' value='span(&quot;info[2]&quot;)' selected='false'/>
+   <accessor type='click' value='span(0,_in(link(&quot;Spree Bag&quot;)))' selected='false'/>
+   <accessor type='click' value='span(17)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='$Quantity' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='numberbox(&quot;form-control title&quot;)' selected='true'/>
+   <accessor type='setValue' value='numberbox(&quot;quantity&quot;)' selected='false'/>
+   <accessor type='setValue' value='numberbox(0,_in(div(&quot;input-group&quot;)))' selected='false'/>
+   <accessor type='setValue' value='numberbox(0,_in(div(&quot;Add To Cart[1]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='numberbox(0)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='submit(&quot;Add To Cart&quot;)' selected='true'/>
+   <accessor type='click' value='submit(&quot;button&quot;)' selected='false'/>
+   <accessor type='click' value='submit(0,_in(span(&quot;input-group-btn&quot;)))' selected='false'/>
+   <accessor type='click' value='submit(0,_in(span(&quot;Add To Cart&quot;)))' selected='false'/>
+   <accessor type='click' value='submit(1)' selected='false'/>
+   <accessor type='click' value='submit(&quot;btn btn-success[1]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='submit(&quot;Checkout&quot;)' selected='true'/>
+   <accessor type='click' value='submit(&quot;checkout-link&quot;)' selected='false'/>
+   <accessor type='click' value='submit(&quot;checkout&quot;)' selected='false'/>
+   <accessor type='click' value='submit(1,_in(div(&quot;form-group[2]&quot;)))' selected='false'/>
+   <accessor type='click' value='submit(2)' selected='false'/>
+   <accessor type='click' value='submit(&quot;btn btn-lg btn-success&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='$Email' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='emailbox(&quot;form-control title&quot;)' selected='true'/>
+   <accessor type='setValue' value='emailbox(&quot;order_email&quot;)' selected='false'/>
+   <accessor type='setValue' value='emailbox(&quot;order[email]&quot;)' selected='false'/>
+   <accessor type='setValue' value='emailbox(1)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='submit(&quot;Continue&quot;)' selected='true'/>
+   <accessor type='click' value='submit(&quot;commit[1]&quot;)' selected='false'/>
+   <accessor type='click' value='submit(2)' selected='false'/>
+   <accessor type='click' value='submit(&quot;btn btn-block btn-lg btn-success[1]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='$FirstName' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textbox(&quot;order_bill_address_attributes_firstname&quot;)' selected='true'/>
+   <accessor type='setValue' value='textbox(&quot;order[bill_address_attributes][firstname]&quot;)' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(paragraph(&quot;bfirstname&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(paragraph(&quot;form-group&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(paragraph(&quot;First Name*&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0)' selected='false'/>
+   <accessor type='setValue' value='textbox(&quot;form-control&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='$LastName' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textbox(&quot;order_bill_address_attributes_lastname&quot;)' selected='true'/>
+   <accessor type='setValue' value='textbox(&quot;order[bill_address_attributes][lastname]&quot;)' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(paragraph(&quot;blastname&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(paragraph(&quot;form-group[1]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(paragraph(&quot;Last Name*&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(1)' selected='false'/>
+   <accessor type='setValue' value='textbox(&quot;form-control[1]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='$Address' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textbox(&quot;order_bill_address_attributes_address1&quot;)' selected='true'/>
+   <accessor type='setValue' value='textbox(&quot;order[bill_address_attributes][address1]&quot;)' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(paragraph(&quot;baddress1&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(paragraph(&quot;form-group[2]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(paragraph(&quot;Street Address*&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(2)' selected='false'/>
+   <accessor type='setValue' value='textbox(&quot;form-control required&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='$City' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textbox(&quot;order_bill_address_attributes_city&quot;)' selected='true'/>
+   <accessor type='setValue' value='textbox(&quot;order[bill_address_attributes][city]&quot;)' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(paragraph(&quot;bcity&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(paragraph(&quot;form-group[4]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(paragraph(&quot;City*&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(4)' selected='false'/>
+   <accessor type='setValue' value='textbox(&quot;form-control[3]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setSelected' value='$State' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setSelected' value='select(&quot;order_bill_address_attributes_state_id&quot;)' selected='true'/>
+   <accessor type='setSelected' value='select(&quot;order[bill_address_attributes][state_id]&quot;)' selected='false'/>
+   <accessor type='setSelected' value='select(0,_in(paragraph(&quot;bstate&quot;)))' selected='false'/>
+   <accessor type='setSelected' value='select(0,_in(paragraph(&quot;form-group[6]&quot;)))' selected='false'/>
+   <accessor type='setSelected' value='select(2)' selected='false'/>
+   <accessor type='setSelected' value='select(&quot;form-control required&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='$Zipcode' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textbox(&quot;order_bill_address_attributes_zipcode&quot;)' selected='true'/>
+   <accessor type='setValue' value='textbox(&quot;order[bill_address_attributes][zipcode]&quot;)' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(paragraph(&quot;bzipcode&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(paragraph(&quot;form-group[7]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(paragraph(&quot;Zip*&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(6)' selected='false'/>
+   <accessor type='setValue' value='textbox(&quot;form-control[4]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='$Phone' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='telephonebox(&quot;form-control&quot;)' selected='true'/>
+   <accessor type='setValue' value='telephonebox(&quot;order_bill_address_attributes_phone&quot;)' selected='false'/>
+   <accessor type='setValue' value='telephonebox(&quot;order[bill_address_attributes][phone]&quot;)' selected='false'/>
+   <accessor type='setValue' value='telephonebox(0,_in(paragraph(&quot;bphone&quot;)))' selected='false'/>
+   <accessor type='setValue' value='telephonebox(0,_in(paragraph(&quot;form-group[8]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='telephonebox(0,_in(paragraph(&quot;Phone*&quot;)))' selected='false'/>
+   <accessor type='setValue' value='telephonebox(0)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='submit(&quot;Save and Continue&quot;)' selected='true'/>
+   <accessor type='click' value='submit(&quot;commit&quot;)' selected='false'/>
+   <accessor type='click' value='submit(0,_in(div(&quot;form-buttons text-right well&quot;)))' selected='false'/>
+   <accessor type='click' value='submit(1)' selected='false'/>
+   <accessor type='click' value='submit(&quot;btn btn-lg btn-success&quot;)' selected='false'/>
+</dialect>
+</step>
+</testcase>

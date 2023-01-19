@@ -1,0 +1,115 @@
+{
+	"threshold": 0.75,
+	"smartTags": [
+		{
+			"name": "STAddtoCart",
+			"type": "Action",
+			"tags": [
+				"button"
+			],
+			"rules": [
+				{
+					"weight": 85,
+					"type": "attrContainsValue",
+					"value": "id:add-to-cart-button"
+				}
+			],
+			"singleton": false,
+			"scanOncePerApp": false,
+			"scanOnePerPage": true,
+			"info": {},
+			"methods": {},
+			"validators": [
+				"ValidBtnAddtoCart"
+			],
+			"extractors": [],
+			"disabled": false,
+			"description": "",
+			"image": "data:image/jpeg;base64,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"
+		},
+		{
+			"name": "STBtnCheckout",
+			"type": "Action",
+			"tags": [
+				"button"
+			],
+			"rules": [
+				{
+					"weight": 100,
+					"type": "attrContainsValue",
+					"value": "id:checkout-link"
+				},
+				{
+					"weight": 100,
+					"type": "containsText",
+					"value": "Checkout"
+				}
+			],
+			"singleton": false,
+			"scanOncePerApp": false,
+			"scanOnePerPage": true,
+			"info": {},
+			"methods": {},
+			"validators": [
+				"btnCheckoutPost"
+			],
+			"extractors": [],
+			"disabled": false,
+			"description": "Green button at the middle of the page",
+			"image": ""
+		},
+		{
+			"name": "STBtnSearch",
+			"type": "Action",
+			"tags": [
+				"input"
+			],
+			"rules": [
+				{
+					"weight": 94,
+					"type": "attrContainsValue",
+					"value": "value:Search"
+				}
+			],
+			"singleton": false,
+			"scanOncePerApp": false,
+			"scanOnePerPage": false,
+			"info": {},
+			"methods": {},
+			"validators": [],
+			"extractors": [],
+			"disabled": false,
+			"description": "",
+			"image": ""
+		}
+	],
+	"actions": [],
+	"customTags": [],
+	"validators": [
+		{
+			"name": "ValidBtnAddtoCart",
+			"when": "preAction",
+			"operator": "equals",
+			"type": "id",
+			"value": "",
+			"target": "\"add-to-cart-button\"",
+			"where": "",
+			"locator": "",
+			"disabled": false,
+			"postprocessing": ""
+		},
+		{
+			"name": "btnCheckoutPost",
+			"when": "preAction",
+			"operator": "elementExists",
+			"type": "",
+			"value": "",
+			"target": "",
+			"where": "locator",
+			"locator": "'update-button'",
+			"disabled": false,
+			"postprocessing": ""
+		}
+	],
+	"extractors": []
+}

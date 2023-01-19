@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase  name= '' description='' author='' version=''>
+<dpl filename='{ds}/dpl.csv' exectype='nullnull' errorhandling='' type='HashDPL'/>
+<fallback useFallback='false'/>
+<step action='js' value='processScript(&apos;{ds}/setup.js&apos;,&apos;js&apos;);' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='js' value='' selected='true'/>
+</dialect>
+</step>
+<step action='addSmartTagsLibrary' value='"{ds}/three.stags"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='addSmartTagsLibrary' value='' selected='true'/>
+</dialect>
+</step>
+<step action='setFailOnValidations' value='false' type='web' desc='' isThinkTime='false' isCommented='true' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setFailOnValidations' value='' selected='true'/>
+</dialect>
+</step>
+<step action='prepareDomain' value='$baseURL' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='prepareDomain' value='' selected='true'/>
+</dialect>
+</step>
+<step action='setFindOnlyVisible' value='true' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setFindOnlyVisible' value='' selected='true'/>
+</dialect>
+</step>
+<step action='setFindOnlyEnabled' value='true' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setFindOnlyEnabled' value='' selected='true'/>
+</dialect>
+</step>
+<step action='selectMainFrame' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='selectMainFrame' value='' selected='true'/>
+</dialect>
+</step>
+<step action='navigateTo' value='$baseURL' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='setValue' value='$product' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='inputField(&apos;keywords&apos;)' selected='true'/>
+</dialect>
+</step>
+<step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='btnGreen(&apos;Search&apos;)' selected='true'/>
+</dialect>
+</step>
+<step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='productAny($productAny)' selected='true'/>
+</dialect>
+</step>
+<step action='setValue' value='$quantity' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='inputField(&apos;quantity&apos;)' selected='true'/>
+</dialect>
+</step>
+<step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='btnGreen(&apos;add-to-cart-button&apos;)' selected='true'/>
+</dialect>
+</step>
+<step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='btnGreen(&apos;checkout-link&apos;)' selected='true'/>
+</dialect>
+</step>
+<step action='setValue' value='$email' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='inputField(&apos;order_email&apos;)' selected='true'/>
+</dialect>
+</step>
+<step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='btnGreen(&apos;Continue&apos;)' selected='true'/>
+</dialect>
+</step>
+</testcase>

@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase  name= '' description='' author='' version=''>
+<dpl filename='{ds}/DYNAMICSDPL.csv' exectype='runstepbystep' errorhandling='' type='JsDPL'/>
+<fallback useFallback='false'/>
+<step action='navigateTo' value='"https://demosite.appvance.com/"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='clickXY' value='"53,79"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='clickXY' value='image(&quot;Ruby on Rails Tote&quot;)' selected='true'/>
+   <accessor type='clickXY' value='image(&quot;https://demosite.appvance.com/spree/products/21/small/ror_tote.jpeg?1527769324&quot;)' selected='false'/>
+   <accessor type='clickXY' value='image(0,_in(link(&quot;Ruby on Rails Tote&quot;)))' selected='false'/>
+   <accessor type='clickXY' value='image(1)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='Click on Add to cart' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='submit(&quot;Add To Cart&quot;)' selected='true'/>
+   <accessor type='click' value='submit(&quot;button&quot;)' selected='false'/>
+   <accessor type='click' value='submit(0,_in(span(&quot;input-group-btn&quot;)))' selected='false'/>
+   <accessor type='click' value='submit(0,_in(span(&quot;Add To Cart&quot;)))' selected='false'/>
+   <accessor type='click' value='submit(1)' selected='false'/>
+   <accessor type='click' value='submit(&quot;btn btn-success[1]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='Click on Checkout' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='submit(&quot;checkout-link&quot;)' selected='true'/>
+   <accessor type='click' value='submit(&quot;checkout&quot;)' selected='false'/>
+   <accessor type='click' value='submit(&quot;Checkout&quot;)' selected='false'/>
+   <accessor type='click' value='submit(1,_in(div(&quot;form-group[2]&quot;)))' selected='false'/>
+   <accessor type='click' value='submit(2)' selected='false'/>
+   <accessor type='click' value='submit(&quot;btn btn-lg btn-success&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='eval(&apos;\&quot;Abc&apos;+ Math.floor(Math.random()*10000)+&apos;\@gmil.com&quot;&apos;)' type='web' desc='Using eval function passing the value in email box' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='emailbox(&quot;form-control title&quot;)' selected='true'/>
+   <accessor type='setValue' value='emailbox(&quot;order_email&quot;)' selected='false'/>
+   <accessor type='setValue' value='emailbox(&quot;order[email]&quot;)' selected='false'/>
+   <accessor type='setValue' value='emailbox(1)' selected='false'/>
+</dialect>
+</step>
+<step action='store' value='eval(&apos;\&quot;App&apos;+ Math.floor(Math.random()*10000)+&apos;\&quot;&apos;)' type='web' desc='Storing the eval value in Data' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='store' value='Data' selected='true'/>
+</dialect>
+</step>
+<step action='log' value='Data' type='web' desc='Data value displayed in log' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='log' value='' selected='true'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='Click on Continue' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='submit(&quot;Continue&quot;)' selected='true'/>
+   <accessor type='click' value='submit(&quot;commit[1]&quot;)' selected='false'/>
+   <accessor type='click' value='submit(2)' selected='false'/>
+   <accessor type='click' value='submit(&quot;btn btn-block btn-lg btn-success[1]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='Data' type='web' desc='Passing the value to textbox' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textbox(&quot;order_bill_address_attributes_firstname&quot;)' selected='true'/>
+   <accessor type='setValue' value='textbox(&quot;order[bill_address_attributes][firstname]&quot;)' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(paragraph(&quot;bfirstname&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(paragraph(&quot;form-group&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(paragraph(&quot;First Name*&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0)' selected='false'/>
+   <accessor type='setValue' value='textbox(&quot;form-control&quot;)' selected='false'/>
+</dialect>
+</step>
+</testcase>

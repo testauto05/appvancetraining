@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase  name= '' description='' author='' version=''>
+<dpl filename='' exectype='runstepbystep' errorhandling='' type='HashDPL'/>
+<fallback useFallback='false'/>
+<step action='navigateTo' value='"https://demosite.appvance.com/"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='link(&quot;/t/bags&quot;)' selected='true'/>
+   <accessor type='click' value='link(&quot;Bags&quot;)' selected='false'/>
+   <accessor type='click' value='link(4)' selected='false'/>
+   <accessor type='click' value='link(&quot;list-group-item&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='if' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='if' value='!(isChecked(checkbox(0,_near(label(&quot;Under $10.00&quot;)))))' selected='true'/>
+   <accessor type='if' value='' selected='false'/>
+   <accessor type='if' value='!(isChecked(checkbox(&quot;Under $10.00&quot;)))' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='checkbox(0,_near(label(&quot;Under $10.00&quot;)))' selected='true'/>
+   <accessor type='click' value='checkbox(&quot;search[price_range_any][]&quot;)' selected='false'/>
+   <accessor type='click' value='checkbox(0)' selected='false'/>
+   <accessor type='click' value='checkbox(&quot;Price_Range_Under_$10.00&quot;)' selected='false'/>
+   <accessor type='click' value='checkbox(&quot;Under $10.00&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='endif' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='endif' value='' selected='true'/>
+</dialect>
+</step>
+</testcase>

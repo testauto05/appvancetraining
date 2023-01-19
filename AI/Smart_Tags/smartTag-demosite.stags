@@ -1,0 +1,387 @@
+{
+	"threshold": 0.75,
+	"smartTags": [
+		{
+			"name": "inputField",
+			"type": "Text",
+			"tags": [
+				"input"
+			],
+			"rules": [
+				{
+					"weight": 100,
+					"type": "attrContainsValue",
+					"value": "class:form-control"
+				}
+			],
+			"singleton": false,
+			"scanOncePerApp": false,
+			"scanOnePerPage": false,
+			"info": {},
+			"methods": {
+				"getName": "getBestName"
+			},
+			"autoValidations": [],
+			"validators": [],
+			"extractors": [],
+			"disabled": false,
+			"description": ""
+		},
+		{
+			"name": "btnCheckout",
+			"type": "Action",
+			"tags": [
+				"button"
+			],
+			"rules": [
+				{
+					"weight": 100,
+					"type": "containsText",
+					"value": "Add To Cart"
+				},
+				{
+					"weight": 100,
+					"type": "attrContainsValue",
+					"value": "id:add-to-cart-button"
+				}
+			],
+			"singleton": true,
+			"scanOncePerApp": false,
+			"scanOnePerPage": false,
+			"info": {},
+			"methods": {
+				"getName": "getBestName"
+			},
+			"autoValidations": [],
+			"validators": [],
+			"extractors": [],
+			"disabled": false,
+			"description": ""
+		},
+		{
+			"name": "btnGreen",
+			"type": "Action",
+			"tags": [
+				"button",
+				"input"
+			],
+			"rules": [
+				{
+					"weight": 100,
+					"type": "attrContainsValue",
+					"value": "class:btn-success"
+				}
+			],
+			"singleton": false,
+			"scanOncePerApp": false,
+			"scanOnePerPage": false,
+			"info": {},
+			"methods": {
+				"getName": "getBestName"
+			},
+			"autoValidations": [],
+			"validators": [],
+			"extractors": [],
+			"disabled": false,
+			"description": ""
+		},
+		{
+			"name": "btnRadio",
+			"type": "Action",
+			"tags": [
+				"input"
+			],
+			"rules": [
+				{
+					"weight": 100,
+					"type": "attrContainsValue",
+					"value": "type:radio"
+				}
+			],
+			"singleton": false,
+			"scanOncePerApp": false,
+			"scanOnePerPage": false,
+			"info": {},
+			"methods": {},
+			"autoValidations": [],
+			"validators": [],
+			"extractors": [],
+			"disabled": false,
+			"description": ""
+		},
+		{
+			"name": "extendedSelect",
+			"type": "Select",
+			"tags": [
+				"div"
+			],
+			"rules": [
+				{
+					"weight": 100,
+					"type": "attrContainsValue",
+					"value": "class:list-group"
+				}
+			],
+			"singleton": false,
+			"scanOncePerApp": false,
+			"scanOnePerPage": false,
+			"info": {},
+			"methods": {
+				"getName": "getBestName",
+				"getSelectValues": "getBtSelectValue",
+				"setSelected": "setBtSelectValue"
+			},
+			"autoValidations": [],
+			"validators": [],
+			"extractors": [],
+			"disabled": false,
+			"description": ""
+		},
+		{
+			"name": "pageWithradioButton",
+			"type": "Navigation",
+			"tags": [
+				"a"
+			],
+			"rules": [
+				{
+					"weight": 100,
+					"type": "attrContainsValue",
+					"value": "href:/products/ruby-on-rails-baseball-jersey"
+				}
+			],
+			"singleton": false,
+			"scanOncePerApp": true,
+			"scanOnePerPage": false,
+			"info": {},
+			"methods": {},
+			"autoValidations": [],
+			"validators": [],
+			"extractors": [],
+			"disabled": false,
+			"description": ""
+		},
+		{
+			"name": "selectElement",
+			"type": "Select",
+			"tags": [
+				"select"
+			],
+			"rules": [
+				{
+					"weight": 100,
+					"type": "attrContainsValue",
+					"value": "class:form-control"
+				}
+			],
+			"singleton": false,
+			"scanOncePerApp": false,
+			"scanOnePerPage": false,
+			"info": {},
+			"methods": {
+				"getName": "getBestName"
+			},
+			"autoValidations": [],
+			"validators": [],
+			"extractors": [],
+			"disabled": false,
+			"description": ""
+		},
+		{
+			"name": "btnCheck",
+			"type": "Action",
+			"tags": [
+				"input"
+			],
+			"rules": [
+				{
+					"weight": 100,
+					"type": "attrContainsValue",
+					"value": "type:check"
+				}
+			],
+			"singleton": false,
+			"scanOncePerApp": false,
+			"scanOnePerPage": false,
+			"info": {},
+			"methods": {
+				"getName": "getBestName"
+			},
+			"autoValidations": [],
+			"validators": [],
+			"extractors": [],
+			"disabled": false,
+			"description": ""
+		},
+		{
+			"name": "btnBlue",
+			"type": "Action",
+			"tags": [
+				"button"
+			],
+			"rules": [
+				{
+					"weight": 100,
+					"type": "attrContainsValue",
+					"value": "class:btn-primary"
+				},
+				{
+					"weight": 100,
+					"type": "containsText",
+					"value": "Update"
+				}
+			],
+			"singleton": true,
+			"scanOncePerApp": false,
+			"scanOnePerPage": false,
+			"info": {},
+			"methods": {
+				"getName": "getNameFromText"
+			},
+			"autoValidations": [],
+			"validators": [],
+			"extractors": [],
+			"disabled": false,
+			"description": ""
+		},
+		{
+			"name": "productAny",
+			"type": "Action",
+			"tags": [
+				"a"
+			],
+			"rules": [
+				{
+					"weight": 100,
+					"type": "attrContainsValue",
+					"value": "href:/products/"
+				},
+				{
+					"weight": 100,
+					"type": "attrContainsValue",
+					"value": "itemprop:url"
+				}
+			],
+			"singleton": false,
+			"scanOncePerApp": false,
+			"scanOnePerPage": false,
+			"info": {},
+			"methods": {
+				"getName": "getNameFromText"
+			},
+			"autoValidations": [
+				"checkoutButtonExist"
+			],
+			"validators": [],
+			"extractors": [],
+			"disabled": false,
+			"description": ""
+		}
+	],
+	"actions": [
+		{
+			"name": "clickMyElement",
+			"functionString": "return ds$(element).click();",
+			"arrayHint": "[]",
+			"previousActions": [],
+			"postActions": []
+		},
+		{
+			"name": "setBtSelectValue",
+			"functionString": "var found = false; \n// params\nds$(element).find('a').each(function(idx, theElement){ \n   var theElementText = ds$(theElement).text().trim();\n   if (params === theElementText && !found){ \n           found = true; \n     //theElement.click(); // method 1 \n      //ds$(theElement).click(); // method 2   \n\n    } \n}); \nreturn found; ",
+			"arrayHint": "[]",
+			"previousActions": [
+				"clickMyElement"
+			],
+			"postActions": []
+		},
+		{
+			"name": "getBtSelectValue",
+			"functionString": "var selectValues = []; \nds$(element).find('a').each(function(idx, theElement){ \n\n\tselectValues.push($(theElement).text().trim()); \n}); \n\nreturn selectValues;",
+			"arrayHint": "array",
+			"previousActions": [
+				"clickMyElement"
+			],
+			"postActions": [
+				"clickMyElement"
+			]
+		},
+		{
+			"name": "getBestName",
+			"functionString": "var theElement = ds$(element);\nvar name = theElement.attr('id');\n\n// we can change the order, if none of the following is found will try to get name from the text of the element.\nif (typeof name === 'undefined') {\n     name = \"\"; \n}\nif (name === \"\") {\n     name = theElement.attr('name'); \n}\nif (typeof name === 'undefined') {\n     name = \"\"; \n}\nif (name === \"\") {\n     name = theElement.attr('value'); \n}\nif (typeof name === 'undefined') {\n     name = \"\"; \n}\nif (name === \"\") {\n     name = theElement.attr('data-hook'); \n}\nif (name === \"\") {\n     name = theElement.text(); \n}\nreturn name;",
+			"arrayHint": "",
+			"previousActions": [],
+			"postActions": []
+		},
+		{
+			"name": "getNameFromText",
+			"functionString": "var theElement = ds$(element);\nreturn theElement.text().trim();",
+			"arrayHint": "",
+			"previousActions": [],
+			"postActions": []
+		}
+	],
+	"customTags": [],
+	"autoValidations": [
+		{
+			"name": "checkoutButtonExist",
+			"value": "",
+			"type": "elementExists",
+			"disabled": false,
+			"target": "locator",
+			"locator": "btnGreen(\"button\")",
+			"postprocessing": ""
+		},
+		{
+			"name": "hasDescriptionForMoreProducts",
+			"value": "\"Look for similar items\"",
+			"type": "staticText",
+			"disabled": false,
+			"target": "wholePage",
+			"locator": "",
+			"postprocessing": ""
+		}
+	],
+	"validators": [
+		{
+			"name": "containPropAttribute",
+			"when": "preAction",
+			"value": "itemprop",
+			"operator": "contains",
+			"type": "attribute",
+			"target": "$itemprop",
+			"disabled": false,
+			"postprocessing": ""
+		},
+		{
+			"name": "hasHref",
+			"when": "postAction",
+			"value": "href",
+			"operator": "equals",
+			"type": "attribute",
+			"target": "$url",
+			"disabled": false,
+			"postprocessing": ""
+		}
+	],
+	"extractors": [
+		{
+			"name": "getItemProp",
+			"when": "preAction",
+			"value": "itemprop",
+			"type": "attribute",
+			"variable": "itemprop",
+			"disabled": false,
+			"postprocessing": "/**You can add JS code here.\n*\t\tUse standard functions to manipulate the variable.\n*\t\t\tVariable must be referenced with $.\n*\t\tUse functions available in JS Edit & Play to extract data.\n*\t\t\tReference of functions is in https://appvance.atlassian.net/wiki/spaces/EN/pages/596967438/DS3+JS+Commands+Reference\n\n*\t\tNote: First line must return value.\n**/\n"
+		},
+		{
+			"name": "getHref",
+			"when": "preAction",
+			"value": "href",
+			"type": "attribute",
+			"variable": "url",
+			"disabled": false,
+			"postprocessing": "/**You can add JS code here.\n*\t\tUse standard functions to manipulate the variable.\n*\t\t\tVariable must be referenced with $.\n*\t\tUse functions available in JS Edit & Play to extract data.\n*\t\t\tReference of functions is in https://appvance.atlassian.net/wiki/spaces/EN/pages/596967438/DS3+JS+Commands+Reference\n\n*\t\tNote: First line must return value.\n**/\n"
+		}
+	]
+}

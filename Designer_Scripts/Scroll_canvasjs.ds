@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase  name= '' description='' author='' version=''>
+<dpl filename='' exectype='runstepbystep' errorhandling='' type='HashDPL'/>
+<fallback useFallback='false'/>
+<step action='navigateTo' value='"https://canvasjs.com/html5-javascript-pie-chart/"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='wait' value='3000' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='wait' value='' selected='true'/>
+</dialect>
+</step>
+<step action='clickXY' value='"375,170"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='clickXY' value='canvas(&quot;canvasjs-chart-canvas[1]&quot;)' selected='true'/>
+   <accessor type='clickXY' value='canvas(1,_in(div(&quot;canvasjs-chart-container&quot;)))' selected='false'/>
+   <accessor type='clickXY' value='canvas(1,_in(div(&quot;Bing:  7.31%[1]&quot;)))' selected='false'/>
+   <accessor type='clickXY' value='canvas(1)' selected='false'/>
+</dialect>
+</step>
+<step action='mouseOverXY' value='"375,170"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='mouseOverXY' value='canvas(&quot;canvasjs-chart-canvas[1]&quot;)' selected='true'/>
+   <accessor type='mouseOverXY' value='canvas(1,_in(div(&quot;canvasjs-chart-container&quot;)))' selected='false'/>
+   <accessor type='mouseOverXY' value='canvas(1,_in(div(&quot;Bing:  7.31%[1]&quot;)))' selected='false'/>
+   <accessor type='mouseOverXY' value='canvas(1)' selected='false'/>
+</dialect>
+</step>
+<step action='assertExists' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='assertExists' value='span([&quot;Bing&quot;])' selected='true'/>
+   <accessor type='assertExists' value='' selected='false'/>
+   <accessor type='assertExists' value='span([&quot;Bing&quot;])' selected='false'/>
+</dialect>
+</step>
+<step action='assertContainsText' value='"Bing:  7.31%"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='assertContainsText' value='div(&quot;canvasjs-chart-container&quot;)' selected='true'/>
+   <accessor type='assertContainsText' value='div(&quot;canvasjs-chart-container&quot;)' selected='false'/>
+   <accessor type='assertContainsText' value='div(&quot;Bing:  7.31%[1]&quot;)' selected='false'/>
+   <accessor type='assertContainsText' value='div(0,_in(div(&quot;chartContainer&quot;)))' selected='false'/>
+   <accessor type='assertContainsText' value='div(0,_in(div(&quot;Bing:  7.31%&quot;)))' selected='false'/>
+   <accessor type='assertContainsText' value='div(1)' selected='false'/>
+</dialect>
+</step>
+<step action='clickXY' value='"379,141"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='clickXY' value='canvas(&quot;canvasjs-chart-canvas[1]&quot;)' selected='true'/>
+   <accessor type='clickXY' value='canvas(1,_in(div(&quot;canvasjs-chart-container&quot;)))' selected='false'/>
+   <accessor type='clickXY' value='canvas(1,_in(div(&quot;Baidu:  7.06%[1]&quot;)))' selected='false'/>
+   <accessor type='clickXY' value='canvas(1)' selected='false'/>
+</dialect>
+</step>
+<step action='mouseOverXY' value='"379,141"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='mouseOverXY' value='canvas(&quot;canvasjs-chart-canvas[1]&quot;)' selected='true'/>
+   <accessor type='mouseOverXY' value='canvas(1,_in(div(&quot;canvasjs-chart-container&quot;)))' selected='false'/>
+   <accessor type='mouseOverXY' value='canvas(1,_in(div(&quot;Baidu:  7.06%[1]&quot;)))' selected='false'/>
+   <accessor type='mouseOverXY' value='canvas(1)' selected='false'/>
+</dialect>
+</step>
+<step action='assertExists' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='assertExists' value='span([&quot;Baidu&quot;])' selected='true'/>
+   <accessor type='assertExists' value='' selected='false'/>
+   <accessor type='assertExists' value='span([&quot;Bing&quot;])' selected='false'/>
+</dialect>
+</step>
+<step action='assertContainsText' value='"Baidu:  7.06%"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='assertContainsText' value='div(&quot;canvasjs-chart-container&quot;)' selected='true'/>
+   <accessor type='assertContainsText' value='div(&quot;canvasjs-chart-container&quot;)' selected='false'/>
+   <accessor type='assertContainsText' value='div(&quot;Bing:  7.31%[1]&quot;)' selected='false'/>
+   <accessor type='assertContainsText' value='div(0,_in(div(&quot;chartContainer&quot;)))' selected='false'/>
+   <accessor type='assertContainsText' value='div(0,_in(div(&quot;Bing:  7.31%&quot;)))' selected='false'/>
+   <accessor type='assertContainsText' value='div(1)' selected='false'/>
+</dialect>
+</step>
+<step action='mouseOverXY' value='"485,186"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='mouseOverXY' value='canvas(&quot;canvasjs-chart-canvas[1]&quot;)' selected='true'/>
+   <accessor type='mouseOverXY' value='canvas(1,_in(div(&quot;canvasjs-chart-container&quot;)))' selected='false'/>
+   <accessor type='mouseOverXY' value='canvas(1,_in(div(&quot;Google:  79.45%[1]&quot;)))' selected='false'/>
+   <accessor type='mouseOverXY' value='canvas(1)' selected='false'/>
+</dialect>
+</step>
+<step action='assertContainsText' value='"Google:  79.45%"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='assertContainsText' value='div(&quot;canvasjs-chart-container&quot;)' selected='true'/>
+   <accessor type='assertContainsText' value='div(&quot;canvasjs-chart-container&quot;)' selected='false'/>
+   <accessor type='assertContainsText' value='div(&quot;Bing:  7.31%[1]&quot;)' selected='false'/>
+   <accessor type='assertContainsText' value='div(0,_in(div(&quot;chartContainer&quot;)))' selected='false'/>
+   <accessor type='assertContainsText' value='div(0,_in(div(&quot;Bing:  7.31%&quot;)))' selected='false'/>
+   <accessor type='assertContainsText' value='div(1)' selected='false'/>
+</dialect>
+</step>
+<step action='navigateTo' value='"https://datatables.net/examples/advanced_init/html5-data-options.html"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='while' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='while' value='! isVisible(cell(&quot;Jena Gaines&quot;))' selected='true'/>
+   <accessor type='while' value='' selected='false'/>
+   <accessor type='while' value='! isVisible(paragraph([&quot;100,000 Data-Points&quot;]))' selected='false'/>
+   <accessor type='while' value='! isVisible(heading3(&quot;Users By Countries&quot;))' selected='false'/>
+</dialect>
+</step>
+<step action='js' value='_eval(&quot;window.scroll(0,100)&quot;)' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='js' value='' selected='true'/>
+</dialect>
+</step>
+<step action='endWhile' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='endWhile' value='' selected='true'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='cell(&quot;Jena Gaines&quot;)' selected='true'/>
+   <accessor type='click' value='cell(0,_in(row(&quot;odd[12]&quot;)))' selected='false'/>
+   <accessor type='click' value='cell(144)' selected='false'/>
+</dialect>
+</step>
+<step action='assertExists' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='assertExists' value='cell(&quot;B. Williamson&quot;)' selected='true'/>
+   <accessor type='assertExists' value='cell(180)' selected='false'/>
+</dialect>
+</step>
+<step action='assertContainsText' value='"$372,000/y"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='assertContainsText' value='cell(&quot;$372,000/y&quot;)' selected='true'/>
+   <accessor type='assertContainsText' value='cell(&quot;$372,000/y&quot;)' selected='false'/>
+   <accessor type='assertContainsText' value='cell(185)' selected='false'/>
+</dialect>
+</step>
+<step action='navigateTo' value='"https://datatables.net/examples/basic_init/scroll_y.html"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='js' value='_eval(&quot;document.getElementsByClassName(&apos;dataTables_scrollBody&apos;)[0].scrollTo(0,1000)&quot;)' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='js' value='' selected='true'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='cell(&quot;Cedric Kelly&quot;)' selected='true'/>
+   <accessor type='click' value='cell(0,_in(row(&quot;even[4]&quot;)))' selected='false'/>
+   <accessor type='click' value='cell(54)' selected='false'/>
+   <accessor type='click' value='cell(&quot;sorting_1[9]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='assertContainsText' value='"$433,060"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='assertContainsText' value='cell(&quot;$433,060&quot;)' selected='true'/>
+   <accessor type='assertContainsText' value='cell(&quot;$433,060&quot;)' selected='false'/>
+   <accessor type='assertContainsText' value='cell(5,_in(row(&quot;even[4]&quot;)))' selected='false'/>
+   <accessor type='assertContainsText' value='cell(59)' selected='false'/>
+</dialect>
+</step>
+</testcase>

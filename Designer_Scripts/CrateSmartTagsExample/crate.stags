@@ -1,0 +1,106 @@
+{
+	"threshold": "0.75",
+	"smartTags": [
+		{
+			"name": "s_unsubscribe",
+			"type": "Action",
+			"tags": [
+				"button"
+			],
+			"rules": [
+				{
+					"weight": 100,
+					"type": "attrContainsValue",
+					"value": "classAPPVANCESPLITTERjsx-2258186958"
+				},
+				{
+					"weight": 100,
+					"type": "containsText",
+					"value": "Unsubscribe"
+				}
+			],
+			"singleton": false,
+			"scanOncePerApp": false,
+			"scanOnePerPage": false,
+			"info": {},
+			"methods": {
+				"getName": "getCrateName"
+			},
+			"validators": [],
+			"extractors": [],
+			"disabled": false,
+			"description": "",
+			"image": ""
+		},
+		{
+			"name": "s_subscribe",
+			"type": "Action",
+			"tags": [
+				"button"
+			],
+			"rules": [
+				{
+					"weight": 100,
+					"type": "attrContainsValue",
+					"value": "classAPPVANCESPLITTERjsx-1228826222"
+				},
+				{
+					"weight": 100,
+					"type": "containsText",
+					"value": "Subscribe"
+				}
+			],
+			"singleton": false,
+			"scanOncePerApp": false,
+			"scanOnePerPage": false,
+			"info": {},
+			"methods": {
+				"getName": "getCrateName"
+			},
+			"validators": [
+				"ValidateSubscribedCratePresent"
+			],
+			"extractors": [
+				"extractSubscribedCrateName"
+			],
+			"disabled": false,
+			"description": "",
+			"image": ""
+		}
+	],
+	"actions": [
+		{
+			"name": "getCrateName",
+			"functionString": "var name = ds$(element).parent().parent().children('h4').text()\nif (typeof name == undefined) {\n  return \"NA?\";\n}\nreturn name;",
+			"arrayHint": "",
+			"previousActions": [],
+			"postActions": []
+		}
+	],
+	"customTags": [],
+	"validators": [
+		{
+			"name": "ValidateSubscribedCratePresent",
+			"when": "postAction",
+			"operator": "elementExists",
+			"type": "",
+			"value": "",
+			"target": "",
+			"where": "locator",
+			"locator": "heading4($subscribedCrateName)",
+			"disabled": false,
+			"postprocessing": ""
+		}
+	],
+	"extractors": [
+		{
+			"name": "extractSubscribedCrateName",
+			"when": "preAction",
+			"value": "class",
+			"type": "attribute",
+			"variable": "subscribedCrateName",
+			"disabled": false,
+			"postprocessing": "$elem.content;\n"
+		}
+	]
+}

@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase  name= '' description='' author='' version=''>
+<dpl filename='' exectype='runstepbystep' errorhandling='' type='HashDPL'/>
+<fallback useFallback='false'/>
+<step action='setUserAgent' value='"iphone"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setUserAgent' value='"www.whatismybrowser.com"' selected='true'/>
+   <accessor type='setUserAgent' value='' selected='false'/>
+</dialect>
+</step>
+<step action='navigateTo' value='"https://www.whatismybrowser.com/detect/what-is-my-user-agent"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='assertContainsText' value='"Mozilla/5.0 (iPhone; CPU iPhone OS 11_3 like Mac OS X) Apple"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='assertContainsText' value='link(&quot;https://developers.whatismybrowser.com/useragents/parse/?analyse-my-user-agent=yes&quot;)' selected='true'/>
+   <accessor type='assertContainsText' value='link(&quot;https://developers.whatismybrowser.com/useragents/parse/?analyse-my-user-agent=yes&quot;)' selected='false'/>
+   <accessor type='assertContainsText' value='link(9)' selected='false'/>
+</dialect>
+</step>
+<step action='setUserAgent' value='"firefox"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setUserAgent' value='"www.whatismybrowser.com"' selected='true'/>
+   <accessor type='setUserAgent' value='' selected='false'/>
+</dialect>
+</step>
+<step action='navigateTo' value='"https://www.whatismybrowser.com/detect/what-is-my-user-agent"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='assertContainsText' value='"Firefox/59.0"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='assertContainsText' value='link(&quot;https://developers.whatismybrowser.com/useragents/parse/?analyse-my-user-agent=yes&quot;)' selected='true'/>
+   <accessor type='assertContainsText' value='link(&quot;https://developers.whatismybrowser.com/useragents/parse/?analyse-my-user-agent=yes&quot;)' selected='false'/>
+   <accessor type='assertContainsText' value='link(9)' selected='false'/>
+</dialect>
+</step>
+<step action='resetUserAgent' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='resetUserAgent' value='"www.whatismybrowser.com"' selected='true'/>
+   <accessor type='resetUserAgent' value='' selected='false'/>
+</dialect>
+</step>
+<step action='navigateTo' value='"https://www.whatismybrowser.com/detect/what-is-my-user-agent"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='assertContainsText' value='"Chrome/83.0"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='assertContainsText' value='link(&quot;https://developers.whatismybrowser.com/useragents/parse/?analyse-my-user-agent=yes&quot;)' selected='true'/>
+   <accessor type='assertContainsText' value='link(&quot;https://developers.whatismybrowser.com/useragents/parse/?analyse-my-user-agent=yes&quot;)' selected='false'/>
+   <accessor type='assertContainsText' value='link(9)' selected='false'/>
+</dialect>
+</step>
+</testcase>

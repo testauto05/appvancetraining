@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase  name= '' description='' author='' version=''>
+<dpl filename='' exectype='' errorhandling='' type='HashDPL'/>
+<fallback useFallback='false'/>
+<step action='navigateTo' value='"https://hax.tor.hu/welcome/"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='link(&quot;[ IRC ]&quot;)' selected='true'/>
+   <accessor type='click' value='link(1)' selected='false'/>
+   <accessor type='click' value='link(&quot;http://hax.tor.hu/irc/&quot;)' selected='false'/>
+   <accessor type='click' value='bold(&quot;[ IRC ]&quot;)' selected='false'/>
+   <accessor type='click' value='bold(3)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='link(&quot;[ Board ]&quot;)' selected='true'/>
+   <accessor type='click' value='link(2)' selected='false'/>
+   <accessor type='click' value='link(&quot;http://hax.tor.hu/board/&quot;)' selected='false'/>
+   <accessor type='click' value='bold(&quot;[ Board ]&quot;)' selected='false'/>
+   <accessor type='click' value='bold(4)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='link(&quot;[ Shell ]&quot;)' selected='true'/>
+   <accessor type='click' value='link(4)' selected='false'/>
+   <accessor type='click' value='link(&quot;http://hax.tor.hu/haxmin/&quot;)' selected='false'/>
+   <accessor type='click' value='bold(&quot;[ Shell ]&quot;)' selected='false'/>
+   <accessor type='click' value='bold(6)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='link(&quot;[ Log in ]&quot;)' selected='true'/>
+   <accessor type='click' value='link(7)' selected='false'/>
+   <accessor type='click' value='link(&quot;http://hax.tor.hu/login/&quot;)' selected='false'/>
+   <accessor type='click' value='bold(&quot;[ Log in ]&quot;)' selected='false'/>
+   <accessor type='click' value='bold(9)' selected='false'/>
+   <accessor type='click' value='link(&quot;[ Logsdgfd in ]&quot;)' selected='false'/>
+   <accessor type='click' value='link(&quot;[ Login ]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"info@example.com"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textbox(&quot;input&quot;)' selected='true'/>
+   <accessor type='setValue' value='textbox(&quot;pEMAIL&quot;)' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(cell(&quot;main[2]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"passw"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='password(&quot;input&quot;)' selected='true'/>
+   <accessor type='setValue' value='password(&quot;pPASS&quot;)' selected='false'/>
+   <accessor type='setValue' value='password(0,_in(cell(&quot;main[4]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='password(0)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='submit(&quot;button&quot;)' selected='true'/>
+   <accessor type='click' value='submit(&quot;lgbtn&quot;)' selected='false'/>
+   <accessor type='click' value='submit(&quot;Log in&quot;)' selected='false'/>
+   <accessor type='click' value='submit(0,_in(cell(&quot;main[5]&quot;)))' selected='false'/>
+   <accessor type='click' value='submit(0)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='bold(&quot;[ Statistics ]&quot;)' selected='true'/>
+   <accessor type='click' value='bold(7)' selected='false'/>
+</dialect>
+</step>
+<step action='selectWindow' value='"HAX.TOR :: Hacking Challenges - Free Shell Account - Security"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+</dialect>
+</step>
+</testcase>

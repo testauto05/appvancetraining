@@ -1,0 +1,2 @@
+SecondColumn,RandomValue
+"='' + randomBoolean()","='' + random(10)"

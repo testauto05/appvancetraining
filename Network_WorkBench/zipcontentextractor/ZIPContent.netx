@@ -1,0 +1,16 @@
+{
+	"validations": [],
+	"extractions": [
+		{
+			"name": "ZIPContent",
+			"disabled": false,
+			"regex": ".*folder.zip",
+			"hint": "",
+			"method": "get",
+			"variable": "ZIPContent",
+			"format": "zip-content",
+			"target": "folder/version.txt",
+			"postprocessing": ""
+		}
+	]
+}

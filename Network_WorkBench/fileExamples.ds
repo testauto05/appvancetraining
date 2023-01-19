@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase  name= '' description='' author='' version=''>
+<dpl filename='' exectype='runstepbystep' errorhandling='' type='HashDPL'/>
+<fallback useFallback='false'/>
+<step action='addNetworkLibrary' value='"{ds}/test2.netx"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='addNetworkLibrary' value='' selected='true'/>
+</dialect>
+</step>
+<step action='navigateTo' value='"https://file-examples.com/"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='link(&quot;https://file-examples.com/index.php/sample-documents-download/&quot;)' selected='true'/>
+   <accessor type='click' value='link(&quot;Sample documents&quot;)' selected='false'/>
+   <accessor type='click' value='link(0,_in(listItem(&quot;menu-item menu-item-27 menu-item-object-page menu-item-type-post_type&quot;)))' selected='false'/>
+   <accessor type='click' value='link(0,_in(listItem(&quot;Sample documents&quot;)))' selected='false'/>
+   <accessor type='click' value='link(3)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='link(0,_in(cell(&quot;file-link text-right[3]&quot;)))' selected='true'/>
+   <accessor type='click' value='link(&quot;https://file-examples.com/index.php/sample-documents-download/sample-pdf-download/&quot;)' selected='false'/>
+   <accessor type='click' value='link(&quot;Select file size &amp; download[3]&quot;)' selected='false'/>
+   <accessor type='click' value='link(0,_in(cell(&quot;Select file size &amp; download[3]&quot;)))' selected='false'/>
+   <accessor type='click' value='link(9)' selected='false'/>
+   <accessor type='click' value='link(&quot;btn btn-orange btn-outline btn-xl page-scroll[3]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='link(&quot;btn btn-orange btn-outline btn-xl page-scroll&quot;)' selected='true'/>
+   <accessor type='click' value='link(&quot;https://file-examples.com/wp-content/uploads/2017/10/file-sample_150kB.pdf&quot;)' selected='false'/>
+   <accessor type='click' value='link(&quot;Download sample pdf file&quot;)' selected='false'/>
+   <accessor type='click' value='link(0,_in(cell(&quot;file-link text-right&quot;)))' selected='false'/>
+   <accessor type='click' value='link(0,_in(cell(&quot;Download sample pdf file&quot;)))' selected='false'/>
+   <accessor type='click' value='link(7)' selected='false'/>
+</dialect>
+</step>
+<step action='log' value='$gDoc' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='log' value='' selected='true'/>
+</dialect>
+</step>
+</testcase>

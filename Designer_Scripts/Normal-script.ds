@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase  name= '' description='' author='' version=''>
+<dpl filename='' exectype='runstepbystep' errorhandling='' type='EncryptedHashDPL'/>
+<fallback useFallback='false'/>
+<step action='navigateTo' value='"https://demosite.appvance.com/"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='link(&quot;/login&quot;)' selected='true'/>
+   <accessor type='click' value='link(&quot;Login&quot;)' selected='false'/>
+   <accessor type='click' value='byXPath(&apos;//*[text()=&quot;Login&quot;]&apos;)' selected='false'/>
+   <accessor type='click' value='byXPath(&apos;//div[1]/header/div/div/nav/ul/li[1]/a&apos;)' selected='false'/>
+   <accessor type='click' value='byXPath(&quot;id(&apos;link-to-login&apos;)/a[1]&quot;)' selected='false'/>
+   <accessor type='click' value='link(0,_in(listItem(&quot;link-to-login&quot;)))' selected='false'/>
+   <accessor type='click' value='link(0,_in(listItem(&quot;Login&quot;)))' selected='false'/>
+   <accessor type='click' value='link(1)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"sachin@appvance.com"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='emailbox(&quot;spree_user[email]&quot;)' selected='true'/>
+   <accessor type='setValue' value='emailbox(&quot;form-control&quot;)' selected='false'/>
+   <accessor type='setValue' value='emailbox(&quot;spree_user_email&quot;)' selected='false'/>
+   <accessor type='setValue' value='byXPath(&apos;//*[@id=&quot;spree_user_email&quot;]&apos;)' selected='false'/>
+   <accessor type='setValue' value='byXPath(&apos;//*[@name=&quot;spree_user[email]&quot;]&apos;)' selected='false'/>
+   <accessor type='setValue' value='byXPath(&apos;//div[2]/div/div/div/div/div[2]/form/fieldset/div[1]/input&apos;)' selected='false'/>
+   <accessor type='setValue' value='byXPath(&quot;id(&apos;spree_user_email&apos;)&quot;)' selected='false'/>
+   <accessor type='setValue' value='emailbox(0,_in(div(&quot;form-group[2]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='emailbox(0)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"Appvance@123"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='password(&quot;spree_user[password]&quot;)' selected='true'/>
+   <accessor type='setValue' value='password(&quot;form-control&quot;)' selected='false'/>
+   <accessor type='setValue' value='password(&quot;spree_user_password&quot;)' selected='false'/>
+   <accessor type='setValue' value='byXPath(&apos;//*[@id=&quot;spree_user_password&quot;]&apos;)' selected='false'/>
+   <accessor type='setValue' value='byXPath(&apos;//*[@name=&quot;spree_user[password]&quot;]&apos;)' selected='false'/>
+   <accessor type='setValue' value='byXPath(&apos;//div[2]/div/div/div/div/div[2]/form/fieldset/div[2]/input&apos;)' selected='false'/>
+   <accessor type='setValue' value='byXPath(&quot;id(&apos;spree_user_password&apos;)&quot;)' selected='false'/>
+   <accessor type='setValue' value='password(0,_in(div(&quot;form-group[3]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='password(0)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='submit(&quot;Login&quot;)' selected='true'/>
+   <accessor type='click' value='submit(&quot;commit&quot;)' selected='false'/>
+   <accessor type='click' value='submit(&quot;btn btn-block btn-lg btn-success&quot;)' selected='false'/>
+   <accessor type='click' value='byXPath(&apos;//*[@name=&quot;commit&quot;]&apos;)' selected='false'/>
+   <accessor type='click' value='byXPath(&apos;//*[@class=&quot;btn btn-lg btn-success btn-block&quot;]&apos;)' selected='false'/>
+   <accessor type='click' value='byXPath(&apos;//div[2]/div/div/div/div/div[2]/form/fieldset/div[4]/input&apos;)' selected='false'/>
+   <accessor type='click' value='byXPath(&quot;id(&apos;password-credentials&apos;)/div[@class=&apos;form-group&apos;]/input[@class=&apos;btn btn-lg btn-success btn-block&apos;]&quot;)' selected='false'/>
+   <accessor type='click' value='submit(0,_in(div(&quot;form-group[4]&quot;)))' selected='false'/>
+   <accessor type='click' value='submit(1)' selected='false'/>
+</dialect>
+</step>
+</testcase>

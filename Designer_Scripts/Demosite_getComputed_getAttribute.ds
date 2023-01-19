@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase  name= '' description='' author='' version=''>
+<dpl filename='' exectype='' errorhandling='' type='HashDPL'/>
+<fallback useFallback='false'/>
+<step action='navigateTo' value='"http://demosite.appvance.com"' type='web' desc='Navigate' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='assertExists' value='""' type='web' desc='Click on Bags' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='assertExists' value='link(&quot;Bags&quot;)' selected='true'/>
+   <accessor type='assertExists' value='link(&quot;/t/bags&quot;)' selected='false'/>
+   <accessor type='assertExists' value='link(0,_in(div(&quot;list-group&quot;)))' selected='false'/>
+   <accessor type='assertExists' value='link(0,_in(div(&quot;Bags Mugs Clothing&quot;)))' selected='false'/>
+   <accessor type='assertExists' value='link(4)' selected='false'/>
+   <accessor type='assertExists' value='link(&quot;list-group-item&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='store' value='getComputedStyle(link(&quot;Bags&quot;),&quot;background-color&quot;)' type='web' desc='Check the computed style of background' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='store' value='Background' selected='true'/>
+</dialect>
+</step>
+<step action='log' value='Background' type='web' desc='Display it' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='log' value='' selected='true'/>
+</dialect>
+</step>
+<step action='store' value='getAttribute(link(&quot;Bags&quot;),&quot;href&quot;)' type='web' desc='Get the attribute of href' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='store' value='Hyperlink' selected='true'/>
+</dialect>
+</step>
+<step action='log' value='Hyperlink' type='web' desc='Display it' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='log' value='' selected='true'/>
+</dialect>
+</step>
+</testcase>

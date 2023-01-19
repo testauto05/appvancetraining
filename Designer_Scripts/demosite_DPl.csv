@@ -1,0 +1,2 @@
+ZIP,firstName,lastName,Email,address,city,phone,BaseURL
+"12345","='Appvance' + random(100)","Test","testappvance02@gmail.com","Test Address","San Francisco","1234567891","https://demosite.appvance.com/"

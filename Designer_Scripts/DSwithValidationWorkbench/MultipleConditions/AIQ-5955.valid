@@ -1,0 +1,32 @@
+{
+	"customActions": [],
+	"validations": [
+		{
+			"triggerType": "element",
+			"validationType": "element",
+			"disabled": false,
+			"passType": "pass",
+			"name": "usingbyJQuery",
+			"match": "byJQuery(\"span[class=info][title='Ruby on Rails Bag']\")",
+			"target": "byJQuery(\"a[href='/products/ruby-on-rails-bag']\")"
+		},
+		{
+			"triggerType": "element",
+			"validationType": "element",
+			"disabled": false,
+			"passType": "pass",
+			"name": "usingBasic",
+			"match": "span(\"Ruby on Rails Baseball Jersey\")",
+			"target": "link(\"Home\")"
+		},
+		{
+			"triggerType": "element",
+			"validationType": "element",
+			"disabled": false,
+			"passType": "pass",
+			"name": "usingNewSupport",
+			"match": "span({\"className\":\"info\",\"title\":\"Ruby on Rails Jr. Spaghetti\"})",
+			"target": "link({\"href\":\"https://demosite.appvance.com/products/ruby-on-rails-jr-spaghetti\"})"
+		}
+	]
+}

@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase  name= '' description='' author='' version=''>
+<dpl filename='{ds}/Javascript.csv' exectype='runstepbystep' errorhandling='' type='JsDPL'/>
+<fallback useFallback='false'/>
+<step action='navigateTo' value='"https://demosite.appvance.com/"' type='web' desc='Navigate To' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='Click on Bags' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='link(&quot;Bags&quot;)' selected='true'/>
+   <accessor type='click' value='link(&quot;/t/bags&quot;)' selected='false'/>
+   <accessor type='click' value='link(0,_in(div(&quot;list-group&quot;)))' selected='false'/>
+   <accessor type='click' value='link(0,_in(div(&quot;Bags Mugs Clothing&quot;)))' selected='false'/>
+   <accessor type='click' value='link(4)' selected='false'/>
+   <accessor type='click' value='link(&quot;list-group-item&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='Click on Ruby Rails Tote' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='span(&quot;Ruby on Rails Tote&quot;)' selected='true'/>
+   <accessor type='click' value='span(&quot;info&quot;)' selected='false'/>
+   <accessor type='click' value='span(0,_in(link(&quot;Ruby on Rails Tote&quot;)))' selected='false'/>
+   <accessor type='click' value='span(9)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='$RandomValue' type='web' desc='Use the Random Value' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='numberbox(&quot;quantity&quot;)' selected='true'/>
+   <accessor type='setValue' value='numberbox(0,_in(div(&quot;input-group&quot;)))' selected='false'/>
+   <accessor type='setValue' value='numberbox(0,_in(div(&quot;Add To Cart[1]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='numberbox(0)' selected='false'/>
+   <accessor type='setValue' value='numberbox(&quot;form-control title&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='Click on Add to Cart' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='submit(&quot;Add To Cart&quot;)' selected='true'/>
+   <accessor type='click' value='submit(&quot;button&quot;)' selected='false'/>
+   <accessor type='click' value='submit(0,_in(span(&quot;input-group-btn&quot;)))' selected='false'/>
+   <accessor type='click' value='submit(0,_in(span(&quot;Add To Cart&quot;)))' selected='false'/>
+   <accessor type='click' value='submit(1)' selected='false'/>
+   <accessor type='click' value='submit(&quot;btn btn-success[1]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='$SecondColumn' type='web' desc='Add some entries to coupon' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textbox(&quot;order_coupon_code&quot;)' selected='true'/>
+   <accessor type='setValue' value='textbox(&quot;order[coupon_code]&quot;)' selected='false'/>
+   <accessor type='setValue' value='textbox(0)' selected='false'/>
+   <accessor type='setValue' value='textbox(&quot;form-control&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='Click on Apply' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='submit(&quot;Apply&quot;)' selected='true'/>
+   <accessor type='click' value='submit(&quot;button[1]&quot;)' selected='false'/>
+   <accessor type='click' value='submit(3)' selected='false'/>
+   <accessor type='click' value='submit(&quot;btn btn-default&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='Click on CheckOut' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='submit(&quot;Checkout&quot;)' selected='true'/>
+   <accessor type='click' value='submit(&quot;checkout-link&quot;)' selected='false'/>
+   <accessor type='click' value='submit(&quot;checkout&quot;)' selected='false'/>
+   <accessor type='click' value='submit(1,_in(div(&quot;form-group[2]&quot;)))' selected='false'/>
+   <accessor type='click' value='submit(2)' selected='false'/>
+   <accessor type='click' value='submit(&quot;btn btn-lg btn-success&quot;)' selected='false'/>
+</dialect>
+</step>
+</testcase>

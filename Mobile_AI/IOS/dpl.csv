@@ -1,0 +1,2 @@
+serverURL,platformName,bundleId,capabilities,keyword
+http://186.179.71.146:4723/wd/hub,iOS,com.appvance.om.CandySearch,"{'orientation':'PORTRAIT','noReset':'false','platformVersion':'13.6','udid':'5FD4B906-5FF6-4844-82C7-07A7E8469528','fullReset':'false','deviceName':'iPhone 11 Pro Max'}",chocolate

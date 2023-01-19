@@ -1,0 +1,81 @@
+{
+    "create": {
+        "path": "/api/v2/storefront/account",
+        "payload": {
+            "user": {
+                "email": "",
+                "password": "",
+                "password_confirmation": ""
+            }
+        },
+        "method": "POST",
+        "headers": [],
+        "description": "Creates a new account.",
+        "validCodes": [200, 422]
+    },
+    "retrieve": {
+        "path": "/api/v2/storefront/account",
+        "query": {
+            "include": "",
+            "fields[user]": ""
+        },
+        "method": "GET",
+        "headers": [],
+        "description": "Returns the current user details.",
+        "validCodes": [200, 422]
+    },
+    "update": {
+        "path": "/api/v2/storefront/account",
+        "payload": {
+            "user": {
+                "email": "",
+                "bill_address_id": "",
+                "ship_address_id": "",
+                "password": "",
+                "password_confirmation": ""
+            }
+        },
+        "method": "PATCH",
+        "headers": [],
+        "description": "Updates the users account details.",
+        "validCodes": [200, 422]
+    },
+    "address": {
+        "create": {
+            "path": "/api/v2/storefront/account/addresses",
+            "query": {
+                "fields[address]": ""
+            },
+            "payload": {
+                "address": {
+                    "firstname": "",
+                    "lastname": "",
+                    "company": "",
+                    "address1": "",
+                    "address2": "",
+                    "city": "",
+                    "phone": "",
+                    "zipcode": "",
+                    "state_name": "",
+                    "country_iso": "",
+                    "label": ""
+                }
+            },
+            "method": "POST",
+            "headers": [],
+            "description": "Creates a new address for the current user.",
+            "validCodes": [200, 403]
+        },
+        "list": {
+            "path": "/api/v2/storefront/account/addresses",
+            "query": {
+                "fields[address]": ""
+            },
+            "method": "GET",
+            "headers": [],
+            "description": "Returns a list of addresses for the current user.",
+            "validCodes": [200, 403]
+        }
+    }
+
+}

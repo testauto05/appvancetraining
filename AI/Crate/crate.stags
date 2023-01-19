@@ -1,0 +1,451 @@
+{
+	"threshold": "0.75",
+	"smartTags": [
+		{
+			"singleton": false,
+			"scanOnePerPage": false,
+			"extractors": [],
+			"validators": [],
+			"methods": {},
+			"scanOncePerApp": false,
+			"rules": [
+				{
+					"failures": 0,
+					"successes": 0,
+					"weight": 100,
+					"type": "attrDoesNotContainValue",
+					"value": "classAPPVANCESPLITTERjsx-1228826222"
+				},
+				{
+					"failures": 0,
+					"successes": 0,
+					"weight": 100,
+					"type": "attrDoesNotContainValue",
+					"value": "classAPPVANCESPLITTERjsx-2258186958"
+				},
+				{
+					"failures": 0,
+					"successes": 0,
+					"weight": 100,
+					"type": "attrContainsValue",
+					"value": "typeAPPVANCESPLITTERbutton"
+				}
+			],
+			"type": "Navigation",
+			"tags": [
+				"button"
+			],
+			"name": "sButton",
+			"disabled": false,
+			"actions": [],
+			"info": {}
+		},
+		{
+			"name": "sGetStarted",
+			"type": "Navigation",
+			"tags": [
+				"button"
+			],
+			"rules": [
+				{
+					"weight": 100,
+					"type": "containsText",
+					"value": "Get Started"
+				},
+				{
+					"weight": 100,
+					"type": "attrContainsValue",
+					"value": "classAPPVANCESPLITTERjsx-2258186958"
+				}
+			],
+			"singleton": false,
+			"scanOncePerApp": true,
+			"scanOnePerPage": false,
+			"info": {},
+			"methods": {},
+			"validators": [],
+			"extractors": [],
+			"disabled": false,
+			"description": "",
+			"image": ""
+		},
+		{
+			"name": "sGetSubscription",
+			"type": "Navigation",
+			"tags": [
+				"button"
+			],
+			"rules": [
+				{
+					"weight": 100,
+					"type": "containsText",
+					"value": "Subscription"
+				},
+				{
+					"weight": 100,
+					"type": "attrContainsValue",
+					"value": "classAPPVANCESPLITTERjsx-2258186958"
+				}
+			],
+			"singleton": false,
+			"scanOncePerApp": true,
+			"scanOnePerPage": false,
+			"info": {},
+			"methods": {},
+			"validators": [],
+			"extractors": [],
+			"disabled": false,
+			"description": "",
+			"image": ""
+		},
+		{
+			"name": "sHeaderText",
+			"type": "Text",
+			"tags": [
+				"h3"
+			],
+			"rules": [
+				{
+					"weight": 100,
+					"type": "attrContainsValue",
+					"value": "classAPPVANCESPLITTERjsx-1368067487"
+				}
+			],
+			"singleton": false,
+			"scanOncePerApp": false,
+			"scanOnePerPage": false,
+			"info": {},
+			"methods": {},
+			"validators": [],
+			"extractors": [],
+			"disabled": false,
+			"description": "",
+			"image": ""
+		},
+		{
+			"name": "sInput",
+			"type": "Text",
+			"tags": [
+				"input"
+			],
+			"rules": [
+				{
+					"weight": 100,
+					"type": "attrContainsValue",
+					"value": "classAPPVANCESPLITTERjsx-3002558909"
+				}
+			],
+			"singleton": false,
+			"scanOncePerApp": false,
+			"scanOnePerPage": false,
+			"info": {},
+			"methods": {
+				"getName": "getInputName"
+			},
+			"validators": [],
+			"extractors": [],
+			"disabled": false,
+			"description": "",
+			"image": ""
+		},
+		{
+			"name": "sLink",
+			"type": "Navigation",
+			"tags": [
+				"a"
+			],
+			"rules": [
+				{
+					"weight": 100,
+					"type": "parent",
+					"value": "div"
+				},
+				{
+					"weight": 100,
+					"type": "attrContainsValue",
+					"value": "styleAPPVANCESPLITTERpadding: 0.6em 1em; text-transform: uppercase; color: rgb(255, 255, 255)"
+				}
+			],
+			"singleton": false,
+			"scanOncePerApp": true,
+			"scanOnePerPage": false,
+			"info": {},
+			"methods": {},
+			"validators": [],
+			"extractors": [],
+			"disabled": false,
+			"description": "",
+			"image": ""
+		},
+		{
+			"name": "sLogout",
+			"type": "Navigation",
+			"tags": [
+				"button"
+			],
+			"rules": [
+				{
+					"weight": 100,
+					"type": "containsText",
+					"value": "Logout"
+				},
+				{
+					"weight": 100,
+					"type": "attrContainsValue",
+					"value": "classAPPVANCESPLITTERjsx-2258186958"
+				}
+			],
+			"singleton": false,
+			"scanOncePerApp": true,
+			"scanOnePerPage": false,
+			"info": {},
+			"methods": {},
+			"validators": [],
+			"extractors": [],
+			"disabled": false,
+			"description": "",
+			"image": ""
+		},
+		{
+			"name": "sMenu",
+			"type": "Navigation",
+			"tags": [
+				"a"
+			],
+			"rules": [
+				{
+					"weight": 100,
+					"type": "attrContainsValue",
+					"value": "styleAPPVANCESPLITTERtransform:uppercase"
+				},
+				{
+					"weight": 100,
+					"type": "parentsSmartTag",
+					"value": "sMenuContainer"
+				}
+			],
+			"singleton": false,
+			"scanOncePerApp": true,
+			"scanOnePerPage": false,
+			"info": {},
+			"methods": {},
+			"validators": [],
+			"extractors": [],
+			"disabled": false,
+			"description": "",
+			"image": ""
+		},
+		{
+			"name": "sMenuContainer",
+			"type": "Prop",
+			"tags": [
+				"div"
+			],
+			"rules": [
+				{
+					"weight": 100,
+					"type": "attrContainsValue",
+					"value": "styleAPPVANCESPLITTERfloat:left;margin-top:0.5em;margin-left:2em"
+				}
+			],
+			"singleton": false,
+			"scanOncePerApp": false,
+			"scanOnePerPage": false,
+			"info": {},
+			"methods": {},
+			"validators": [],
+			"extractors": [],
+			"disabled": false,
+			"description": "",
+			"image": ""
+		},
+		{
+			"name": "sStart",
+			"type": "Navigation",
+			"tags": [
+				"button"
+			],
+			"rules": [
+				{
+					"weight": 100,
+					"type": "containsText",
+					"value": "Start"
+				},
+				{
+					"weight": 100,
+					"type": "attrContainsValue",
+					"value": "classAPPVANCESPLITTERjsx-1228826222"
+				}
+			],
+			"singleton": false,
+			"scanOncePerApp": true,
+			"scanOnePerPage": false,
+			"info": {},
+			"methods": {},
+			"validators": [],
+			"extractors": [],
+			"disabled": false,
+			"description": "",
+			"image": ""
+		},
+		{
+			"singleton": false,
+			"scanOnePerPage": false,
+			"extractors": [],
+			"validators": [],
+			"methods": {},
+			"scanOncePerApp": false,
+			"rules": [
+				{
+					"failures": 0,
+					"successes": 0,
+					"weight": 100,
+					"type": "attrContainsValue",
+					"value": "typeAPPVANCESPLITTERsubmit"
+				}
+			],
+			"type": "Action",
+			"tags": [
+				"button"
+			],
+			"name": "sSubmit",
+			"disabled": false,
+			"actions": [],
+			"info": {}
+		},
+		{
+			"name": "sSubscribe",
+			"type": "Navigation",
+			"tags": [
+				"button"
+			],
+			"rules": [
+				{
+					"weight": 100,
+					"type": "containsText",
+					"value": "Subscribe"
+				},
+				{
+					"weight": 100,
+					"type": "attrContainsValue",
+					"value": "classAPPVANCESPLITTERjsx-1228826222"
+				}
+			],
+			"singleton": false,
+			"scanOncePerApp": false,
+			"scanOnePerPage": true,
+			"info": {},
+			"methods": {
+				"click": "getCrateName"
+			},
+			"validators": [
+				"ValidateSubscribedCratePresent"
+			],
+			"extractors": [
+				"extractSubscribedCrateName"
+			],
+			"disabled": false,
+			"description": "",
+			"image": ""
+		},
+		{
+			"name": "sSubscriptions",
+			"type": "Navigation",
+			"tags": [
+				"button"
+			],
+			"rules": [
+				{
+					"weight": 100,
+					"type": "containsText",
+					"value": "Subscriptions"
+				},
+				{
+					"weight": 100,
+					"type": "attrContainsValue",
+					"value": "classAPPVANCESPLITTERjsx-1228826222"
+				}
+			],
+			"singleton": false,
+			"scanOncePerApp": true,
+			"scanOnePerPage": false,
+			"info": {},
+			"methods": {},
+			"validators": [],
+			"extractors": [],
+			"disabled": false,
+			"description": "",
+			"image": ""
+		},
+		{
+			"singleton": false,
+			"scanOnePerPage": true,
+			"extractors": [],
+			"validators": [],
+			"methods": {},
+			"scanOncePerApp": false,
+			"rules": [
+				{
+					"failures": 0,
+					"successes": 0,
+					"weight": 100,
+					"type": "containsText",
+					"value": "Unsubscribe"
+				},
+				{
+					"failures": 0,
+					"successes": 0,
+					"weight": 100,
+					"type": "attrContainsValue",
+					"value": "classAPPVANCESPLITTERjsx-2258186958"
+				}
+			],
+			"type": "Navigation",
+			"tags": [
+				"button"
+			],
+			"name": "sUnsubscribe",
+			"disabled": false,
+			"actions": [],
+			"info": {}
+		}
+	],
+	"actions": [
+		{
+			"functionString": "var name = ds$(element).parent().parent().children('h4').text()\nif (typeof name == undefined) {\n  return \"NA?\";\n}\nreturn name;",
+			"previousActions": [],
+			"name": "getCrateName",
+			"postActions": [],
+			"arrayHint": ""
+		},
+		{
+			"name": "getInputName",
+			"functionString": "var name = ds$(element).attr('name');\nif (typeof name == undefined) {\n  name = ds$(element).attr('placeholder');\n}\nreturn name;",
+			"arrayHint": "",
+			"previousActions": [],
+			"postActions": []
+		}
+	],
+	"customTags": [],
+	"validators": [
+		{
+			"name": "ValidateSubscribedCratePresent",
+			"disabled": false,
+			"where": "locator",
+			"when": "postAction",
+			"locator": "heading4($subscribedCrateName)",
+			"operator": "elementExists"
+		}
+	],
+	"extractors": [
+		{
+			"postprocessing": "$elem.content;\n",
+			"name": "extractSubscribedCrateName",
+			"variable": "subscribedCrateName",
+			"disabled": false,
+			"type": "attribute",
+			"when": "preAction",
+			"value": "class"
+		}
+	]
+}

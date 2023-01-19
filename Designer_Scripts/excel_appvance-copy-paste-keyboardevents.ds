@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase  name= '' description='' author='' version=''>
+<dpl filename='' exectype='' errorhandling='' type='HashDPL' locale='en_US'/>
+<fallback useFallback='false'/>
+<step action='navigateTo' value='"https://office.live.com/start/excel.aspx"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='setValue' value='"xxxx@appvance.com"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='emailbox(0)' selected='true'/>
+   <accessor type='setValue' value='emailbox(0,_in(div(&quot;col-md-12 form-group placeholderContainer&quot;)))' selected='false'/>
+   <accessor type='setValue' value='emailbox(&quot;form-control&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='submit(0)' selected='true'/>
+   <accessor type='click' value='submit(&quot;Next&quot;)' selected='false'/>
+   <accessor type='click' value='submit(0,_in(div(&quot;button-container inline-block no-margin-top-bottom row&quot;)))' selected='false'/>
+   <accessor type='click' value='submit(&quot;btn btn-block btn-primary&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='' type='web' desc='provide password in double quotes' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='password(0)' selected='true'/>
+   <accessor type='setValue' value='password(&quot;i0118&quot;)' selected='false'/>
+   <accessor type='setValue' value='password(&quot;passwd&quot;)' selected='false'/>
+   <accessor type='setValue' value='password(0,_in(div(&quot;placeholderContainer&quot;)))' selected='false'/>
+   <accessor type='setValue' value='password(&quot;ext-input ext-text-box form-control input text-box&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='submit(0)' selected='true'/>
+   <accessor type='click' value='submit(&quot;idSIButton9&quot;)' selected='false'/>
+   <accessor type='click' value='submit(0,_in(div(&quot;inline-block&quot;)))' selected='false'/>
+   <accessor type='click' value='submit(&quot;button ext-button ext-primary primary&quot;)' selected='false'/>
+   <accessor type='click' value='submit(&quot;Sign in&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='button(&quot;No&quot;)' selected='true'/>
+   <accessor type='click' value='button(&quot;idBtn_Back&quot;)' selected='false'/>
+   <accessor type='click' value='button(0,_in(div(&quot;inline-block&quot;)))' selected='false'/>
+   <accessor type='click' value='button(0)' selected='false'/>
+   <accessor type='click' value='button(&quot;button ext-button ext-secondary secondary&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='div(&quot;New blank workbook[1]&quot;)' selected='true'/>
+   <accessor type='click' value='div(3,_in(link(&quot;New blank workbook&quot;)))' selected='false'/>
+   <accessor type='click' value='div(3,_in(link(&quot;generic-tile ms-bgc-g40-a ms-bgc-g40-f ms-bgc-nl-h ms-fcl-np ms-fcl-tda-f ms-fcl-tda-h ng-trigger ng-trigger-enterAndLeave template-tile template-tile--0 template-tile--small template-tile--small--excel&quot;)))' selected='false'/>
+   <accessor type='click' value='div(141)' selected='false'/>
+   <accessor type='click' value='div(&quot;template__title template__title--small&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='wait' value='5000' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='wait' value='' selected='true'/>
+</dialect>
+</step>
+<step action='clickXY' value='"201,29"' type='web' desc='Clicking some cell' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='clickXY' value='canvas(&quot;ewr-sheettable&quot;)' selected='true'/>
+   <accessor type='clickXY' value='canvas(0)' selected='false'/>
+</dialect>
+</step>
+<step action='assertExists' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='assertExists' value='canvas(&quot;ewr-sheettable&quot;)' selected='true'/>
+   <accessor type='assertExists' value='canvas(&quot;ewr-sheettable&quot;)' selected='false'/>
+   <accessor type='assertExists' value='canvas(0)' selected='false'/>
+</dialect>
+</step>
+<step action='keyboardCommand' value='"TAB"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='keyboardCommand' value='div(&quot;gridKeyboardContentEditable&quot;)' selected='true'/>
+   <accessor type='keyboardCommand' value='body(&quot;Safari TouchPanOnly Windows ewa-scrollbars-enabled grid-cell-cursor grid-header-border-cursor-pointer legacyScrollBar ms-Fabric--isFocusHidden usehover&quot;)' selected='false'/>
+   <accessor type='keyboardCommand' value='body(0)' selected='false'/>
+   <accessor type='keyboardCommand' value='body(&quot;MainApp&quot;)' selected='false'/>
+   <accessor type='keyboardCommand' value='body(&quot;MainApp&quot;)' selected='false'/>
+   <accessor type='keyboardCommand' value='body(&quot;gridKeyboardContentEditable&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"new value"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='div(&quot;gridKeyboardContentEditable&quot;)' selected='true'/>
+   <accessor type='setValue' value='body(&quot;Safari TouchPanOnly Windows ewa-scrollbars-enabled grid-cell-cursor grid-header-border-cursor-pointer legacyScrollBar ms-Fabric--isFocusHidden usehover&quot;)' selected='false'/>
+   <accessor type='setValue' value='body(0)' selected='false'/>
+   <accessor type='setValue' value='body(&quot;MainApp&quot;)' selected='false'/>
+   <accessor type='setValue' value='body(&quot;MainApp&quot;)' selected='false'/>
+   <accessor type='setValue' value='body(&quot;gridKeyboardContentEditable&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='keyboardCommand' value='"DOWN"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='keyboardCommand' value='div(&quot;gridKeyboardContentEditable&quot;)' selected='true'/>
+   <accessor type='keyboardCommand' value='body(&quot;Safari TouchPanOnly Windows ewa-scrollbars-enabled grid-cell-cursor grid-header-border-cursor-pointer legacyScrollBar ms-Fabric--isFocusHidden usehover&quot;)' selected='false'/>
+   <accessor type='keyboardCommand' value='body(0)' selected='false'/>
+   <accessor type='keyboardCommand' value='body(&quot;MainApp&quot;)' selected='false'/>
+   <accessor type='keyboardCommand' value='body(&quot;MainApp&quot;)' selected='false'/>
+   <accessor type='keyboardCommand' value='body(&quot;gridKeyboardContentEditable&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='keyboardCommand' value='"UP"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='keyboardCommand' value='div(&quot;gridKeyboardContentEditable&quot;)' selected='true'/>
+   <accessor type='keyboardCommand' value='body(&quot;Safari TouchPanOnly Windows ewa-scrollbars-enabled grid-cell-cursor grid-header-border-cursor-pointer legacyScrollBar ms-Fabric--isFocusHidden usehover&quot;)' selected='false'/>
+   <accessor type='keyboardCommand' value='body(0)' selected='false'/>
+   <accessor type='keyboardCommand' value='body(&quot;MainApp&quot;)' selected='false'/>
+   <accessor type='keyboardCommand' value='body(&quot;MainApp&quot;)' selected='false'/>
+   <accessor type='keyboardCommand' value='body(&quot;gridKeyboardContentEditable&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='keyboardCommand' value='"CTRL B"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='keyboardCommand' value='div(&quot;gridKeyboardContentEditable&quot;)' selected='true'/>
+   <accessor type='keyboardCommand' value='body(&quot;Safari TouchPanOnly Windows ewa-scrollbars-enabled grid-cell-cursor grid-header-border-cursor-pointer legacyScrollBar ms-Fabric--isFocusHidden usehover&quot;)' selected='false'/>
+   <accessor type='keyboardCommand' value='body(0)' selected='false'/>
+   <accessor type='keyboardCommand' value='body(&quot;MainApp&quot;)' selected='false'/>
+   <accessor type='keyboardCommand' value='body(&quot;MainApp&quot;)' selected='false'/>
+   <accessor type='keyboardCommand' value='body(&quot;gridKeyboardContentEditable&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='copy' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='copy' value='div(&quot;ewa-fb-text-box&quot;)' selected='true'/>
+   <accessor type='copy' value='div(&quot;ewa-fb-text-box&quot;)' selected='false'/>
+   <accessor type='copy' value='div(&quot;formulaBarTextDivId&quot;)' selected='false'/>
+   <accessor type='copy' value='div(&quot;new value&quot;)' selected='false'/>
+   <accessor type='copy' value='div(272)' selected='false'/>
+</dialect>
+</step>
+<step action='keyboardCommand' value='"DOWN"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='keyboardCommand' value='div(&quot;gridKeyboardContentEditable&quot;)' selected='true'/>
+   <accessor type='keyboardCommand' value='body(&quot;Safari TouchPanOnly Windows ewa-scrollbars-enabled grid-cell-cursor grid-header-border-cursor-pointer legacyScrollBar ms-Fabric--isFocusHidden usehover&quot;)' selected='false'/>
+   <accessor type='keyboardCommand' value='body(0)' selected='false'/>
+   <accessor type='keyboardCommand' value='body(&quot;MainApp&quot;)' selected='false'/>
+   <accessor type='keyboardCommand' value='body(&quot;MainApp&quot;)' selected='false'/>
+   <accessor type='keyboardCommand' value='body(&quot;gridKeyboardContentEditable&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='paste' value='"DOWN"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='paste' value='div(&quot;gridKeyboardContentEditable&quot;)' selected='true'/>
+   <accessor type='paste' value='body(&quot;Safari TouchPanOnly Windows ewa-scrollbars-enabled grid-cell-cursor grid-header-border-cursor-pointer legacyScrollBar ms-Fabric--isFocusHidden usehover&quot;)' selected='false'/>
+   <accessor type='paste' value='body(0)' selected='false'/>
+   <accessor type='paste' value='body(&quot;MainApp&quot;)' selected='false'/>
+   <accessor type='paste' value='body(&quot;MainApp&quot;)' selected='false'/>
+   <accessor type='paste' value='body(&quot;gridKeyboardContentEditable&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='keyboardCommand' value='"PAGE_DOWN"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='keyboardCommand' value='div(&quot;gridKeyboardContentEditable&quot;)' selected='true'/>
+   <accessor type='keyboardCommand' value='body(&quot;Safari TouchPanOnly Windows ewa-scrollbars-enabled grid-cell-cursor grid-header-border-cursor-pointer legacyScrollBar ms-Fabric--isFocusHidden usehover&quot;)' selected='false'/>
+   <accessor type='keyboardCommand' value='body(0)' selected='false'/>
+   <accessor type='keyboardCommand' value='body(&quot;MainApp&quot;)' selected='false'/>
+   <accessor type='keyboardCommand' value='body(&quot;MainApp&quot;)' selected='false'/>
+   <accessor type='keyboardCommand' value='body(&quot;gridKeyboardContentEditable&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='keyboardCommand' value='"RIGHT"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='keyboardCommand' value='div(&quot;gridKeyboardContentEditable&quot;)' selected='true'/>
+   <accessor type='keyboardCommand' value='body(&quot;Safari TouchPanOnly Windows ewa-scrollbars-enabled grid-cell-cursor grid-header-border-cursor-pointer legacyScrollBar ms-Fabric--isFocusHidden usehover&quot;)' selected='false'/>
+   <accessor type='keyboardCommand' value='body(0)' selected='false'/>
+   <accessor type='keyboardCommand' value='body(&quot;MainApp&quot;)' selected='false'/>
+   <accessor type='keyboardCommand' value='body(&quot;MainApp&quot;)' selected='false'/>
+   <accessor type='keyboardCommand' value='body(&quot;gridKeyboardContentEditable&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='keyboardCommand' value='"PAGE_UP"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='keyboardCommand' value='div(&quot;gridKeyboardContentEditable&quot;)' selected='true'/>
+   <accessor type='keyboardCommand' value='body(&quot;Safari TouchPanOnly Windows ewa-scrollbars-enabled grid-cell-cursor grid-header-border-cursor-pointer legacyScrollBar ms-Fabric--isFocusHidden usehover&quot;)' selected='false'/>
+   <accessor type='keyboardCommand' value='body(0)' selected='false'/>
+   <accessor type='keyboardCommand' value='body(&quot;MainApp&quot;)' selected='false'/>
+   <accessor type='keyboardCommand' value='body(&quot;MainApp&quot;)' selected='false'/>
+   <accessor type='keyboardCommand' value='body(&quot;gridKeyboardContentEditable&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='keyboardCommand' value='"CTRL S"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='keyboardCommand' value='div(&quot;gridKeyboardContentEditable&quot;)' selected='true'/>
+   <accessor type='keyboardCommand' value='body(&quot;Safari TouchPanOnly Windows ewa-scrollbars-enabled grid-cell-cursor grid-header-border-cursor-pointer legacyScrollBar ms-Fabric--isFocusHidden usehover&quot;)' selected='false'/>
+   <accessor type='keyboardCommand' value='body(0)' selected='false'/>
+   <accessor type='keyboardCommand' value='body(&quot;MainApp&quot;)' selected='false'/>
+   <accessor type='keyboardCommand' value='body(&quot;MainApp&quot;)' selected='false'/>
+   <accessor type='keyboardCommand' value='body(&quot;gridKeyboardContentEditable&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='keyboardCommand' value='"CTRL V"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='keyboardCommand' value='div(&quot;gridKeyboardContentEditable&quot;)' selected='true'/>
+   <accessor type='keyboardCommand' value='body(&quot;Safari TouchPanOnly Windows ewa-scrollbars-enabled grid-cell-cursor grid-header-border-cursor-pointer legacyScrollBar ms-Fabric--isFocusHidden usehover&quot;)' selected='false'/>
+   <accessor type='keyboardCommand' value='body(0)' selected='false'/>
+   <accessor type='keyboardCommand' value='body(&quot;MainApp&quot;)' selected='false'/>
+   <accessor type='keyboardCommand' value='body(&quot;MainApp&quot;)' selected='false'/>
+   <accessor type='keyboardCommand' value='body(&quot;gridKeyboardContentEditable&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='log' value='"OK"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='log' value='' selected='true'/>
+</dialect>
+</step>
+</testcase>

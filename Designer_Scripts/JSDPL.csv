@@ -1,0 +1,7 @@
+Col1,Col2
+"=random(100)","=today().format('yyyy/MM/dd')"
+"=random(100)","=today().format('yyyy/MM/dd')"
+"=random(100)","=today().format('yyyy/MM/dd')"
+"=random(100)","=today().format('yyyy/MM/dd')"
+"=random(100)","=today().format('yyyy/MM/dd')"
+"=random(100)","=today().format('yyyy/MM/dd')"

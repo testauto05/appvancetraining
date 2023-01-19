@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase  name= '' description='' author='' version=''>
+<dpl filename='' exectype='' errorhandling='' type='HashDPL' locale=''/>
+<fallback useFallback='false'/>
+<step action='navigateTo' value='"http://sahitest.com/"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='link(&quot;/demo&quot;)' selected='true'/>
+   <accessor type='click' value='link(&quot;demo&quot;)' selected='false'/>
+   <accessor type='click' value='link(0,_in(body(&quot;demo&quot;)))' selected='false'/>
+   <accessor type='click' value='link(0)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='link(&quot;Form Test&quot;)' selected='true'/>
+   <accessor type='click' value='link(&quot;formTest.htm&quot;)' selected='false'/>
+   <accessor type='click' value='link(1)' selected='false'/>
+   <accessor type='click' value='link(&quot;a x[1]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"some value"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textbox(&quot;bordercheck&quot;)' selected='true'/>
+   <accessor type='setValue' value='textbox(&quot;t1&quot;)' selected='false'/>
+   <accessor type='setValue' value='textbox(0)' selected='false'/>
+</dialect>
+</step>
+<step action='copy' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='copy' value='cell(4)' selected='true'/>
+   <accessor type='copy' value='cell(4)' selected='false'/>
+</dialect>
+</step>
+<step action='paste' value='"asdasd"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='paste' value='textbox(1)' selected='true'/>
+</dialect>
+</step>
+<step action='copy' value='"some value"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='copy' value='textbox(&quot;bordercheck&quot;)' selected='true'/>
+   <accessor type='copy' value='textbox(&quot;t1&quot;)' selected='false'/>
+   <accessor type='copy' value='textbox(0)' selected='false'/>
+</dialect>
+</step>
+<step action='paste' value='"asdasd"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='paste' value='textbox(&quot;name&quot;)' selected='true'/>
+   <accessor type='paste' value='textbox(2)' selected='false'/>
+</dialect>
+</step>
+<step action='log' value='"ok"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='log' value='' selected='true'/>
+</dialect>
+</step>
+</testcase>

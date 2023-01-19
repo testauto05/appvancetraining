@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase  name= '' description='' author='' version=''>
+<dpl filename='' exectype='' errorhandling='' type='HashDPL' locale='en_US'/>
+<fallback useFallback='false'/>
+<step action='navigateTo' value='"http://sahitest.com/"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='link(&quot;demo&quot;)' selected='true'/>
+   <accessor type='click' value='link(&quot;/demo&quot;)' selected='false'/>
+   <accessor type='click' value='link(0,_in(body(&quot;demo&quot;)))' selected='false'/>
+   <accessor type='click' value='link(0)' selected='false'/>
+</dialect>
+</step>
+<step action='store' value='"test1.csv"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='store' value='$dyn1' selected='true'/>
+</dialect>
+</step>
+<step action='store' value='"test2.csv"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='store' value='$dyn2' selected='true'/>
+</dialect>
+</step>
+<step action='store' value='" "' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='store' value='$dyn3' selected='true'/>
+</dialect>
+</step>
+<step action='writeCSV' value='[[&quot;No&quot;,&quot;Name&quot;,&quot;Age&quot;],[&quot;1&quot;,&quot;Ram&quot;,&quot;21&quot; ],[&quot;2&quot;,&quot;Ben&quot;,&quot;22&quot; ]]' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='writeCSV' value='$dyn1' selected='true'/>
+   <accessor type='writeCSV' value='link(&quot;label.htm&quot;)' selected='false'/>
+   <accessor type='writeCSV' value='link(13)' selected='false'/>
+   <accessor type='writeCSV' value='link(&quot;Label Page&quot;)' selected='false'/>
+   <accessor type='writeCSV' value='"test1.csv,false"' selected='false'/>
+   <accessor type='writeCSV' value='$d' selected='false'/>
+</dialect>
+</step>
+<step action='writeCSV' value='[[&quot;No&quot;,&quot;Name&quot;,&quot;Age&quot;]]' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='writeCSV' value='$dyn2' selected='true'/>
+</dialect>
+</step>
+<step action='readCSV' value='$dyn3' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='readCSV' value='"{ds}/test1.csv"' selected='true'/>
+</dialect>
+</step>
+<step action='js' value='$dyn3[1][1]=&quot;Appvance&quot;' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='js' value='' selected='true'/>
+</dialect>
+</step>
+<step action='writeCSV' value='$dyn3' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='writeCSV' value='$dyn1' selected='true'/>
+</dialect>
+</step>
+<step action='assertEqual' value='"Appvance"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='assertEqual' value='$dyn3[1][1]' selected='true'/>
+</dialect>
+</step>
+</testcase>

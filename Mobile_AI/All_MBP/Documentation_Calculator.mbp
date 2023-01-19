@@ -1,0 +1,817 @@
+{
+    "appPackage": "com.tct.calculator",
+    "stepsExecuted": 7,
+    "scale": 1,
+    "requests": {},
+    "type": ["Tags"],
+    "visualHints": true,
+    "states": [
+        {
+            "containsInput": false,
+            "children": {"0": [1]},
+            "paths": [],
+            "name": "Blank",
+            "nameVariants": [],
+            "customActions": [],
+            "id": 0,
+            "fields": [],
+            "visualHints": []
+        },
+        {
+            "containsInput": false,
+            "children": {},
+            "paths": [],
+            "name": "Still Blank",
+            "nameVariants": [],
+            "customActions": [],
+            "id": 1,
+            "fields": [],
+            "visualHints": []
+        },
+        {
+            "containsInput": true,
+            "children": {"0": [2]},
+            "paths": [{
+                "executionId": 0,
+                "trails": [[1]]
+            }],
+            "name": "Currency check",
+            "nameVariants": ["Currency check"],
+            "customActions": [{
+                "executionId": 0,
+                "customActionIds": [{
+                    "customActionId": 2,
+                    "name": "SetValue-1"
+                }]
+            }],
+            "id": -1835913502,
+            "fields": [
+                {
+                    "oncePerApp": true,
+                    "actionsCreated": 0,
+                    "w": 788,
+                    "name": "byId(\"com.tct.calculator:id/splash_converter_tv_content\")",
+                    "x": 146,
+                    "h": 197,
+                    "y": 1410,
+                    "type": "Label",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": true,
+                    "actionsCreated": 1,
+                    "w": 168,
+                    "name": "byId(\"com.tct.calculator:id/tv_skip\")",
+                    "x": 0,
+                    "h": 131,
+                    "action": "click",
+                    "y": 1663,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": true,
+                    "actionsCreated": 0,
+                    "w": 53,
+                    "name": "byId(\"com.tct.calculator:id/point_one\")",
+                    "x": 482,
+                    "h": 53,
+                    "action": "click",
+                    "y": 1702,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": true,
+                    "actionsCreated": 0,
+                    "w": 63,
+                    "name": "byId(\"com.tct.calculator:id/point_two\")",
+                    "x": 535,
+                    "h": 63,
+                    "action": "click",
+                    "y": 1697,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": true,
+                    "actionsCreated": 0,
+                    "w": 183,
+                    "name": "byId(\"com.tct.calculator:id/tv_next\")",
+                    "x": 871,
+                    "h": 131,
+                    "action": "click",
+                    "y": 1663,
+                    "type": "Action",
+                    "elementType": "mobile"
+                }
+            ],
+            "visualHints": [{
+                "executionId": 0,
+                "visualHint": "{abp}/-1835913502.jpg"
+            }]
+        },
+        {
+            "containsInput": true,
+            "children": {"0": [3]},
+            "paths": [{
+                "executionId": 0,
+                "trails": [
+                    [
+                        1,
+                        2
+                    ],
+                    [
+                        1,
+                        2,
+                        3
+                    ]
+                ]
+            }],
+            "name": "State--1513582003",
+            "nameVariants": [
+                "State--1513582003",
+                "304"
+            ],
+            "customActions": [{
+                "executionId": 0,
+                "customActionIds": [{
+                    "customActionId": 3,
+                    "name": "SetValue-1"
+                }]
+            }],
+            "id": -1513582003,
+            "fields": [
+                {
+                    "oncePerApp": true,
+                    "actionsCreated": 0,
+                    "w": 231,
+                    "name": "byId(\"com.tct.calculator:id/layout_type\")",
+                    "x": 0,
+                    "h": 147,
+                    "action": "click",
+                    "y": 63,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": true,
+                    "actionsCreated": 0,
+                    "w": 63,
+                    "name": "byId(\"com.tct.calculator:id/iv_type\")",
+                    "x": 63,
+                    "h": 63,
+                    "action": "click",
+                    "y": 105,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": true,
+                    "actionsCreated": 0,
+                    "w": 24,
+                    "name": "byId(\"com.tct.calculator:id/iv_arrow\")",
+                    "x": 144,
+                    "h": 24,
+                    "action": "click",
+                    "y": 124,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": true,
+                    "actionsCreated": 0,
+                    "w": 84,
+                    "name": "byId(\"com.tct.calculator:id/iv_math\")",
+                    "x": 828,
+                    "h": 84,
+                    "action": "click",
+                    "y": 94,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": true,
+                    "actionsCreated": 0,
+                    "w": 84,
+                    "name": "byId(\"com.tct.calculator:id/iv_history\")",
+                    "x": 954,
+                    "h": 84,
+                    "action": "click",
+                    "y": 94,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": true,
+                    "actionsCreated": 0,
+                    "w": 1080,
+                    "name": "byId(\"com.tct.calculator:id/formula\")",
+                    "x": 0,
+                    "h": 148,
+                    "action": "setValue",
+                    "y": 765,
+                    "type": "Text",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": true,
+                    "actionsCreated": 0,
+                    "w": 1080,
+                    "name": "byId(\"com.tct.calculator:id/result\")",
+                    "x": 0,
+                    "h": 62,
+                    "action": "click",
+                    "y": 926,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": true,
+                    "actionsCreated": 0,
+                    "w": 268,
+                    "name": "byAccessibilityId(\"delete\")",
+                    "x": 0,
+                    "h": 154,
+                    "action": "click",
+                    "y": 1016,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": true,
+                    "actionsCreated": 0,
+                    "w": 134,
+                    "name": "byId(\"com.tct.calculator:id/btn_left_pan\")",
+                    "x": 270,
+                    "h": 154,
+                    "action": "click",
+                    "y": 1016,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": true,
+                    "actionsCreated": 0,
+                    "w": 134,
+                    "name": "byId(\"com.tct.calculator:id/btn_right_pan\")",
+                    "x": 404,
+                    "h": 154,
+                    "action": "click",
+                    "y": 1016,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": true,
+                    "actionsCreated": 0,
+                    "w": 269,
+                    "name": "byId(\"com.tct.calculator:id/op_per\")",
+                    "x": 540,
+                    "h": 154,
+                    "action": "click",
+                    "y": 1016,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": true,
+                    "actionsCreated": 0,
+                    "w": 269,
+                    "name": "byAccessibilityId(\"divide\")",
+                    "x": 811,
+                    "h": 154,
+                    "action": "click",
+                    "y": 1016,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": true,
+                    "actionsCreated": 0,
+                    "w": 268,
+                    "name": "byId(\"com.tct.calculator:id/digit_7\")",
+                    "x": 0,
+                    "h": 154,
+                    "action": "click",
+                    "y": 1172,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": true,
+                    "actionsCreated": 0,
+                    "w": 268,
+                    "name": "byId(\"com.tct.calculator:id/digit_8\")",
+                    "x": 270,
+                    "h": 154,
+                    "action": "click",
+                    "y": 1172,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": true,
+                    "actionsCreated": 0,
+                    "w": 269,
+                    "name": "byId(\"com.tct.calculator:id/digit_9\")",
+                    "x": 540,
+                    "h": 154,
+                    "action": "click",
+                    "y": 1172,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": true,
+                    "actionsCreated": 0,
+                    "w": 269,
+                    "name": "byAccessibilityId(\"times\")",
+                    "x": 811,
+                    "h": 154,
+                    "action": "click",
+                    "y": 1172,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": true,
+                    "actionsCreated": 0,
+                    "w": 268,
+                    "name": "byId(\"com.tct.calculator:id/digit_4\")",
+                    "x": 0,
+                    "h": 154,
+                    "action": "click",
+                    "y": 1328,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": true,
+                    "actionsCreated": 0,
+                    "w": 268,
+                    "name": "byId(\"com.tct.calculator:id/digit_5\")",
+                    "x": 270,
+                    "h": 154,
+                    "action": "click",
+                    "y": 1328,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": true,
+                    "actionsCreated": 0,
+                    "w": 269,
+                    "name": "byId(\"com.tct.calculator:id/digit_6\")",
+                    "x": 540,
+                    "h": 154,
+                    "action": "click",
+                    "y": 1328,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": true,
+                    "actionsCreated": 0,
+                    "w": 269,
+                    "name": "byAccessibilityId(\"minus\")",
+                    "x": 811,
+                    "h": 154,
+                    "action": "click",
+                    "y": 1328,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": true,
+                    "actionsCreated": 0,
+                    "w": 268,
+                    "name": "byId(\"com.tct.calculator:id/digit_1\")",
+                    "x": 0,
+                    "h": 154,
+                    "action": "click",
+                    "y": 1484,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": true,
+                    "actionsCreated": 0,
+                    "w": 268,
+                    "name": "byId(\"com.tct.calculator:id/digit_2\")",
+                    "x": 270,
+                    "h": 154,
+                    "action": "click",
+                    "y": 1484,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": true,
+                    "actionsCreated": 1,
+                    "w": 269,
+                    "name": "byId(\"com.tct.calculator:id/digit_3\")",
+                    "x": 540,
+                    "h": 154,
+                    "action": "click",
+                    "y": 1484,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": true,
+                    "actionsCreated": 0,
+                    "w": 269,
+                    "name": "byAccessibilityId(\"plus\")",
+                    "x": 811,
+                    "h": 154,
+                    "action": "click",
+                    "y": 1484,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": true,
+                    "actionsCreated": 0,
+                    "w": 268,
+                    "name": "byId(\"com.tct.calculator:id/digit_0\")",
+                    "x": 0,
+                    "h": 154,
+                    "action": "click",
+                    "y": 1640,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": true,
+                    "actionsCreated": 0,
+                    "w": 268,
+                    "name": "byId(\"com.tct.calculator:id/dec_point\")",
+                    "x": 270,
+                    "h": 154,
+                    "action": "click",
+                    "y": 1640,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": true,
+                    "actionsCreated": 0,
+                    "w": 79,
+                    "name": "byXPath(\"//android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout[5]/android.widget.LinearLayout/android.widget.ImageView\")",
+                    "x": 635,
+                    "h": 79,
+                    "action": "click",
+                    "y": 1677,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": true,
+                    "actionsCreated": 0,
+                    "w": 269,
+                    "name": "byAccessibilityId(\"equals\")",
+                    "x": 811,
+                    "h": 154,
+                    "action": "click",
+                    "y": 1640,
+                    "type": "Action",
+                    "elementType": "mobile"
+                }
+            ],
+            "visualHints": [{
+                "executionId": 0,
+                "visualHint": "{abp}/-1513582003.jpg"
+            }]
+        }
+    ],
+    "duration": 132091,
+    "blueprintType": "mobile",
+    "mobileConfigurations": [{
+        "capabilities": {
+            "orientation": "PORTRAIT",
+            "noReset": "false",
+            "platformVersion": "8.1",
+            "fullReset": "false",
+            "deviceName": "Pixel_2_API_27"
+        },
+        "proxyURL": "",
+        "serverURL": "http://localhost:4723/wd/hub"
+    }],
+    "root": 1,
+    "setupJS": "",
+    "lastActionId": 4,
+    "nwLibraries": [],
+    "validationsWorkbench": [{
+        "customActions": [],
+        "validations": [
+            {
+                "passType": "pass",
+                "validationType": "element",
+                "name": "ManualCall",
+                "disabled": false,
+                "triggerType": "manual",
+                "target": "byId(\"com.tct.calculator:id/digit_3\")"
+            },
+            {
+                "passType": "pass",
+                "validationType": "element",
+                "name": "ElementFound",
+                "match": "byId(\"com.tct.calculator:id/digit_4\")",
+                "disabled": false,
+                "triggerType": "element",
+                "target": "byId(\"com.tct.calculator:id/digit_3\")"
+            },
+            {
+                "passType": "pass",
+                "validationType": "js",
+                "name": "JSreturns",
+                "match": "click(byId(\"com.tct.calculator:id/digit_8\"));\nclick(byAccessibilityId(\"times\"));\n",
+                "disabled": false,
+                "triggerType": "js",
+                "target": "assertExists(byId(\"com.tct.calculator:id/digit_2\"));\n"
+            },
+            {
+                "passType": "pass",
+                "validationType": "elementText",
+                "name": "TextPresentinElement",
+                "match": "byId(\"com.tct.calculator:id/digit_3\")",
+                "disabled": false,
+                "triggerType": "element",
+                "locator": "byId(\"com.tct.calculator:id/digit_6\")",
+                "target": "\"6\""
+            },
+            {
+                "passType": "pass",
+                "validationType": "text",
+                "name": "byText",
+                "match": "1",
+                "disabled": false,
+                "triggerType": "text",
+                "target": "\"6\""
+            }
+        ]
+    }],
+    "platformName": "Android",
+    "dplType": "HashDPL",
+    "validDomains": [],
+    "stLibraries": [],
+    "app": "",
+    "timesThreadStarted": 3,
+    "bundleId": "",
+    "threads": 1,
+    "version": 300,
+    "appActivity": "com.tct.calculator.Calculator",
+    "delay": 0,
+    "executions": [{
+        "processedStates": [
+            -703130379,
+            1089201297
+        ],
+        "extractors": [],
+        "validators": [
+            {
+                "url": "Currency check",
+                "statistics": [{
+                    "failures": [],
+                    "successes": 3,
+                    "name": "byText",
+                    "id": -1422483772
+                }]
+            },
+            {
+                "url": "State--1513582003",
+                "statistics": [
+                    {
+                        "failures": [],
+                        "successes": 2,
+                        "name": "TextPresentinElement",
+                        "id": 1444668523
+                    },
+                    {
+                        "failures": [],
+                        "successes": 2,
+                        "name": "ElementFound",
+                        "id": 473563080
+                    },
+                    {
+                        "failures": [],
+                        "successes": 2,
+                        "name": "byText",
+                        "id": 490434854
+                    }
+                ]
+            },
+            {
+                "url": "24",
+                "statistics": [
+                    {
+                        "failures": [],
+                        "successes": 1,
+                        "name": "ElementFound",
+                        "id": 1590259407
+                    },
+                    {
+                        "failures": [],
+                        "successes": 1,
+                        "name": "TextPresentinElement",
+                        "id": 1403739250
+                    },
+                    {
+                        "failures": [],
+                        "successes": 1,
+                        "name": "byText",
+                        "id": 531657069
+                    },
+                    {
+                        "failures": [],
+                        "successes": 1,
+                        "name": "ManualCall",
+                        "id": 261340589
+                    }
+                ]
+            }
+        ],
+        "templates": [
+            {
+                "stateId": -1835913502,
+                "orders": [{
+                    "start": true,
+                    "hashId": -2006473532,
+                    "order": [{
+                        "oncePerApp": "true",
+                        "name": "byId(&quot;com.tct.calculator:id/tv_skip&quot;)",
+                        "smartTagName": "undefined",
+                        "action": "click",
+                        "type": "Action",
+                        "value": "click",
+                        "elementType": "mobile"
+                    }]
+                }]
+            },
+            {
+                "stateId": -1513582003,
+                "orders": [{
+                    "start": true,
+                    "hashId": 51910731,
+                    "order": [
+                        {
+                            "oncePerApp": "true",
+                            "name": "byId(&quot;com.tct.calculator:id/digit_3&quot;)",
+                            "smartTagName": "undefined",
+                            "action": "click",
+                            "type": "Action",
+                            "value": "click",
+                            "elementType": "mobile"
+                        },
+                        {
+                            "oncePerApp": "false",
+                            "name": "",
+                            "action": "js",
+                            "type": "Custom",
+                            "value": "validate(\"ManualCall\");",
+                            "elementType": "custom"
+                        }
+                    ]
+                }]
+            }
+        ],
+        "start": 1590502472358,
+        "unprocessedActions": [],
+        "smartTags": [],
+        "duration": 132081,
+        "actionsFound": 3,
+        "dataSetNames": ["Default"],
+        "stop": 1590502761341,
+        "lastResume": 0,
+        "networkValidations": [],
+        "useOneDataSet": false,
+        "bindingsWithoutCustomActions": [],
+        "validationsWorkbenchId": 0,
+        "name": "Calulator_Execution",
+        "usePreviousBindings": false,
+        "id": 0,
+        "statesFound": [
+            -1835913502,
+            -1513582003
+        ],
+        "failedActions": [],
+        "bindingsWithCustomActions": [
+            -1835913502,
+            -1513582003
+        ],
+        "inconsistentActions": []
+    }],
+    "prune": true,
+    "dataSets": [{
+        "values": {},
+        "name": "Default",
+        "used": true
+    }],
+    "files": [],
+    "messages": [],
+    "actions": [
+        {
+            "oncePerApp": false,
+            "requestList": [],
+            "children": {"0": [{
+                "stateId": 0,
+                "weight": 1
+            }]},
+            "shortestPath": [],
+            "timesVisited": [],
+            "apiRequestList": [],
+            "id": 0,
+            "subActions": [{
+                "oncePerApp": false,
+                "actionsCreated": 0,
+                "action": "//Open",
+                "value": ""
+            }]
+        },
+        {
+            "oncePerApp": false,
+            "requestList": [],
+            "children": {"0": [{
+                "stateId": -1835913502,
+                "weight": 1
+            }]},
+            "shortestPath": [],
+            "timesVisited": [{
+                "executionId": 0,
+                "times": 3
+            }],
+            "apiRequestList": [],
+            "id": 1,
+            "subActions": [{
+                "oncePerApp": false,
+                "actionsCreated": 0,
+                "action": "start",
+                "value": ""
+            }]
+        },
+        {
+            "oncePerApp": false,
+            "requestList": [],
+            "children": {"0": [{
+                "stateId": -1513582003,
+                "weight": 1
+            }]},
+            "shortestPath": [1],
+            "timesVisited": [{
+                "executionId": 0,
+                "times": 2
+            }],
+            "apiRequestList": [],
+            "id": 2,
+            "subActions": [{
+                "oncePerApp": true,
+                "actionsCreated": 0,
+                "name": "byId(\"com.tct.calculator:id/tv_skip\")",
+                "smartTagName": "undefined",
+                "action": "click",
+                "type": "Action",
+                "elementType": "mobile"
+            }]
+        },
+        {
+            "oncePerApp": false,
+            "requestList": [],
+            "children": {"0": [{
+                "stateId": -1513582003,
+                "weight": 1
+            }]},
+            "shortestPath": [
+                1,
+                2
+            ],
+            "timesVisited": [{
+                "executionId": 0,
+                "times": 1
+            }],
+            "apiRequestList": [],
+            "id": 3,
+            "subActions": [
+                {
+                    "oncePerApp": true,
+                    "actionsCreated": 0,
+                    "name": "byId(\"com.tct.calculator:id/digit_3\")",
+                    "smartTagName": "undefined",
+                    "action": "click",
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "name": "",
+                    "action": "js",
+                    "type": "Custom",
+                    "value": "validate(\"ManualCall\");\n",
+                    "elementType": "custom"
+                }
+            ]
+        }
+    ],
+    "selfHealing": false
+}

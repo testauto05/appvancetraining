@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase  name= '' description='' author='' version=''>
+<dpl filename='' exectype='runstepbystep' errorhandling='' type='HashDPL'/>
+<fallback useFallback='false'/>
+<step action='navigateTo' value='"https://demosite.appvance.com/"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='span(&quot;Ruby on Rails Tote&quot;)' selected='true'/>
+   <accessor type='click' value='span(&quot;info&quot;)' selected='false'/>
+   <accessor type='click' value='byXPath(&apos;//*[@class=&quot;info&quot;]&apos;)' selected='false'/>
+   <accessor type='click' value='byXPath(&apos;//*[text()=&quot;Ruby on Rails Tote&quot;]&apos;)' selected='false'/>
+   <accessor type='click' value='byXPath(&apos;//div[2]/div/div/div/div[2]/div[1]/div/div[1]/a/span&apos;)' selected='false'/>
+   <accessor type='click' value='byXPath(&quot;id(&apos;product_1&apos;)/div[@class=&apos;panel panel-default&apos;]/div[@class=&apos;panel-body text-center product-body&apos;]/a[1]/span[@class=&apos;info&apos;]&quot;)' selected='false'/>
+   <accessor type='click' value='span(0,_in(link(&quot;Ruby on Rails Tote&quot;)))' selected='false'/>
+   <accessor type='click' value='span(1)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"15"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='numberbox(&quot;form-control title&quot;)' selected='true'/>
+   <accessor type='setValue' value='numberbox(&quot;quantity&quot;)' selected='false'/>
+   <accessor type='setValue' value='byXPath(&apos;//*[@class=&quot;title form-control&quot;]&apos;)' selected='false'/>
+   <accessor type='setValue' value='byXPath(&apos;//div[2]/div/div/div/div[2]/div/div[1]/div[2]/form/div/div/div[2]/div/input&apos;)' selected='false'/>
+   <accessor type='setValue' value='byXPath(&quot;id(&apos;quantity&apos;)&quot;)' selected='false'/>
+   <accessor type='setValue' value='byXPath(&apos;//*[@id=&quot;quantity&quot;]&apos;)' selected='false'/>
+   <accessor type='setValue' value='byXPath(&apos;//*[@name=&quot;quantity&quot;]&apos;)' selected='false'/>
+   <accessor type='setValue' value='numberbox(0,_in(div(&quot;input-group&quot;)))' selected='false'/>
+   <accessor type='setValue' value='numberbox(0,_in(div(&quot;Add To Cart[1]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='numberbox(0)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='submit(&quot;btn btn-success[1]&quot;)' selected='true'/>
+   <accessor type='click' value='submit(&quot;button&quot;)' selected='false'/>
+   <accessor type='click' value='submit(&quot;Add To Cart&quot;)' selected='false'/>
+   <accessor type='click' value='byXPath(&apos;//div[2]/div/div/div/div[2]/div/div[1]/div[2]/form/div/div/div[2]/div/span/button&apos;)' selected='false'/>
+   <accessor type='click' value='byXPath(&quot;id(&apos;add-to-cart-button&apos;)&quot;)' selected='false'/>
+   <accessor type='click' value='byXPath(&apos;//*[@name=&quot;button&quot;]&apos;)' selected='false'/>
+   <accessor type='click' value='submit(0,_in(span(&quot;input-group-btn&quot;)))' selected='false'/>
+   <accessor type='click' value='submit(0,_in(span(&quot;Add To Cart&quot;)))' selected='false'/>
+   <accessor type='click' value='submit(1)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='submit(&quot;btn btn-primary-Faill&quot;)' selected='true'/>
+   <accessor type='click' value='submit(&quot;update-button&quot;)' selected='false'/>
+   <accessor type='click' value='submit(&quot;button&quot;)' selected='false'/>
+   <accessor type='click' value='submit(&quot;Update&quot;)' selected='false'/>
+   <accessor type='click' value='byXPath(&apos;//*[@class=&quot;btn btn-primary&quot;]&apos;)' selected='false'/>
+   <accessor type='click' value='byXPath(&apos;//div[2]/div/div/div/div[1]/form/div/div[2]/div/button[1]&apos;)' selected='false'/>
+   <accessor type='click' value='byXPath(&quot;id(&apos;update-button&apos;)&quot;)' selected='false'/>
+   <accessor type='click' value='byXPath(&apos;//*[@id=&quot;update-button&quot;]&apos;)' selected='false'/>
+   <accessor type='click' value='byXPath(&apos;//*[@name=&quot;button&quot;]&apos;)' selected='false'/>
+   <accessor type='click' value='submit(0,_in(div(&quot;form-group[2]&quot;)))' selected='false'/>
+   <accessor type='click' value='submit(1)' selected='false'/>
+   <accessor type='click' value='submit(&quot;btn btn-primary&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='submit(&quot;btn btn-lg btn-success&quot;)' selected='true'/>
+   <accessor type='click' value='submit(&quot;checkout-link&quot;)' selected='false'/>
+   <accessor type='click' value='submit(&quot;checkout&quot;)' selected='false'/>
+   <accessor type='click' value='submit(&quot;Checkout&quot;)' selected='false'/>
+   <accessor type='click' value='byXPath(&apos;//*[@class=&quot;btn btn-lg btn-success&quot;]&apos;)' selected='false'/>
+   <accessor type='click' value='byXPath(&apos;//div[2]/div/div/div/div[1]/form/div/div[2]/div/button[2]&apos;)' selected='false'/>
+   <accessor type='click' value='byXPath(&quot;id(&apos;checkout-link&apos;)&quot;)' selected='false'/>
+   <accessor type='click' value='byXPath(&apos;//*[@id=&quot;checkout-link&quot;]&apos;)' selected='false'/>
+   <accessor type='click' value='byXPath(&apos;//*[@name=&quot;checkout&quot;]&apos;)' selected='false'/>
+   <accessor type='click' value='submit(1,_in(div(&quot;form-group[2]&quot;)))' selected='false'/>
+   <accessor type='click' value='submit(2)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"n@appvance.com"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='emailbox(&quot;form-control title&quot;)' selected='true'/>
+   <accessor type='setValue' value='emailbox(&quot;order_email&quot;)' selected='false'/>
+   <accessor type='setValue' value='emailbox(&quot;order[email]&quot;)' selected='false'/>
+   <accessor type='setValue' value='byXPath(&apos;//*[@class=&quot;form-control title&quot;]&apos;)' selected='false'/>
+   <accessor type='setValue' value='byXPath(&apos;//div[2]/div/div/div/div[2]/div/div[2]/form/p[1]/input&apos;)' selected='false'/>
+   <accessor type='setValue' value='byXPath(&quot;id(&apos;order_email&apos;)&quot;)' selected='false'/>
+   <accessor type='setValue' value='byXPath(&apos;//*[@id=&quot;order_email&quot;]&apos;)' selected='false'/>
+   <accessor type='setValue' value='byXPath(&apos;//*[@name=&quot;order[email]&quot;]&apos;)' selected='false'/>
+   <accessor type='setValue' value='emailbox(1)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='submit(&quot;btn btn-block btn-lg btn-success[1]&quot;)' selected='true'/>
+   <accessor type='click' value='submit(&quot;commit[1]&quot;)' selected='false'/>
+   <accessor type='click' value='submit(&quot;Continue&quot;)' selected='false'/>
+   <accessor type='click' value='byXPath(&apos;//div[2]/div/div/div/div[2]/div/div[2]/form/p[2]/input&apos;)' selected='false'/>
+   <accessor type='click' value='byXPath(&quot;id(&apos;checkout_form_registration&apos;)/p[2]/input[@class=&apos;btn btn-lg btn-success btn-block&apos;]&quot;)' selected='false'/>
+   <accessor type='click' value='submit(2)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"Naveen"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textbox(&quot;form-control&quot;)' selected='true'/>
+   <accessor type='setValue' value='textbox(&quot;order_bill_address_attributes_firstname&quot;)' selected='false'/>
+   <accessor type='setValue' value='textbox(&quot;order[bill_address_attributes][firstname]&quot;)' selected='false'/>
+   <accessor type='setValue' value='byXPath(&apos;//div[2]/div/div/div/div[2]/div[1]/form/div[2]/div[1]/div/div[2]/div/p[1]/input&apos;)' selected='false'/>
+   <accessor type='setValue' value='byXPath(&quot;id(&apos;order_bill_address_attributes_firstname&apos;)&quot;)' selected='false'/>
+   <accessor type='setValue' value='byXPath(&apos;//*[@id=&quot;order_bill_address_attributes_firstname&quot;]&apos;)' selected='false'/>
+   <accessor type='setValue' value='byXPath(&apos;//*[@name=&quot;order[bill_address_attributes][firstname]&quot;]&apos;)' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(paragraph(&quot;bfirstname&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(paragraph(&quot;form-group&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(paragraph(&quot;First Name*&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='submit(&quot;btn btn-lg btn-success&quot;)' selected='true'/>
+   <accessor type='click' value='submit(&quot;commit&quot;)' selected='false'/>
+   <accessor type='click' value='submit(&quot;Save and Continue&quot;)' selected='false'/>
+   <accessor type='click' value='byXPath(&apos;//*[@class=&quot;btn btn-lg btn-success&quot;]&apos;)' selected='false'/>
+   <accessor type='click' value='byXPath(&apos;//div[2]/div/div/div/div[2]/div[1]/form/div[3]/input&apos;)' selected='false'/>
+   <accessor type='click' value='byXPath(&quot;id(&apos;checkout_form_address&apos;)/div[@class=&apos;well text-right form-buttons&apos;]/input[@class=&apos;btn btn-lg btn-success&apos;]&quot;)' selected='false'/>
+   <accessor type='click' value='byXPath(&apos;//*[@name=&quot;commit&quot;]&apos;)' selected='false'/>
+   <accessor type='click' value='submit(0,_in(div(&quot;form-buttons text-right well&quot;)))' selected='false'/>
+   <accessor type='click' value='submit(1)' selected='false'/>
+</dialect>
+</step>
+</testcase>

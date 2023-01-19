@@ -1,0 +1,123 @@
+{"blueprint": {
+    "reportDuration": 2000,
+    "maxBrowsers": 5,
+    "interactive": false,
+    "visualHints": true,
+    "proxyPort": 9090,
+    "uniqueDS": false,
+    "blueprintType": "web",
+    "dataSetNames": [{
+        "values": {
+            "baseURL": "http://44.241.36.103:3000",
+            "userPassword": "Appvance1234",
+            "userFullName": "AI Girl",
+            "userEmail": "appvanceai@gmail.com"
+        },
+        "name": "data.csv1831"
+    }],
+    "browser": "Chrome",
+    "usePreviousBindings": false,
+    "setupJS": "",
+    "proxyAddress": "localhost",
+    "dplType": "HashDPL",
+    "validDomains": ["http://44.241.36.103:3000"],
+    "stLibraries": [{
+        "customTags": [],
+        "extractors": [],
+        "validators": [],
+        "threshold": 0.75,
+        "actions": [],
+        "smartTags": [
+            {
+                "singleton": false,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {},
+                "scanOncePerApp": false,
+                "rules": [{
+                    "failures": 0,
+                    "successes": 0,
+                    "weight": 100,
+                    "type": "attrContainsValue",
+                    "value": "typeAPPVANCESPLITTERsubmit"
+                }],
+                "type": "Action",
+                "tags": ["button"],
+                "name": "sSubmit",
+                "disabled": false,
+                "actions": [],
+                "info": {}
+            },
+            {
+                "singleton": false,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {},
+                "scanOncePerApp": false,
+                "rules": [{
+                    "failures": 0,
+                    "successes": 0,
+                    "weight": 100,
+                    "type": "attrContainsValue",
+                    "value": "typeAPPVANCESPLITTERbutton"
+                }],
+                "type": "Navigation",
+                "tags": ["button"],
+                "name": "sButton",
+                "disabled": false,
+                "actions": [],
+                "info": {}
+            },
+            {
+                "singleton": false,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {},
+                "scanOncePerApp": true,
+                "rules": [{
+                    "failures": 0,
+                    "successes": 0,
+                    "weight": 100,
+                    "type": "parents",
+                    "value": "header"
+                }],
+                "type": "Navigation",
+                "tags": [
+                    "span",
+                    "link",
+                    "a"
+                ],
+                "name": "sMenu",
+                "disabled": false,
+                "actions": [],
+                "info": {}
+            }
+        ]
+    }],
+    "templates": [{
+        "stateId": -1,
+        "orders": []
+    }],
+    "ignoreURLs": [],
+    "version": 300,
+    "shadowDOM": false,
+    "url": "http://44.241.36.103:3000",
+    "executionName": "findEverything",
+    "stLibraryId": 0,
+    "baseURL": "http://44.241.36.103:3000",
+    "delay": 10,
+    "dataSets": [{
+        "values": {"baseURL": "http://44.241.36.103:3000"},
+        "name": "Default"
+    }],
+    "files": [],
+    "scanType": [
+        "Inputs",
+        "Smarttags"
+    ],
+    "selfHealing": false,
+    "reportStatusCode": 400
+}}

@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase  name= '' description='' author='' version=''>
+<dpl filename='' exectype='' errorhandling='' type='null'/>
+<fallback useFallback='false'/>
+<step action='setSearchRetries' value='3' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setSearchRetries' value='' selected='true'/>
+</dialect>
+</step>
+<step action='prepareDomain' value='"http://MSI:8080"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='prepareDomain' value='' selected='true'/>
+</dialect>
+</step>
+<step action='navigateTo' value='"http://MSI:8080/UI/test/AIQ5811.html"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='submit(&quot;btn btn-success&quot;)' selected='true'/>
+   <accessor type='click' value='submit(&quot;hereBtn&quot;)' selected='false'/>
+   <accessor type='click' value='submit(&quot;HERE&quot;)' selected='false'/>
+   <accessor type='click' value='submit(0,_in(div(&quot;Click HERE to open Success modal&quot;)))' selected='false'/>
+   <accessor type='click' value='submit(0)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"{{ESC}}"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='div(&quot;alertModal&quot;)' selected='true'/>
+   <accessor type='setValue' value='div(&quot;fade modal show&quot;)' selected='false'/>
+   <accessor type='setValue' value='div(&quot;alertModal&quot;)' selected='false'/>
+   <accessor type='setValue' value='div(1,_in(body(&quot;modal-open&quot;)))' selected='false'/>
+   <accessor type='setValue' value='div(1)' selected='false'/>
+</dialect>
+</step>
+<step action='assertNotExists' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='assertNotExists' value='heading4(&quot;SUCCESS!!&quot;)' selected='true'/>
+   <accessor type='assertNotExists' value='heading4(&quot;alertHeader&quot;)' selected='false'/>
+   <accessor type='assertNotExists' value='heading4(&quot;SUCCESS!!&quot;)' selected='false'/>
+   <accessor type='assertNotExists' value='heading4(0,_in(div(&quot;modal-header&quot;)))' selected='false'/>
+   <accessor type='assertNotExists' value='heading4(0)' selected='false'/>
+</dialect>
+</step>
+</testcase>

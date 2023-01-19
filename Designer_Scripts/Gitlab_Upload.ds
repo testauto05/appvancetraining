@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase  name= '' description='' author='' version=''>
+<dpl filename='{ds}/Gitlab_Upload.csv' exectype='runstepbystep' errorhandling='' type='JsDPL'/>
+<fallback useFallback='false'/>
+<step action='navigateTo' value='"https://gitlab.com/users/sign_in"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='setValue' value='$User' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textbox(&quot;user_login&quot;)' selected='true'/>
+   <accessor type='setValue' value='textbox(&quot;form-control top&quot;)' selected='false'/>
+   <accessor type='setValue' value='textbox(&quot;user[login]&quot;)' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;form-group&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0)' selected='false'/>
+   <accessor type='setValue' value='textbox(&quot;This field is required.&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='$Password' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='password(&quot;user_password&quot;)' selected='true'/>
+   <accessor type='setValue' value='password(&quot;bottom form-control&quot;)' selected='false'/>
+   <accessor type='setValue' value='password(&quot;user[password]&quot;)' selected='false'/>
+   <accessor type='setValue' value='password(0,_in(div(&quot;form-group[1]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='password(0,_in(div(&quot;Password This field is required.&quot;)))' selected='false'/>
+   <accessor type='setValue' value='password(0)' selected='false'/>
+   <accessor type='setValue' value='password(&quot;This field is required.&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='submit(&quot;Sign in&quot;)' selected='true'/>
+   <accessor type='click' value='submit(&quot;commit&quot;)' selected='false'/>
+   <accessor type='click' value='submit(0,_in(div(&quot;move-submit-down submit-container&quot;)))' selected='false'/>
+   <accessor type='click' value='submit(0)' selected='false'/>
+   <accessor type='click' value='submit(&quot;btn btn-success&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='span(&quot;Appvance_Demo&quot;)' selected='true'/>
+   <accessor type='click' value='span(1,_in(span(&quot;append-right-8 project-full-name&quot;)))' selected='false'/>
+   <accessor type='click' value='span(1,_in(span(&quot;Avinash  /  Appvance_Demo&quot;)))' selected='false'/>
+   <accessor type='click' value='span(13)' selected='false'/>
+   <accessor type='click' value='span(&quot;project-name&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='span(&quot;Repository&quot;)' selected='true'/>
+   <accessor type='click' value='span(0,_in(link(&quot;qa-project-menu-repo shortcuts-tree&quot;)))' selected='false'/>
+   <accessor type='click' value='span(12)' selected='false'/>
+   <accessor type='click' value='span(&quot;nav-item-name[1]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='svg(0,_in(button(&quot;add-to-tree btn qa-add-to-tree&quot;)))' selected='true'/>
+   <accessor type='click' value='svg(37)' selected='false'/>
+   <accessor type='click' value='svg(&quot;float-left s16&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='link(&quot;Upload file&quot;)' selected='true'/>
+   <accessor type='click' value='link(0,_in(listItem(&quot;Upload file&quot;)))' selected='false'/>
+   <accessor type='click' value='link(122)' selected='false'/>
+   <accessor type='click' value='link(&quot;#modal-upload-blob&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='link(&quot;click to upload&quot;)' selected='true'/>
+   <accessor type='click' value='link(0,_in(listItem(&quot;Upload file&quot;)))' selected='false'/>
+   <accessor type='click' value='link(122)' selected='false'/>
+   <accessor type='click' value='link(&quot;#modal-upload-blob&quot;)' selected='false'/>
+   <accessor type='click' value='link(&quot;Upload file&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setFile4' value='"{ds}/adventure-blue-sea-diving-3046638.jpg"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setFile4' value='file(&quot;dz-hidden-input&quot;)' selected='true'/>
+   <accessor type='setFile4' value='link(&quot;#[1]&quot;)' selected='false'/>
+   <accessor type='setFile4' value='link(&quot;click to upload&quot;)' selected='false'/>
+   <accessor type='setFile4' value='link(0,_in(paragraph(&quot;dz-message light&quot;)))' selected='false'/>
+   <accessor type='setFile4' value='link(138)' selected='false'/>
+   <accessor type='setFile4' value='link(&quot;markdown-selector&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='$Upload' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textarea(&quot;commit_message&quot;)' selected='true'/>
+   <accessor type='setValue' value='textarea(0,_in(div(&quot;commit-message-container&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textarea(0,_in(div(&quot;Upload New File[1]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textarea(0)' selected='false'/>
+   <accessor type='setValue' value='textarea(&quot;form-control js-commit-message&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='button(&quot;Upload file&quot;)' selected='true'/>
+   <accessor type='click' value='button(&quot;submit-all&quot;)' selected='false'/>
+   <accessor type='click' value='button(0,_in(div(&quot;form-actions&quot;)))' selected='false'/>
+   <accessor type='click' value='button(0,_in(div(&quot;Upload file Cancel&quot;)))' selected='false'/>
+   <accessor type='click' value='button(14)' selected='false'/>
+   <accessor type='click' value='button(&quot;btn btn-success btn-upload-file&quot;)' selected='false'/>
+</dialect>
+</step>
+</testcase>

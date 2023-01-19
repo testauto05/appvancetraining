@@ -1,0 +1,2 @@
+Test
+"='' + today().format('yyyy/MM/dd')"

@@ -1,0 +1,251 @@
+{
+    "customTags": [],
+    "extractors": [],
+    "validators": [{
+        "name": "SmartTagValidationhere",
+        "disabled": false,
+        "type": "attribute",
+        "when": "preAction",
+        "value": "s",
+        "operator": "equals",
+        "target": "\"s\""
+    }],
+    "threshold": 0.75,
+    "actions": [],
+    "smartTags": [
+        {
+            "singleton": false,
+            "scanOnePerPage": false,
+            "extractors": [],
+            "validators": [],
+            "methods": {},
+            "scanOncePerApp": false,
+            "name": "HomeButton",
+            "disabled": false,
+            "rules": [{
+                "weight": 100,
+                "type": "containsText",
+                "value": "Home"
+            }],
+            "type": "Navigation",
+            "tags": ["a"],
+            "info": {}
+        },
+        {
+            "singleton": false,
+            "scanOnePerPage": false,
+            "extractors": [],
+            "validators": [],
+            "methods": {},
+            "scanOncePerApp": false,
+            "name": "Products",
+            "disabled": false,
+            "rules": [{
+                "weight": 100,
+                "type": "attrContainsValue",
+                "value": "class:info"
+            }],
+            "type": "Navigation",
+            "tags": ["span"],
+            "info": {}
+        },
+        {
+            "singleton": false,
+            "scanOnePerPage": false,
+            "extractors": [],
+            "validators": [],
+            "methods": {},
+            "scanOncePerApp": false,
+            "name": "LeftMenu",
+            "disabled": false,
+            "rules": [{
+                "weight": 100,
+                "type": "attrContainsValue",
+                "value": "class:list-group-item"
+            }],
+            "type": "Navigation",
+            "tags": ["a"],
+            "info": {}
+        },
+        {
+            "singleton": false,
+            "scanOnePerPage": false,
+            "extractors": [],
+            "validators": [],
+            "methods": {},
+            "scanOncePerApp": false,
+            "name": "SaveandContinue",
+            "disabled": false,
+            "rules": [{
+                "weight": 100,
+                "type": "attrContainsValue",
+                "value": "value:Save and Continue"
+            }],
+            "type": "Action",
+            "tags": ["input"],
+            "info": {}
+        },
+        {
+            "singleton": false,
+            "scanOnePerPage": false,
+            "extractors": [],
+            "validators": [],
+            "methods": {},
+            "scanOncePerApp": false,
+            "name": "CheckoutInputs1",
+            "disabled": false,
+            "rules": [{
+                "weight": 100,
+                "type": "attrContainsValue",
+                "value": "class:form-control"
+            }],
+            "type": "Text",
+            "tags": ["input"],
+            "info": {}
+        },
+        {
+            "singleton": false,
+            "scanOnePerPage": false,
+            "extractors": [],
+            "validators": [],
+            "methods": {},
+            "scanOncePerApp": false,
+            "name": "AddToCart",
+            "disabled": false,
+            "rules": [{
+                "weight": 100,
+                "type": "attrContainsValue",
+                "value": "class:btn btn-success"
+            }],
+            "type": "Action",
+            "tags": ["button"],
+            "info": {}
+        },
+        {
+            "singleton": false,
+            "scanOnePerPage": false,
+            "extractors": [],
+            "validators": [],
+            "methods": {},
+            "scanOncePerApp": false,
+            "name": "CheckoutInputs2",
+            "disabled": false,
+            "rules": [{
+                "weight": 100,
+                "type": "attrContainsValue",
+                "value": "class:form-control required"
+            }],
+            "type": "Text",
+            "tags": ["input"],
+            "info": {}
+        },
+        {
+            "singleton": false,
+            "scanOnePerPage": false,
+            "extractors": [],
+            "validators": [],
+            "methods": {},
+            "scanOncePerApp": false,
+            "name": "ContinueButton",
+            "disabled": false,
+            "rules": [{
+                "weight": 100,
+                "type": "attrContainsValue",
+                "value": "name:commit"
+            }],
+            "type": "Action",
+            "tags": ["input"],
+            "info": {}
+        },
+        {
+            "singleton": false,
+            "scanOnePerPage": false,
+            "extractors": [],
+            "validators": [],
+            "methods": {},
+            "scanOncePerApp": false,
+            "name": "SearchText",
+            "disabled": false,
+            "rules": [{
+                "weight": 100,
+                "type": "attrContainsValue",
+                "value": "id:keywords"
+            }],
+            "type": "Text",
+            "tags": ["input"],
+            "info": {}
+        },
+        {
+            "singleton": false,
+            "scanOnePerPage": false,
+            "extractors": [],
+            "validators": [],
+            "methods": {},
+            "scanOncePerApp": false,
+            "name": "SelectDropdowns",
+            "disabled": false,
+            "rules": [{
+                "weight": 100,
+                "type": "attrContainsValue",
+                "value": "class:form-control required"
+            }],
+            "type": "Action",
+            "tags": ["select"],
+            "info": {}
+        },
+        {
+            "singleton": false,
+            "scanOnePerPage": false,
+            "extractors": [],
+            "validators": [],
+            "methods": {},
+            "scanOncePerApp": false,
+            "name": "CheckoutasGuestEmail",
+            "disabled": false,
+            "rules": [{
+                "weight": 100,
+                "type": "attrContainsValue",
+                "value": "id:order_email"
+            }],
+            "type": "Text",
+            "tags": ["input"],
+            "info": {}
+        },
+        {
+            "singleton": false,
+            "scanOnePerPage": false,
+            "extractors": [],
+            "validators": [],
+            "methods": {},
+            "scanOncePerApp": false,
+            "name": "Checkout",
+            "disabled": false,
+            "rules": [{
+                "weight": 100,
+                "type": "attrContainsValue",
+                "value": "id:checkout-link"
+            }],
+            "type": "Navigation",
+            "tags": ["button"],
+            "info": {}
+        },
+        {
+            "singleton": false,
+            "scanOnePerPage": false,
+            "extractors": [],
+            "validators": [],
+            "methods": {},
+            "scanOncePerApp": false,
+            "name": "SearchButton",
+            "disabled": false,
+            "rules": [{
+                "weight": 100,
+                "type": "attrContainsValue",
+                "value": "value:Search"
+            }],
+            "type": "Action",
+            "tags": ["input"],
+            "info": {}
+        }
+    ]
+}

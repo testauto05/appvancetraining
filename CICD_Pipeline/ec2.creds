@@ -1,0 +1,3 @@
+AWS_ACCESS_KEY_ID=Access key should be given here
+AWS_SECRET_ACCESS_KEY=Secret Access key should be given here
+REGION: Amazon region where the machine runs( Ex: us-east-1.amazonaws.com)

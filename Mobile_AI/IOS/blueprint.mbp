@@ -1,0 +1,1422 @@
+{
+    "appPackage": "",
+    "stepsExecuted": 9,
+    "interactive": false,
+    "scale": 3,
+    "requests": {},
+    "type": [
+        "Tags",
+        "Smarttags"
+    ],
+    "visualHints": true,
+    "states": [
+        {
+            "containsInput": false,
+            "children": {"0": [1]},
+            "name": "Blank",
+            "nameVariants": [],
+            "customActions": [],
+            "fieldsProcessed": {},
+            "id": 0,
+            "fields": [],
+            "customActionsAdded": [],
+            "visualHints": []
+        },
+        {
+            "containsInput": false,
+            "children": {},
+            "name": "Still Blank",
+            "nameVariants": [],
+            "customActions": [],
+            "fieldsProcessed": {},
+            "id": 1,
+            "fields": [],
+            "customActionsAdded": [],
+            "visualHints": []
+        },
+        {
+            "containsInput": true,
+            "children": {"0": [2]},
+            "name": "Chocolate Bar",
+            "nameVariants": ["Chocolate Bar"],
+            "customActions": [{
+                "executionId": 0,
+                "actions": [{
+                    "name": "SetValue-2",
+                    "actionId": 2,
+                    "caoId": 1716586656
+                }]
+            }],
+            "fieldsProcessed": {"0": true},
+            "id": 984985654,
+            "fields": [
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 414,
+                    "name": "searchBar(\"88\")",
+                    "smartTagName": "searchBar",
+                    "x": 0,
+                    "h": 52,
+                    "action": "setValue",
+                    "y": 88,
+                    "type": "Text",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 414,
+                    "name": "byId(\"Master\")",
+                    "x": 0,
+                    "h": 96,
+                    "action": "click",
+                    "y": 44,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 414,
+                    "name": "byXPath(\"//XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell\")",
+                    "x": 0,
+                    "h": 44,
+                    "action": "click",
+                    "y": 140,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 110,
+                    "name": "byId(\"Chocolate Bar\")",
+                    "x": 19,
+                    "h": 21,
+                    "action": "click",
+                    "y": 145,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 59,
+                    "name": "byXPath(\"//XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell/XCUIElementTypeStaticText[2]\")",
+                    "x": 19,
+                    "h": 15,
+                    "action": "click",
+                    "y": 165,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 414,
+                    "name": "byXPath(\"//XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[2]\")",
+                    "x": 0,
+                    "h": 44,
+                    "action": "click",
+                    "y": 184,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 118,
+                    "name": "byId(\"Chocolate Chip\")",
+                    "x": 20,
+                    "h": 21,
+                    "action": "click",
+                    "y": 189,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 59,
+                    "name": "byXPath(\"//XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[2]\")",
+                    "x": 19,
+                    "h": 15,
+                    "action": "click",
+                    "y": 209,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 414,
+                    "name": "byXPath(\"//XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[3]\")",
+                    "x": 0,
+                    "h": 44,
+                    "action": "click",
+                    "y": 228,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 120,
+                    "name": "byId(\"Dark Chocolate\")",
+                    "x": 19,
+                    "h": 21,
+                    "action": "click",
+                    "y": 233,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 59,
+                    "name": "byXPath(\"//XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeStaticText[2]\")",
+                    "x": 19,
+                    "h": 15,
+                    "action": "click",
+                    "y": 253,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 414,
+                    "name": "byXPath(\"//XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[4]\")",
+                    "x": 0,
+                    "h": 44,
+                    "action": "click",
+                    "y": 272,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 60,
+                    "name": "byId(\"Lollipop\")",
+                    "x": 20,
+                    "h": 21,
+                    "action": "click",
+                    "y": 277,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 28,
+                    "name": "byXPath(\"//XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[4]/XCUIElementTypeStaticText[2]\")",
+                    "x": 20,
+                    "h": 15,
+                    "action": "click",
+                    "y": 297,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 414,
+                    "name": "byXPath(\"//XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[5]\")",
+                    "x": 0,
+                    "h": 44,
+                    "action": "click",
+                    "y": 316,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 95,
+                    "name": "byId(\"Candy Cane\")",
+                    "x": 19,
+                    "h": 21,
+                    "action": "click",
+                    "y": 321,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 28,
+                    "name": "byXPath(\"//XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[5]/XCUIElementTypeStaticText[2]\")",
+                    "x": 20,
+                    "h": 15,
+                    "action": "click",
+                    "y": 341,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 414,
+                    "name": "byXPath(\"//XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[6]\")",
+                    "x": 0,
+                    "h": 44,
+                    "action": "click",
+                    "y": 360,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 95,
+                    "name": "byId(\"Jaw Breaker\")",
+                    "x": 19,
+                    "h": 21,
+                    "action": "click",
+                    "y": 365,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 28,
+                    "name": "byXPath(\"//XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[6]/XCUIElementTypeStaticText[2]\")",
+                    "x": 20,
+                    "h": 15,
+                    "action": "click",
+                    "y": 385,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 414,
+                    "name": "byXPath(\"//XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[7]\")",
+                    "x": 0,
+                    "h": 44,
+                    "action": "click",
+                    "y": 404,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 65,
+                    "name": "byId(\"Caramel\")",
+                    "x": 19,
+                    "h": 21,
+                    "action": "click",
+                    "y": 409,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 33,
+                    "name": "byXPath(\"//XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[7]/XCUIElementTypeStaticText[2]\")",
+                    "x": 20,
+                    "h": 15,
+                    "action": "click",
+                    "y": 429,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 414,
+                    "name": "byXPath(\"//XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[8]\")",
+                    "x": 0,
+                    "h": 44,
+                    "action": "click",
+                    "y": 448,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 96,
+                    "name": "byId(\"Gummi Bear\")",
+                    "x": 19,
+                    "h": 21,
+                    "action": "click",
+                    "y": 453,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 33,
+                    "name": "byXPath(\"//XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[8]/XCUIElementTypeStaticText[2]\")",
+                    "x": 20,
+                    "h": 15,
+                    "action": "click",
+                    "y": 473,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 414,
+                    "name": "byXPath(\"//XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[9]\")",
+                    "x": 0,
+                    "h": 44,
+                    "action": "click",
+                    "y": 492,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 84,
+                    "name": "byId(\"Sour Chew\")",
+                    "x": 20,
+                    "h": 21,
+                    "action": "click",
+                    "y": 497,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 33,
+                    "name": "byXPath(\"//XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[9]/XCUIElementTypeStaticText[2]\")",
+                    "x": 20,
+                    "h": 15,
+                    "action": "click",
+                    "y": 517,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 414,
+                    "name": "byXPath(\"//XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[10]\")",
+                    "x": 0,
+                    "h": 44,
+                    "action": "click",
+                    "y": 536,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 94,
+                    "name": "byId(\"Candy Floss\")",
+                    "x": 20,
+                    "h": 21,
+                    "action": "click",
+                    "y": 541,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 33,
+                    "name": "byXPath(\"//XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[10]/XCUIElementTypeStaticText[2]\")",
+                    "x": 20,
+                    "h": 15,
+                    "action": "click",
+                    "y": 561,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 414,
+                    "name": "byXPath(\"//XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[11]\")",
+                    "x": 0,
+                    "h": 44,
+                    "action": "click",
+                    "y": 580,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 117,
+                    "name": "byId(\"Chocolate Coin\")",
+                    "x": 20,
+                    "h": 21,
+                    "action": "click",
+                    "y": 585,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 59,
+                    "name": "byXPath(\"//XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[11]/XCUIElementTypeStaticText[2]\")",
+                    "x": 19,
+                    "h": 15,
+                    "action": "click",
+                    "y": 605,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 414,
+                    "name": "byXPath(\"//XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[12]\")",
+                    "x": 0,
+                    "h": 44,
+                    "action": "click",
+                    "y": 624,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 112,
+                    "name": "byId(\"Chocolate Egg\")",
+                    "x": 20,
+                    "h": 21,
+                    "action": "click",
+                    "y": 629,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 59,
+                    "name": "byXPath(\"//XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[12]/XCUIElementTypeStaticText[2]\")",
+                    "x": 19,
+                    "h": 15,
+                    "action": "click",
+                    "y": 649,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 414,
+                    "name": "byXPath(\"//XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[13]\")",
+                    "x": 0,
+                    "h": 44,
+                    "action": "click",
+                    "y": 668,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 87,
+                    "name": "byId(\"Jelly Beans\")",
+                    "x": 20,
+                    "h": 21,
+                    "action": "click",
+                    "y": 673,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 33,
+                    "name": "byXPath(\"//XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[13]/XCUIElementTypeStaticText[2]\")",
+                    "x": 20,
+                    "h": 15,
+                    "action": "click",
+                    "y": 693,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 414,
+                    "name": "byXPath(\"//XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[14]\")",
+                    "x": 0,
+                    "h": 44,
+                    "action": "click",
+                    "y": 712,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 71,
+                    "name": "byId(\"Liquorice\")",
+                    "x": 20,
+                    "h": 21,
+                    "action": "click",
+                    "y": 717,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 33,
+                    "name": "byXPath(\"//XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[14]/XCUIElementTypeStaticText[2]\")",
+                    "x": 20,
+                    "h": 15,
+                    "action": "click",
+                    "y": 737,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 414,
+                    "name": "byXPath(\"//XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[15]\")",
+                    "x": 0,
+                    "h": 44,
+                    "action": "click",
+                    "y": 756,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 97,
+                    "name": "byId(\"Toffee Apple\")",
+                    "x": 20,
+                    "h": 21,
+                    "action": "click",
+                    "y": 761,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 28,
+                    "name": "byXPath(\"//XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[15]/XCUIElementTypeStaticText[2]\")",
+                    "x": 20,
+                    "h": 15,
+                    "action": "click",
+                    "y": 781,
+                    "type": "Action",
+                    "elementType": "mobile"
+                }
+            ],
+            "customActionsAdded": [],
+            "visualHints": [{
+                "executionId": 0,
+                "visualHint": "{abp}/984985654.png"
+            }]
+        },
+        {
+            "containsInput": true,
+            "children": {"0": [
+                3,
+                4
+            ]},
+            "name": "Chocolate Bar",
+            "nameVariants": ["Chocolate Bar"],
+            "customActions": [{
+                "executionId": 0,
+                "actions": [
+                    {
+                        "name": "SetValue-3",
+                        "actionId": 3,
+                        "caoId": 216056364
+                    },
+                    {
+                        "name": "SetValue-4",
+                        "actionId": 4,
+                        "caoId": -1201109254
+                    }
+                ]
+            }],
+            "fieldsProcessed": {"0": true},
+            "id": 190203503,
+            "fields": [
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 414,
+                    "name": "searchBar(\"44\")",
+                    "smartTagName": "searchBar",
+                    "x": 0,
+                    "h": 52,
+                    "action": "setValue",
+                    "y": 44,
+                    "type": "Text",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 414,
+                    "name": "byId(\"Master\")",
+                    "x": 0,
+                    "h": 52,
+                    "action": "click",
+                    "y": 44,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 414,
+                    "name": "byXPath(\"//XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell\")",
+                    "x": 0,
+                    "h": 44,
+                    "action": "click",
+                    "y": 96,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 110,
+                    "name": "byId(\"Chocolate Bar\")",
+                    "x": 19,
+                    "h": 21,
+                    "action": "click",
+                    "y": 101,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 59,
+                    "name": "byXPath(\"//XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell/XCUIElementTypeStaticText[2]\")",
+                    "x": 19,
+                    "h": 15,
+                    "action": "click",
+                    "y": 121,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 414,
+                    "name": "byXPath(\"//XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[2]\")",
+                    "x": 0,
+                    "h": 44,
+                    "action": "click",
+                    "y": 140,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 118,
+                    "name": "byId(\"Chocolate Chip\")",
+                    "x": 20,
+                    "h": 21,
+                    "action": "click",
+                    "y": 145,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 59,
+                    "name": "byXPath(\"//XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[2]\")",
+                    "x": 19,
+                    "h": 15,
+                    "action": "click",
+                    "y": 165,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 414,
+                    "name": "byXPath(\"//XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[3]\")",
+                    "x": 0,
+                    "h": 44,
+                    "action": "click",
+                    "y": 184,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 120,
+                    "name": "byId(\"Dark Chocolate\")",
+                    "x": 19,
+                    "h": 21,
+                    "action": "click",
+                    "y": 189,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 59,
+                    "name": "byXPath(\"//XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeStaticText[2]\")",
+                    "x": 19,
+                    "h": 15,
+                    "action": "click",
+                    "y": 209,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 414,
+                    "name": "byXPath(\"//XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[4]\")",
+                    "x": 0,
+                    "h": 44,
+                    "action": "click",
+                    "y": 228,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 117,
+                    "name": "byId(\"Chocolate Coin\")",
+                    "x": 20,
+                    "h": 21,
+                    "action": "click",
+                    "y": 233,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 59,
+                    "name": "byXPath(\"//XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[4]/XCUIElementTypeStaticText[2]\")",
+                    "x": 19,
+                    "h": 15,
+                    "action": "click",
+                    "y": 253,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 414,
+                    "name": "byXPath(\"//XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[5]\")",
+                    "x": 0,
+                    "h": 44,
+                    "action": "click",
+                    "y": 272,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 112,
+                    "name": "byId(\"Chocolate Egg\")",
+                    "x": 20,
+                    "h": 21,
+                    "action": "click",
+                    "y": 277,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 59,
+                    "name": "byXPath(\"//XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[5]/XCUIElementTypeStaticText[2]\")",
+                    "x": 19,
+                    "h": 15,
+                    "action": "click",
+                    "y": 297,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 50,
+                    "name": "byId(\"shift\")",
+                    "x": 2,
+                    "h": 49,
+                    "action": "click",
+                    "y": 714,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 102,
+                    "name": "byId(\"Search\")",
+                    "x": 310,
+                    "h": 49,
+                    "action": "click",
+                    "y": 770,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 78,
+                    "name": "byId(\"Emoji\")",
+                    "x": 2,
+                    "h": 67,
+                    "action": "click",
+                    "y": 829,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 78,
+                    "name": "byId(\"dictation\")",
+                    "x": 334,
+                    "h": 66,
+                    "action": "click",
+                    "y": 829,
+                    "type": "Action",
+                    "elementType": "mobile"
+                }
+            ],
+            "customActionsAdded": [],
+            "visualHints": [{
+                "executionId": 0,
+                "visualHint": "{abp}/190203503.png"
+            }]
+        },
+        {
+            "containsInput": true,
+            "children": {"0": []},
+            "name": "Chocolate",
+            "nameVariants": ["Chocolate"],
+            "customActions": [{
+                "executionId": 0,
+                "actions": []
+            }],
+            "fieldsProcessed": {"0": true},
+            "id": -333130068,
+            "fields": [
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 414,
+                    "name": "byXPath(\"//XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeNavigationBar\")",
+                    "x": 0,
+                    "h": 96,
+                    "action": "click",
+                    "y": 44,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 69,
+                    "name": "byId(\"Back\")",
+                    "x": 0,
+                    "h": 44,
+                    "action": "click",
+                    "y": 44,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 164,
+                    "name": "byXPath(\"//XCUIElementTypeStaticText[@value='Chocolate']\")",
+                    "x": 20,
+                    "h": 42,
+                    "action": "click",
+                    "y": 91,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 374,
+                    "name": "byId(\"Chocolate Bar\")",
+                    "x": 20,
+                    "h": 34,
+                    "action": "click",
+                    "y": 150,
+                    "type": "Action",
+                    "elementType": "mobile"
+                }
+            ],
+            "customActionsAdded": [],
+            "visualHints": [{
+                "executionId": 0,
+                "visualHint": "{abp}/-333130068.png"
+            }]
+        },
+        {
+            "containsInput": true,
+            "children": {},
+            "name": "Chocolate",
+            "nameVariants": ["Chocolate"],
+            "customActions": [{
+                "executionId": 0,
+                "actions": []
+            }],
+            "fieldsProcessed": {"0": true},
+            "id": -203162113,
+            "fields": [
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 414,
+                    "name": "byXPath(\"//XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeNavigationBar\")",
+                    "x": 0,
+                    "h": 96,
+                    "action": "click",
+                    "y": 44,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 69,
+                    "name": "byId(\"Back\")",
+                    "x": 0,
+                    "h": 44,
+                    "action": "click",
+                    "y": 44,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 164,
+                    "name": "byXPath(\"//XCUIElementTypeStaticText[@value='Chocolate']\")",
+                    "x": 20,
+                    "h": 42,
+                    "action": "click",
+                    "y": 91,
+                    "type": "Action",
+                    "elementType": "mobile"
+                },
+                {
+                    "oncePerApp": false,
+                    "actionsCreated": 0,
+                    "w": 374,
+                    "name": "byId(\"Chocolate Chip\")",
+                    "x": 20,
+                    "h": 34,
+                    "action": "click",
+                    "y": 150,
+                    "type": "Action",
+                    "elementType": "mobile"
+                }
+            ],
+            "customActionsAdded": [],
+            "visualHints": [{
+                "executionId": 0,
+                "visualHint": "{abp}/-203162113.png"
+            }]
+        }
+    ],
+    "duration": 222296,
+    "blueprintType": "mobile",
+    "mobileConfigurations": [{
+        "capabilities": {
+            "orientation": "PORTRAIT",
+            "noReset": "false",
+            "platformVersion": "13.6",
+            "bundleId": "com.appvance.om.CandySearch",
+            "udid": "5FD4B906-5FF6-4844-82C7-07A7E8469528",
+            "platformName": "iOS",
+            "fullReset": "false",
+            "deviceName": "iPhone 11 Pro Max"
+        },
+        "proxyURL": "",
+        "serverURL": "http://186.179.71.146:4723/wd/hub"
+    }],
+    "root": 1,
+    "setupJS": "",
+    "lastActionId": 4,
+    "nwLibraries": [],
+    "validationsWorkbench": [{
+        "customActions": [],
+        "validations": [
+            {
+                "passType": "pass",
+                "validationType": "element",
+                "name": "validateContent",
+                "match": "Back",
+                "disabled": false,
+                "triggerType": "text",
+                "target": "byXPath(\"//XCUIElementTypeApplication[@name='CandySearch']/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeImage\")"
+            },
+            {
+                "passType": "pass",
+                "validationType": "element",
+                "name": "validateSearchBar",
+                "match": "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",
+                "disabled": false,
+                "triggerType": "image",
+                "target": "byId(\"searchBar\")"
+            }
+        ]
+    }],
+    "platformName": "iOS",
+    "dplType": "HashDPL",
+    "validDomains": [],
+    "stLibraries": [{
+        "customTags": [],
+        "extractors": [],
+        "validators": [],
+        "threshold": 0.75,
+        "actions": [],
+        "smartTags": [{
+            "singleton": false,
+            "scanOnePerPage": false,
+            "extractors": [],
+            "validators": [],
+            "methods": {},
+            "scanOncePerApp": false,
+            "name": "searchBar",
+            "disabled": false,
+            "rules": [{
+                "failures": 0,
+                "successes": 0,
+                "weight": 100,
+                "type": "csv",
+                "value": "searchBar"
+            }],
+            "type": "Text",
+            "tags": ["XCUIElementTypeOther"],
+            "info": {}
+        }]
+    }],
+    "app": "",
+    "timesThreadStarted": 4,
+    "bundleId": "com.appvance.om.CandySearch",
+    "threads": 1,
+    "version": 300,
+    "appActivity": "",
+    "delay": 0,
+    "executions": [{
+        "processedStates": [
+            744181626,
+            -1897872539,
+            1638243229
+        ],
+        "extractors": [],
+        "validators": [
+            {
+                "url": "Chocolate Bar",
+                "statistics": [{
+                    "failures": [],
+                    "successes": 4,
+                    "name": "validateSearchBar",
+                    "id": -1623226547
+                }]
+            },
+            {
+                "url": "Chocolate",
+                "statistics": [{
+                    "failures": [],
+                    "successes": 2,
+                    "name": "validateContent",
+                    "id": -910169362
+                }]
+            }
+        ],
+        "templates": [
+            {
+                "stateId": -1,
+                "orders": []
+            },
+            {
+                "stateId": 984985654,
+                "orders": [{
+                    "start": true,
+                    "id": 1716586656,
+                    "trails": [["start();\n"]],
+                    "order": [{
+                        "oncePerApp": "false",
+                        "name": "searchBar(&quot;88&quot;)",
+                        "smartTagName": "searchBar",
+                        "action": "setValue",
+                        "type": "Text",
+                        "value": "$keyword",
+                        "elementType": "mobile"
+                    }]
+                }]
+            },
+            {
+                "stateId": 190203503,
+                "orders": [
+                    {
+                        "start": true,
+                        "id": -1201109254,
+                        "trails": [[
+                            "start();\n",
+                            "setValue(searchBar(\"88\"), $keyword);\n"
+                        ]],
+                        "order": [{
+                            "oncePerApp": "false",
+                            "name": "byXPath(&quot;//XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[2]&quot;)",
+                            "smartTagName": "undefined",
+                            "action": "click",
+                            "type": "Action",
+                            "value": "click",
+                            "elementType": "mobile"
+                        }]
+                    },
+                    {
+                        "start": true,
+                        "id": 216056364,
+                        "trails": [[
+                            "start();\n",
+                            "setValue(searchBar(\"88\"), $keyword);\n"
+                        ]],
+                        "order": [{
+                            "oncePerApp": "false",
+                            "name": "byXPath(&quot;//XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell&quot;)",
+                            "smartTagName": "undefined",
+                            "action": "click",
+                            "type": "Action",
+                            "value": "click",
+                            "elementType": "mobile"
+                        }]
+                    }
+                ]
+            }
+        ],
+        "start": 1595458566054,
+        "unprocessedActions": [],
+        "smartTags": [{
+            "inconsistencies": 0,
+            "urls": [{
+                "inconsistencies": 0,
+                "failures": 0,
+                "url": "Chocolate Bar"
+            }],
+            "failures": 0,
+            "actionsCreated": 1,
+            "name": "searchBar",
+            "disabled": false,
+            "rules": [{
+                "failures": 0,
+                "successes": 0,
+                "weight": 100,
+                "type": "csv",
+                "value": "searchBar"
+            }],
+            "type": "Text",
+            "visualHints": [{
+                "visualHintPath": "{abp}/984985654.png",
+                "url": "Chocolate Bar",
+                "points": [
+                    {
+                        "w": 1242,
+                        "x": 10,
+                        "h": 156,
+                        "y": 264
+                    },
+                    {
+                        "w": 1242,
+                        "x": 10,
+                        "h": 156,
+                        "y": 132
+                    }
+                ]
+            }]
+        }],
+        "duration": 222296,
+        "actionsFound": 4,
+        "stLibraryId": 0,
+        "dataSetNames": ["Default"],
+        "stop": 1595458862554,
+        "lastResume": 0,
+        "networkValidations": [],
+        "useOneDataSet": false,
+        "bindingsWithoutCustomActions": [
+            -333130068,
+            -203162113
+        ],
+        "validationsWorkbenchId": 0,
+        "name": "candySearch",
+        "usePreviousBindings": false,
+        "id": 0,
+        "statesFound": [
+            984985654,
+            190203503,
+            -333130068,
+            -203162113
+        ],
+        "failedActions": [],
+        "bindingsWithCustomActions": [
+            984985654,
+            190203503
+        ],
+        "inconsistentActions": []
+    }],
+    "prune": true,
+    "service": "On-Premises",
+    "dataSets": [{
+        "values": {"keyword": "chocolate"},
+        "name": "Default"
+    }],
+    "files": [],
+    "messages": [],
+    "actions": [
+        {
+            "requestList": [],
+            "children": {"0": [{
+                "stateId": 0,
+                "weight": 1
+            }]},
+            "paths": [],
+            "timesVisited": [],
+            "apiRequestList": [],
+            "presentSteps": [],
+            "id": 0,
+            "steps": [{
+                "oncePerApp": false,
+                "actionsCreated": 0,
+                "action": "//Open",
+                "value": ""
+            }]
+        },
+        {
+            "requestList": [],
+            "children": {"0": [{
+                "stateId": 984985654,
+                "weight": 1
+            }]},
+            "paths": [],
+            "timesVisited": [{
+                "executionId": 0,
+                "times": 4
+            }],
+            "apiRequestList": [],
+            "presentSteps": [],
+            "id": 1,
+            "steps": [{
+                "oncePerApp": false,
+                "actionsCreated": 0,
+                "action": "start",
+                "value": ""
+            }]
+        },
+        {
+            "requestList": [],
+            "children": {"0": [{
+                "stateId": 190203503,
+                "weight": 1
+            }]},
+            "paths": [{
+                "executionId": 0,
+                "actionIds": [1]
+            }],
+            "timesVisited": [{
+                "executionId": 0,
+                "times": 3
+            }],
+            "apiRequestList": [],
+            "presentSteps": [],
+            "id": 2,
+            "steps": [{
+                "oncePerApp": false,
+                "actionsCreated": 1,
+                "name": "searchBar(\"88\")",
+                "smartTagName": "searchBar",
+                "action": "setValue",
+                "type": "Text",
+                "value": "$keyword",
+                "elementType": "mobile"
+            }]
+        },
+        {
+            "requestList": [],
+            "children": {"0": [{
+                "stateId": -333130068,
+                "weight": 1
+            }]},
+            "paths": [{
+                "executionId": 0,
+                "actionIds": [
+                    1,
+                    2
+                ]
+            }],
+            "timesVisited": [{
+                "executionId": 0,
+                "times": 1
+            }],
+            "apiRequestList": [],
+            "presentSteps": [],
+            "id": 3,
+            "steps": [{
+                "oncePerApp": false,
+                "actionsCreated": 1,
+                "name": "byXPath(\"//XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell\")",
+                "smartTagName": "undefined",
+                "action": "click",
+                "type": "Action",
+                "elementType": "mobile"
+            }]
+        },
+        {
+            "requestList": [],
+            "children": {"0": [{
+                "stateId": -203162113,
+                "weight": 1
+            }]},
+            "paths": [{
+                "executionId": 0,
+                "actionIds": [
+                    1,
+                    2
+                ]
+            }],
+            "timesVisited": [{
+                "executionId": 0,
+                "times": 1
+            }],
+            "apiRequestList": [],
+            "presentSteps": [],
+            "id": 4,
+            "steps": [{
+                "oncePerApp": false,
+                "actionsCreated": 1,
+                "name": "byXPath(\"//XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[2]\")",
+                "smartTagName": "undefined",
+                "action": "click",
+                "type": "Action",
+                "elementType": "mobile"
+            }]
+        }
+    ],
+    "selfHealing": false
+}

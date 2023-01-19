@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase  name= '' description='' author='' version=''>
+<dpl filename='' exectype='runstepbystep' errorhandling='' type='HashDPL'/>
+<fallback useFallback='false'/>
+<step action='navigateTo' value='"https://demosite.appvance.com/"' type='web' desc='Navigate To' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='Click on Bags' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='link(&quot;Bags&quot;)' selected='true'/>
+   <accessor type='click' value='link(&quot;/t/bags&quot;)' selected='false'/>
+   <accessor type='click' value='link(0,_in(div(&quot;list-group&quot;)))' selected='false'/>
+   <accessor type='click' value='link(0,_in(div(&quot;Bags Mugs Clothing&quot;)))' selected='false'/>
+   <accessor type='click' value='link(4)' selected='false'/>
+   <accessor type='click' value='link(&quot;list-group-item&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='Click on Mugs' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='link(&quot;Mugs&quot;)' selected='true'/>
+   <accessor type='click' value='link(&quot;/t/mugs&quot;)' selected='false'/>
+   <accessor type='click' value='link(1,_in(div(&quot;list-group&quot;)))' selected='false'/>
+   <accessor type='click' value='link(1,_in(div(&quot;Bags Mugs Clothing&quot;)))' selected='false'/>
+   <accessor type='click' value='link(9)' selected='false'/>
+   <accessor type='click' value='link(&quot;list-group-item&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='Click on Clothing' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='link(&quot;Clothing&quot;)' selected='true'/>
+   <accessor type='click' value='link(&quot;/t/clothing&quot;)' selected='false'/>
+   <accessor type='click' value='link(2,_in(div(&quot;list-group&quot;)))' selected='false'/>
+   <accessor type='click' value='link(2,_in(div(&quot;Bags Mugs Clothing&quot;)))' selected='false'/>
+   <accessor type='click' value='link(10)' selected='false'/>
+   <accessor type='click' value='link(&quot;list-group-item[1]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='Click on Ruby' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='link(&quot;Ruby&quot;)' selected='true'/>
+   <accessor type='click' value='link(&quot;/t/ruby&quot;)' selected='false'/>
+   <accessor type='click' value='link(0,_in(div(&quot;list-group[1]&quot;)))' selected='false'/>
+   <accessor type='click' value='link(0,_in(div(&quot;Ruby Apache Spree Rails&quot;)))' selected='false'/>
+   <accessor type='click' value='link(11)' selected='false'/>
+   <accessor type='click' value='link(&quot;list-group-item[2]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='Click on Apache' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='link(&quot;Apache&quot;)' selected='true'/>
+   <accessor type='click' value='link(&quot;/t/apache&quot;)' selected='false'/>
+   <accessor type='click' value='link(1,_in(div(&quot;list-group[1]&quot;)))' selected='false'/>
+   <accessor type='click' value='link(1,_in(div(&quot;Ruby Apache Spree Rails&quot;)))' selected='false'/>
+   <accessor type='click' value='link(12)' selected='false'/>
+   <accessor type='click' value='link(&quot;list-group-item[3]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='Click on Spree' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='link(&quot;Spree&quot;)' selected='true'/>
+   <accessor type='click' value='link(&quot;/t/spree&quot;)' selected='false'/>
+   <accessor type='click' value='link(2,_in(div(&quot;list-group[1]&quot;)))' selected='false'/>
+   <accessor type='click' value='link(2,_in(div(&quot;Ruby Apache Spree Rails&quot;)))' selected='false'/>
+   <accessor type='click' value='link(13)' selected='false'/>
+   <accessor type='click' value='link(&quot;list-group-item[4]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='Click on Rails' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='link(&quot;Rails&quot;)' selected='true'/>
+   <accessor type='click' value='link(&quot;/t/rails&quot;)' selected='false'/>
+   <accessor type='click' value='link(3,_in(div(&quot;list-group[1]&quot;)))' selected='false'/>
+   <accessor type='click' value='link(3,_in(div(&quot;Ruby Apache Spree Rails&quot;)))' selected='false'/>
+   <accessor type='click' value='link(14)' selected='false'/>
+   <accessor type='click' value='link(&quot;list-group-item[5]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"Ruby"' type='web' desc='Search for Ruby' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='searchbox(&quot;keywords&quot;)' selected='true'/>
+   <accessor type='setValue' value='searchbox(0,_in(div(&quot;form-group[1]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='searchbox(0)' selected='false'/>
+   <accessor type='setValue' value='searchbox(&quot;form-control&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='Click on Search' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='submit(&quot;Search&quot;)' selected='true'/>
+   <accessor type='click' value='submit(0)' selected='false'/>
+   <accessor type='click' value='submit(&quot;btn btn-success&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='Click on Home' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='link(&quot;Home&quot;)' selected='true'/>
+   <accessor type='click' value='link(0,_in(listItem(&quot;home-link&quot;)))' selected='false'/>
+   <accessor type='click' value='link(0,_in(listItem(&quot;Home&quot;)))' selected='false'/>
+   <accessor type='click' value='link(2)' selected='false'/>
+   <accessor type='click' value='link(&quot;/[1]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='Click on Ruby Tote' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='span(&quot;Ruby on Rails Tote&quot;)' selected='true'/>
+   <accessor type='click' value='span(&quot;info&quot;)' selected='false'/>
+   <accessor type='click' value='span(0,_in(link(&quot;Ruby on Rails Tote&quot;)))' selected='false'/>
+   <accessor type='click' value='span(1)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='Click on Add to Cart' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='submit(&quot;Add To Cart&quot;)' selected='true'/>
+   <accessor type='click' value='submit(0,_in(span(&quot;input-group-btn&quot;)))' selected='false'/>
+   <accessor type='click' value='submit(0,_in(span(&quot;Add To Cart&quot;)))' selected='false'/>
+   <accessor type='click' value='submit(1)' selected='false'/>
+   <accessor type='click' value='submit(&quot;btn btn-success[1]&quot;)' selected='false'/>
+   <accessor type='click' value='submit(&quot;button&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='Click on Update' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='submit(&quot;Update&quot;)' selected='true'/>
+   <accessor type='click' value='submit(&quot;update-button&quot;)' selected='false'/>
+   <accessor type='click' value='submit(&quot;button&quot;)' selected='false'/>
+   <accessor type='click' value='submit(0,_in(div(&quot;form-group[2]&quot;)))' selected='false'/>
+   <accessor type='click' value='submit(1)' selected='false'/>
+   <accessor type='click' value='submit(&quot;btn btn-primary&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='Click on Checkout' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='submit(&quot;Checkout&quot;)' selected='true'/>
+   <accessor type='click' value='submit(&quot;checkout-link&quot;)' selected='false'/>
+   <accessor type='click' value='submit(&quot;checkout&quot;)' selected='false'/>
+   <accessor type='click' value='submit(1,_in(div(&quot;form-group[2]&quot;)))' selected='false'/>
+   <accessor type='click' value='submit(2)' selected='false'/>
+   <accessor type='click' value='submit(&quot;btn btn-lg btn-success&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='Click on Continue' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='submit(&quot;Continue&quot;)' selected='true'/>
+   <accessor type='click' value='submit(&quot;commit[1]&quot;)' selected='false'/>
+   <accessor type='click' value='submit(2)' selected='false'/>
+   <accessor type='click' value='submit(&quot;btn btn-block btn-lg btn-success[1]&quot;)' selected='false'/>
+</dialect>
+</step>
+</testcase>

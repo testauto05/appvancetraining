@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase  name= '' description='' author='' version=''>
+<dpl filename='' exectype='runstepbystep' errorhandling='' type='HashDPL'/>
+<fallback useFallback='false'/>
+<step action='navigateTo' value='"https://www.apple.com/"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='link(&quot;ac-gn-link ac-gn-link-mac&quot;)' selected='true'/>
+   <accessor type='click' value='link(&quot;/mac/&quot;)' selected='false'/>
+   <accessor type='click' value='link(&quot;Mac&quot;)' selected='false'/>
+   <accessor type='click' value='link(0,_in(listItem(&quot;ac-gn-item ac-gn-item-menu ac-gn-mac&quot;)))' selected='false'/>
+   <accessor type='click' value='link(0,_in(listItem(&quot;Mac&quot;)))' selected='false'/>
+   <accessor type='click' value='link(1)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='link(&quot;ac-gn-link ac-gn-link-ipad&quot;)' selected='true'/>
+   <accessor type='click' value='link(&quot;/ipad/&quot;)' selected='false'/>
+   <accessor type='click' value='link(&quot;iPad&quot;)' selected='false'/>
+   <accessor type='click' value='link(0,_in(listItem(&quot;ac-gn-ipad ac-gn-item ac-gn-item-menu&quot;)))' selected='false'/>
+   <accessor type='click' value='link(0,_in(listItem(&quot;iPad&quot;)))' selected='false'/>
+   <accessor type='click' value='link(2)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='link(&quot;ac-gn-link ac-gn-link-iphone&quot;)' selected='true'/>
+   <accessor type='click' value='link(&quot;/iphone/&quot;)' selected='false'/>
+   <accessor type='click' value='link(&quot;iPhone&quot;)' selected='false'/>
+   <accessor type='click' value='link(0,_in(listItem(&quot;ac-gn-iphone ac-gn-item ac-gn-item-menu&quot;)))' selected='false'/>
+   <accessor type='click' value='link(0,_in(listItem(&quot;iPhone&quot;)))' selected='false'/>
+   <accessor type='click' value='link(3)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='link(&quot;ac-gn-link ac-gn-link-watch&quot;)' selected='true'/>
+   <accessor type='click' value='link(&quot;/watch/&quot;)' selected='false'/>
+   <accessor type='click' value='link(&quot;Watch&quot;)' selected='false'/>
+   <accessor type='click' value='link(0,_in(listItem(&quot;ac-gn-item ac-gn-item-menu ac-gn-watch&quot;)))' selected='false'/>
+   <accessor type='click' value='link(0,_in(listItem(&quot;Watch&quot;)))' selected='false'/>
+   <accessor type='click' value='link(4)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='link(&quot;ac-gn-link ac-gn-link-tv&quot;)' selected='true'/>
+   <accessor type='click' value='link(&quot;/tv/&quot;)' selected='false'/>
+   <accessor type='click' value='link(&quot;TV&quot;)' selected='false'/>
+   <accessor type='click' value='link(0,_in(listItem(&quot;ac-gn-item ac-gn-item-menu ac-gn-tv&quot;)))' selected='false'/>
+   <accessor type='click' value='link(0,_in(listItem(&quot;TV&quot;)))' selected='false'/>
+   <accessor type='click' value='link(5)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='link(&quot;ac-gn-link ac-gn-link-search&quot;)' selected='true'/>
+   <accessor type='click' value='link(&quot;ac-gn-link-search&quot;)' selected='false'/>
+   <accessor type='click' value='link(&quot;/us/search&quot;)' selected='false'/>
+   <accessor type='click' value='link(0,_in(listItem(&quot;ac-gn-item ac-gn-item-menu ac-gn-search&quot;)))' selected='false'/>
+   <accessor type='click' value='link(8)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"iphone"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textbox(&quot;ac-gn-searchform-input&quot;)' selected='true'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;ac-gn-searchform-wrapper&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='bold(&quot;iPhone&quot;)' selected='true'/>
+   <accessor type='click' value='bold(0,_in(link(&quot;ac-gn-searchresults-link ac-gn-searchresults-link-quicklinks&quot;)))' selected='false'/>
+   <accessor type='click' value='bold(0,_in(link(&quot;iPhone[1]&quot;)))' selected='false'/>
+   <accessor type='click' value='bold(0)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='link(&quot;ac-gn-link ac-gn-link-bag&quot;)' selected='true'/>
+   <accessor type='click' value='link(&quot;/us/shop/goto/bag&quot;)' selected='false'/>
+   <accessor type='click' value='link(&quot;Shopping Bag&quot;)' selected='false'/>
+   <accessor type='click' value='link(0,_in(div(&quot;ac-gn-bag-wrapper&quot;)))' selected='false'/>
+   <accessor type='click' value='link(9)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='link(&quot;ac-gn-bagview-nav-link ac-gn-bagview-nav-link-signIn&quot;)' selected='true'/>
+   <accessor type='click' value='link(&quot;https://secure2.store.apple.com/shop/sign_in?c=aHR0cHM6Ly93d3cuYXBwbGUuY29tL2lwaG9uZS98MWFvc2RiODFlNWExZWFiNTQ0NTM1NjUxNGQyOTdjODhiOTIzYjBlMzhhYjM&amp;r=SCDHYHP7CY4H9XK2H&amp;s=aHR0cHM6Ly93d3cuYXBwbGUuY29tL2lwaG9uZS98MWFvc2RiODFlNWExZWFiNTQ0NTM1NjUxNGQyOTdjODhiOTIzYjBlMzhhYjM&quot;)' selected='false'/>
+   <accessor type='click' value='link(&quot;Sign in&quot;)' selected='false'/>
+   <accessor type='click' value='link(0,_in(listItem(&quot;ac-gn-bagview-nav-item ac-gn-bagview-nav-item-signIn&quot;)))' selected='false'/>
+   <accessor type='click' value='link(0,_in(listItem(&quot;Sign in&quot;)))' selected='false'/>
+   <accessor type='click' value='link(14)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"appleid"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='emailbox(&quot;appleId&quot;)' selected='true'/>
+   <accessor type='setValue' value='emailbox(&quot;recon-0-0&quot;)' selected='false'/>
+   <accessor type='setValue' value='emailbox(0,_in(div(&quot;form-textbox&quot;)))' selected='false'/>
+   <accessor type='setValue' value='emailbox(0,_in(div(&quot;Apple ID&quot;)))' selected='false'/>
+   <accessor type='setValue' value='emailbox(0)' selected='false'/>
+   <accessor type='setValue' value='emailbox(&quot;form-textbox-entered form-textbox-input&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"applepwd"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='password(&quot;password&quot;)' selected='true'/>
+   <accessor type='setValue' value='password(&quot;recon-0-1&quot;)' selected='false'/>
+   <accessor type='setValue' value='password(0,_in(div(&quot;form-textbox[1]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='password(0,_in(div(&quot;Password&quot;)))' selected='false'/>
+   <accessor type='setValue' value='password(0)' selected='false'/>
+   <accessor type='setValue' value='password(&quot;form-textbox-entered form-textbox-input&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='submit(&quot;form-button&quot;)' selected='true'/>
+   <accessor type='click' value='submit(&quot;signInButtonId&quot;)' selected='false'/>
+   <accessor type='click' value='submit(&quot;Sign InSign In&quot;)' selected='false'/>
+   <accessor type='click' value='submit(0,_in(div(&quot;as-signin-button&quot;)))' selected='false'/>
+   <accessor type='click' value='submit(0,_in(div(&quot;Sign InSign In&quot;)))' selected='false'/>
+   <accessor type='click' value='submit(0)' selected='false'/>
+</dialect>
+</step>
+</testcase>

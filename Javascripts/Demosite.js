@@ -1,0 +1,10 @@
+navigateTo("https://demosite.appvance.com/");
+click(link("Bags"));
+click(link("Mugs"));
+click(link("Ruby"));
+click(link("Apache"));
+click(span("Apache Baseball Jersey"));
+click(byId("add-to-cart-button"));
+click(submit("Update"));
+click(submit("Checkout"));
+click(submit("Search"));

@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase  name= '' description='' author='' version=''>
+<dpl filename='' exectype='runstepbystep' errorhandling='' type='HashDPL' locale='en_US'/>
+<fallback useFallback='false'/>
+<step action='include' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='include' value='"{ds}/GenerateRandomData.js"' selected='true'/>
+</dialect>
+</step>
+<step action='store' value='Math.floor(Math.random() * 50000)' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='store' value='r' selected='true'/>
+</dialect>
+</step>
+<step action='readCSV' value='c' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='readCSV' value='"{ds}/xml_template.csv"' selected='true'/>
+   <accessor type='readCSV' value='"SERVER/C:/test/AIQ-1188/file.csv"' selected='false'/>
+   <accessor type='readCSV' value='"SERVER/C:/test/AIQ-1188/file_new.csv"' selected='false'/>
+   <accessor type='readCSV' value='"SERVER/C:/test/AIQ-1188/file.csv"' selected='false'/>
+   <accessor type='readCSV' value='"{ds}/file.csv"' selected='false'/>
+</dialect>
+</step>
+<step action='store' value='c' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='store' value='data' selected='true'/>
+</dialect>
+</step>
+<step action='store' value='&quot;{ds}/file_&quot; + r + &quot;.csv&quot; ' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='store' value='csvname' selected='true'/>
+</dialect>
+</step>
+<step action='store' value='0' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='store' value='i' selected='true'/>
+</dialect>
+</step>
+<step action='while' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='while' value='i &lt; data[1].length' selected='true'/>
+   <accessor type='while' value='i &lt; c[0].length' selected='false'/>
+   <accessor type='while' value='i &lt; c[1].length' selected='false'/>
+   <accessor type='while' value='i &lt; data[0].length' selected='false'/>
+</dialect>
+</step>
+<step action='if' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='if' value='(i==1 &amp;&amp; (data[1][1] == null || data[1][1] == &quot;&quot;))' selected='true'/>
+   <accessor type='if' value='data[1][i] == null || data[1][i] == &quot; &quot;' selected='false'/>
+   <accessor type='if' value='(i==1 &amp;&amp; (data[1][i] == null || data[1][i] == &quot; &quot;))' selected='false'/>
+   <accessor type='if' value='(i==1 &amp;&amp; (data[1][i] == null || data[1][i] == &quot; &quot;))' selected='false'/>
+   <accessor type='if' value='(i==1 &amp;&amp; (data[1][i] == null || data[1][i] == &quot; &quot;))' selected='false'/>
+   <accessor type='if' value='(i==4 &amp;&amp; (data[1][i] == null || data[1][i] == &quot; &quot;))' selected='false'/>
+   <accessor type='if' value='(data[1][i] == null || data[1][i] == &quot; &quot;)' selected='false'/>
+   <accessor type='if' value='(i==1 &amp;&amp; (data[1][i] == null || data[1][i] == &quot;&quot;))' selected='false'/>
+   <accessor type='if' value='(i==4 &amp;&amp; (data[1][i] == null || data[1][i] == &quot;&quot;))' selected='false'/>
+</dialect>
+</step>
+<step action='log' value='data[1][i]' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='log' value='' selected='true'/>
+</dialect>
+</step>
+<step action='store' value='generatemessageid()' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='store' value='data[1][1]' selected='true'/>
+</dialect>
+</step>
+<step action='elseif' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='elseif' value='(i==4 &amp;&amp; (data[1][4] == null || data[1][4] == &quot;&quot;))' selected='true'/>
+   <accessor type='elseif' value='data[1][i] == null || data[1][i] == &quot; &quot;' selected='false'/>
+   <accessor type='elseif' value='(i==1 &amp;&amp; (data[1][i] == null || data[1][i] == &quot; &quot;))' selected='false'/>
+   <accessor type='elseif' value='(i==1 &amp;&amp; (data[1][i] == null || data[1][i] == &quot; &quot;))' selected='false'/>
+   <accessor type='elseif' value='(i==1 &amp;&amp; (data[1][i] == null || data[1][i] == &quot; &quot;))' selected='false'/>
+   <accessor type='elseif' value='(i==4 &amp;&amp; (data[1][i] == null || data[1][i] == &quot; &quot;))' selected='false'/>
+   <accessor type='elseif' value='(data[1][i] == null || data[1][i] == &quot; &quot;)' selected='false'/>
+   <accessor type='elseif' value='(i==1 &amp;&amp; (data[1][i] == null || data[1][i] == &quot;&quot;))' selected='false'/>
+   <accessor type='elseif' value='(i==4 &amp;&amp; (data[1][i] == null || data[1][i] == &quot;&quot;))' selected='false'/>
+</dialect>
+</step>
+<step action='log' value='data[1][i]' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='log' value='' selected='true'/>
+</dialect>
+</step>
+<step action='store' value='makedata(&apos; &apos;,37)' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='store' value='data[1][4]' selected='true'/>
+</dialect>
+</step>
+<step action='elseif' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='elseif' value='(data[1][i] == null || data[1][i] == &quot;&quot;)' selected='true'/>
+   <accessor type='elseif' value='data[1][i] == null || data[1][i] == &quot; &quot;' selected='false'/>
+   <accessor type='elseif' value='(i==1 &amp;&amp; (data[1][i] == null || data[1][i] == &quot; &quot;))' selected='false'/>
+   <accessor type='elseif' value='(i==1 &amp;&amp; (data[1][i] == null || data[1][i] == &quot; &quot;))' selected='false'/>
+   <accessor type='elseif' value='(i==1 &amp;&amp; (data[1][i] == null || data[1][i] == &quot; &quot;))' selected='false'/>
+   <accessor type='elseif' value='(i==4 &amp;&amp; (data[1][i] == null || data[1][i] == &quot; &quot;))' selected='false'/>
+   <accessor type='elseif' value='(data[1][i] == null || data[1][i] == &quot; &quot;)' selected='false'/>
+   <accessor type='elseif' value='(i==1 &amp;&amp; (data[1][i] == null || data[1][i] == &quot;&quot;))' selected='false'/>
+   <accessor type='elseif' value='(i==4 &amp;&amp; (data[1][i] == null || data[1][i] == &quot;&quot;))' selected='false'/>
+</dialect>
+</step>
+<step action='log' value='data[1][i]' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='log' value='' selected='true'/>
+</dialect>
+</step>
+<step action='store' value='makedata(&apos; &apos;,10)+Math.floor(Math.random() * 50000)' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='store' value='data[1][i]' selected='true'/>
+</dialect>
+</step>
+<step action='endif' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='endif' value='' selected='true'/>
+</dialect>
+</step>
+<step action='store' value='i + 1' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='store' value='i' selected='true'/>
+</dialect>
+</step>
+<step action='endWhile' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='endWhile' value='' selected='true'/>
+</dialect>
+</step>
+<step action='writeCSV' value='data' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='writeCSV' value='csvname' selected='true'/>
+   <accessor type='writeCSV' value='"SERVER/C:/test/AIQ-1188/file.csv"' selected='false'/>
+   <accessor type='writeCSV' value='"SERVER/C:/test/AIQ-1188/file_new.csv"' selected='false'/>
+   <accessor type='writeCSV' value='&quot;SERVER/C:/test/AIQ-1188/file_&quot; + r + &quot;.csv&quot;' selected='false'/>
+   <accessor type='writeCSV' value='&quot;{ds}/file_&quot; + r + &quot;.csv&quot;' selected='false'/>
+</dialect>
+</step>
+<step action='store' value='generatemessageid()' type='web' desc='Can replace data directly without while loop like this.Steps commented for now.' isThinkTime='false' isCommented='true' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='store' value='c[1][1]' selected='true'/>
+</dialect>
+</step>
+<step action='log' value='c[1][1]' type='web' desc='' isThinkTime='false' isCommented='true' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='log' value='' selected='true'/>
+</dialect>
+</step>
+<step action='store' value='makedata(&apos; &apos;,37)' type='web' desc='' isThinkTime='false' isCommented='true' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='store' value='c[1][4]' selected='true'/>
+</dialect>
+</step>
+<step action='log' value='c[1][4]' type='web' desc='' isThinkTime='false' isCommented='true' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='log' value='' selected='true'/>
+</dialect>
+</step>
+<step action='writeCSV' value='c' type='web' desc='' isThinkTime='false' isCommented='true' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='writeCSV' value='csvname' selected='true'/>
+   <accessor type='writeCSV' value='"SERVER/C:/test/AIQ-1188/file.csv"' selected='false'/>
+   <accessor type='writeCSV' value='"SERVER/C:/test/AIQ-1188/file_new.csv"' selected='false'/>
+   <accessor type='writeCSV' value='&quot;SERVER/C:/test/AIQ-1188/file_&quot; + r + &quot;.csv&quot;' selected='false'/>
+   <accessor type='writeCSV' value='&quot;{ds}/file_&quot; + r + &quot;.csv&quot;' selected='false'/>
+</dialect>
+</step>
+</testcase>

@@ -1,0 +1,16 @@
+{
+	"validations": [],
+	"extractions": [
+		{
+			"name": "ZIPMetaData",
+			"disabled": false,
+			"regex": ".*folder.zip",
+			"hint": "",
+			"method": "get",
+			"variable": "ZIPMetaData",
+			"format": "zip-metadata",
+			"target": "folder/version.txt",
+			"postprocessing": ""
+		}
+	]
+}

@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase  name= '' description='' author='' version=''>
+<dpl filename='' exectype='runstepbystep' errorhandling='' type='HashDPL'/>
+<fallback useFallback='false'/>
+<step action='store' value='"$219.00"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='store' value='Actual' selected='true'/>
+</dialect>
+</step>
+<step action='store' value='Actual.replace(/\$/g,&apos;&apos;)' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='store' value='Actual2' selected='true'/>
+</dialect>
+</step>
+<step action='log' value='Actual2' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='log' value='' selected='true'/>
+</dialect>
+</step>
+<step action='store' value='"$32.02"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='store' value='TotalTaxesCost' selected='true'/>
+</dialect>
+</step>
+<step action='store' value='TotalTaxesCost.replace(/\$/g,&apos;&apos;)' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='store' value='TotalTaxesCost2' selected='true'/>
+</dialect>
+</step>
+<step action='store' value='"$251.02"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='store' value='GrandTotalCost' selected='true'/>
+</dialect>
+</step>
+<step action='store' value='GrandTotalCost.replace(/\$/g,&apos;&apos;)' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='store' value='GrandTotalCost2' selected='true'/>
+</dialect>
+</step>
+<step action='log' value='GrandTotalCost2' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='log' value='' selected='true'/>
+</dialect>
+</step>
+<step action='store' value='parseInt(Actual)+parseInt(TotalTaxesCost)' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='store' value='ValidateTotalCost' selected='true'/>
+</dialect>
+</step>
+<step action='log' value='ValidateTotalCost' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='log' value='' selected='true'/>
+</dialect>
+</step>
+<step action='assertEqual' value='ValidateTotalCost' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='assertEqual' value='parseInt(GrandTotalCost)' selected='true'/>
+   <accessor type='assertEqual' value='' selected='false'/>
+   <accessor type='assertEqual' value='GrandTotalCost' selected='false'/>
+   <accessor type='assertEqual' value='GrandTotalCost2' selected='false'/>
+   <accessor type='assertEqual' value='parseInt(GrandTotalCost2)' selected='false'/>
+</dialect>
+</step>
+</testcase>

@@ -1,0 +1,24 @@
+#image: ubuntu:16.04
+image: centos:7
+stages:
+  - build
+
+build:
+  type: build
+  
+  script:
+    - echo $PATH
+    - echo $PWD
+   #- yum install wget
+    - sudo yum install ant -y
+   # - apt-get update && apt-get install -y openjdk-8-jdk ant
+   #  - export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+    - ant deps
+    - ant startNode
+    - ant -DbuildNumber=$CI_PIPELINE_ID  -Dbranch=$CI_BUILD_REF_NAME createScenariosDashboard
+    - ant stopNode
+    - ls
+    
+  artifacts:
+    paths:
+    - junit/

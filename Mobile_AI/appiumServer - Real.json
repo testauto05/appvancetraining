@@ -1,0 +1,10 @@
+[{
+    "udid": "emulator-5554",
+    "port": "8201",
+	   "capabilities": {
+		 },
+    "serverURL": "http://localhost:4723/wd/hub",
+    "platformVersion": "23",
+    "deviceName": "Pixel_2_API_27",
+    "id": 0
+}]

@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase  name= '' description='' author='' version=''>
+<dpl filename='' exectype='runstepbystep' errorhandling='' type='HashDPL'/>
+<fallback useFallback='false'/>
+<step action='navigateTo' value='"https://demosite.appvance.com/"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='div(&quot;panel-body product-body text-center[2]&quot;)' selected='true'/>
+   <accessor type='click' value='div(&quot;Ruby on Rails Baseball Jersey&quot;)' selected='false'/>
+   <accessor type='click' value='div(0,_in(div(&quot;panel panel-default[2]&quot;)))' selected='false'/>
+   <accessor type='click' value='div(26)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='span(&quot;Ruby on Rails Baseball Jersey&quot;)' selected='true'/>
+   <accessor type='click' value='span(&quot;info[2]&quot;)' selected='false'/>
+   <accessor type='click' value='span(0,_in(link(&quot;Ruby on Rails Baseball Jersey&quot;)))' selected='false'/>
+   <accessor type='click' value='span(9)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='submit(&quot;Add To Cart&quot;)' selected='true'/>
+   <accessor type='click' value='submit(&quot;button&quot;)' selected='false'/>
+   <accessor type='click' value='submit(0,_in(span(&quot;input-group-btn&quot;)))' selected='false'/>
+   <accessor type='click' value='submit(0,_in(span(&quot;Add To Cart&quot;)))' selected='false'/>
+   <accessor type='click' value='submit(1)' selected='false'/>
+   <accessor type='click' value='submit(&quot;btn btn-success[1]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='submit(&quot;Update&quot;)' selected='true'/>
+   <accessor type='click' value='submit(&quot;update-button&quot;)' selected='false'/>
+   <accessor type='click' value='submit(&quot;button&quot;)' selected='false'/>
+   <accessor type='click' value='submit(0,_in(div(&quot;form-group[2]&quot;)))' selected='false'/>
+   <accessor type='click' value='submit(1)' selected='false'/>
+   <accessor type='click' value='submit(&quot;btn btn-primary&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"Test@appvance.com"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='emailbox(&quot;form-control title&quot;)' selected='true'/>
+   <accessor type='setValue' value='emailbox(&quot;order_email&quot;)' selected='false'/>
+   <accessor type='setValue' value='emailbox(&quot;order[email]&quot;)' selected='false'/>
+   <accessor type='setValue' value='emailbox(1)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='submit(&quot;Continue&quot;)' selected='true'/>
+   <accessor type='click' value='submit(&quot;commit[1]&quot;)' selected='false'/>
+   <accessor type='click' value='submit(2)' selected='false'/>
+   <accessor type='click' value='submit(&quot;btn btn-block btn-lg btn-success[1]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='if' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='if' value='checkbox(&quot;order_use_billing&quot;)' selected='true'/>
+   <accessor type='if' value='checkbox(&quot;order[use_billing]&quot;)' selected='false'/>
+   <accessor type='if' value='checkbox(&quot;1&quot;)' selected='false'/>
+   <accessor type='if' value='checkbox(0,_in(label(&quot;use_billing&quot;)))' selected='false'/>
+   <accessor type='if' value='checkbox(0,_in(label(&quot;Use Billing Address&quot;)))' selected='false'/>
+   <accessor type='if' value='checkbox(0)' selected='false'/>
+</dialect>
+</step>
+</testcase>

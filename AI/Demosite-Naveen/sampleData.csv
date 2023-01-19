@@ -1,0 +1,2 @@
+zip,country,product,quantity,city,lastname,search,password,phone,street,name,state,cccode,creditCard,exp,email
+"='80202'","='231'","='bag'","='5'","='Denver'","='Smith'","='bag'","= 'ABC123xyz'","='123-123-1234'","='123 Main Street'","='myuser' + random(1000) + '@demosite.com'","='Colorado'","='123'","='5555560000000000'","='1229'","='checkoutemail' + random(1000) + '@demosite.com'"

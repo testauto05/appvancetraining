@@ -1,0 +1,1 @@
+{"validations":[],"extractions":[{"name":"DPFData","disabled":false,"regex":".*WCAG2-at-a-Glance-a4.pdf","hint":"","method":"get","variable":"pdfData","format":"pdf","target":"document","postprocessing":""}]}

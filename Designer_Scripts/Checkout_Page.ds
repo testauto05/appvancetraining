@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase  name= '' description='' author='' version=''>
+<dpl filename='{ds}/demosite_DPl.csv' exectype='runstepbystep' errorhandling='' type='HashDPL'/>
+<fallback useFallback='false'/>
+<step action='setValue' value='$Email' type='web' desc='Enter email' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='emailbox(&quot;order_email&quot;)' selected='true'/>
+   <accessor type='setValue' value='emailbox(&quot;order[email]&quot;)' selected='false'/>
+   <accessor type='setValue' value='emailbox(1)' selected='false'/>
+   <accessor type='setValue' value='emailbox(&quot;form-control title&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='Click on continue' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='submit(&quot;Continue&quot;)' selected='true'/>
+   <accessor type='click' value='submit(&quot;commit[1]&quot;)' selected='false'/>
+   <accessor type='click' value='submit(2)' selected='false'/>
+   <accessor type='click' value='submit(&quot;btn btn-block btn-lg btn-success[1]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='$firstName' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textbox(&quot;order_bill_address_attributes_firstname&quot;)' selected='true'/>
+   <accessor type='setValue' value='textbox(&quot;order[bill_address_attributes][firstname]&quot;)' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(paragraph(&quot;bfirstname&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(paragraph(&quot;form-group&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(paragraph(&quot;First Name*&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0)' selected='false'/>
+   <accessor type='setValue' value='textbox(&quot;form-control&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='$lastName' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textbox(&quot;order_bill_address_attributes_lastname&quot;)' selected='true'/>
+   <accessor type='setValue' value='textbox(&quot;order[bill_address_attributes][lastname]&quot;)' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(paragraph(&quot;blastname&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(paragraph(&quot;form-group[1]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(paragraph(&quot;Last Name*&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(1)' selected='false'/>
+   <accessor type='setValue' value='textbox(&quot;form-control[1]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='$address' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textbox(&quot;order_bill_address_attributes_address1&quot;)' selected='true'/>
+   <accessor type='setValue' value='textbox(&quot;order[bill_address_attributes][address1]&quot;)' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(paragraph(&quot;baddress1&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(paragraph(&quot;form-group[2]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(paragraph(&quot;Street Address*&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(2)' selected='false'/>
+   <accessor type='setValue' value='textbox(&quot;form-control required&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='$city' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textbox(&quot;order_bill_address_attributes_city&quot;)' selected='true'/>
+   <accessor type='setValue' value='textbox(&quot;order[bill_address_attributes][city]&quot;)' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(paragraph(&quot;bcity&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(paragraph(&quot;form-group[4]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(paragraph(&quot;City*&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(4)' selected='false'/>
+   <accessor type='setValue' value='textbox(&quot;form-control[3]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='$ZIP' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textbox(&quot;order_bill_address_attributes_zipcode&quot;)' selected='true'/>
+   <accessor type='setValue' value='textbox(&quot;order[bill_address_attributes][zipcode]&quot;)' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(paragraph(&quot;bzipcode&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(paragraph(&quot;form-group[7]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(paragraph(&quot;Zip*&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(6)' selected='false'/>
+   <accessor type='setValue' value='textbox(&quot;form-control[4]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='$phone' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='telephonebox(&quot;order_bill_address_attributes_phone&quot;)' selected='true'/>
+   <accessor type='setValue' value='telephonebox(&quot;order[bill_address_attributes][phone]&quot;)' selected='false'/>
+   <accessor type='setValue' value='telephonebox(0,_in(paragraph(&quot;bphone&quot;)))' selected='false'/>
+   <accessor type='setValue' value='telephonebox(0,_in(paragraph(&quot;form-group[8]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='telephonebox(0,_in(paragraph(&quot;Phone*&quot;)))' selected='false'/>
+   <accessor type='setValue' value='telephonebox(0)' selected='false'/>
+   <accessor type='setValue' value='telephonebox(&quot;form-control&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='Click on Save and continue' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='submit(&quot;Save and Continue&quot;)' selected='true'/>
+   <accessor type='click' value='submit(0,_in(div(&quot;form-buttons text-right well&quot;)))' selected='false'/>
+   <accessor type='click' value='submit(1)' selected='false'/>
+   <accessor type='click' value='submit(&quot;btn btn-lg btn-success&quot;)' selected='false'/>
+   <accessor type='click' value='submit(&quot;commit&quot;)' selected='false'/>
+</dialect>
+</step>
+</testcase>

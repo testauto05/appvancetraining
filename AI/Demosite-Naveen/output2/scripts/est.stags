@@ -1,0 +1,423 @@
+{
+    "customTags": [],
+    "extractors": [
+        {
+            "postprocessing": "",
+            "name": "getFrameworkField",
+            "variable": "_name",
+            "disabled": false,
+            "type": "attribute",
+            "when": "postAction",
+            "value": "name"
+        },
+        {
+            "postprocessing": "",
+            "name": "getElementText",
+            "variable": "productPrice",
+            "disabled": false,
+            "type": "text",
+            "when": "postAction",
+            "value": ""
+        },
+        {
+            "postprocessing": "",
+            "name": "getSpanTextpost",
+            "variable": "price",
+            "disabled": false,
+            "type": "text",
+            "when": "postAction",
+            "value": ""
+        }
+    ],
+    "validators": [
+        {
+            "name": "validateFrameworkVar",
+            "disabled": false,
+            "type": "attribute",
+            "value": "id",
+            "when": "postAction",
+            "operator": "equals",
+            "target": "$_name"
+        },
+        {
+            "name": "checkData_002",
+            "disabled": false,
+            "type": "text",
+            "value": "",
+            "when": "postAction",
+            "operator": "contains",
+            "target": "\"$\""
+        },
+        {
+            "name": "checkData_001",
+            "disabled": false,
+            "type": "text",
+            "value": "",
+            "when": "postAction",
+            "operator": "contains",
+            "target": "$productPrice"
+        }
+    ],
+    "threshold": 0.75,
+    "autoValidations": [
+        {
+            "name": "transactionCreated",
+            "disabled": true,
+            "type": "staticText",
+            "value": "\"Entry was created\"",
+            "locator": "",
+            "target": "wholePage"
+        },
+        {
+            "name": "offersSimilars",
+            "disabled": false,
+            "type": "staticText",
+            "value": "\"Look for similar items\"",
+            "locator": "",
+            "target": "wholePage"
+        },
+        {
+            "name": "entryWasCreated",
+            "disabled": true,
+            "type": "staticText",
+            "value": "\"User was created successfully\"",
+            "locator": "",
+            "target": "wholePage"
+        },
+        {
+            "name": "hasPropertiesChart",
+            "disabled": false,
+            "type": "staticText",
+            "value": "\"Properties\"",
+            "locator": "",
+            "target": "wholePage"
+        },
+        {
+            "name": "FailedCreatingEntry",
+            "disabled": false,
+            "type": "staticText",
+            "value": "\"Email must be unique\"",
+            "locator": "",
+            "target": "wholePage"
+        },
+        {
+            "name": "loginEnabled",
+            "disabled": false,
+            "type": "elementExists",
+            "value": "",
+            "locator": "success(\"Login\")",
+            "target": "locator"
+        },
+        {
+            "name": "navigateToCheckoutList",
+            "disabled": false,
+            "type": "staticText",
+            "value": "\"Shopping Cart\"",
+            "locator": "",
+            "target": "wholePage"
+        },
+        {
+            "name": "checkLoginExist",
+            "disabled": false,
+            "type": "elementExists",
+            "value": "",
+            "locator": "btn(\"Login\")",
+            "target": "locator"
+        }
+    ],
+    "actions": [
+        {
+            "functionString": "var responseText = ds$(element).attr('value');\nif (typeof responseText === 'undefined') {\n  responseText = \"\";  \n}\nif (responseText === '') {\n  responseText = ds$(element).text();  \n}\n\nif (responseText === \"\") {\n  responseText = ds$(element).attr('data-title');\n}\nif (typeof responseText === 'undefined') {\n  responseText = \"\";  \n}\nif (responseText === \"\") {\n  responseText = ds$(element).attr('id');\n}\nif (typeof responseText === 'undefined') {\n  responseText = \"\";  \n}\n\n\nds$(element).css('background','yellow');\n\nreturn responseText.trim();",
+            "previousActions": [],
+            "name": "getBestName",
+            "postActions": [],
+            "arrayHint": ""
+        },
+        {
+            "functionString": "var theElement = ds$(element);\nvar name = $(theElement).find('img').attr('alt');\nreturn name.trim();",
+            "previousActions": [],
+            "name": "getItemName",
+            "postActions": [],
+            "arrayHint": ""
+        },
+        {
+            "functionString": "ds$(element).css('background', 'yellow');\nds$(element).click();\n",
+            "previousActions": [],
+            "name": "clickMyElement",
+            "postActions": [],
+            "arrayHint": ""
+        },
+        {
+            "functionString": "return ds$(element).find('a').click();",
+            "previousActions": [],
+            "name": "clickHref",
+            "postActions": [],
+            "arrayHint": ""
+        }
+    ],
+    "smartTags": [
+        {
+            "singleton": false,
+            "scanOnePerPage": false,
+            "extractors": [],
+            "validators": [],
+            "methods": {},
+            "scanOncePerApp": false,
+            "rules": [],
+            "type": "Select",
+            "tags": ["select"],
+            "name": "select",
+            "disabled": false,
+            "autoValidations": [],
+            "info": {}
+        },
+        {
+            "singleton": true,
+            "scanOnePerPage": false,
+            "extractors": [],
+            "validators": [],
+            "methods": {"getName": "getBestName"},
+            "scanOncePerApp": false,
+            "rules": [
+                {
+                    "weight": 100,
+                    "type": "attrContainsValue",
+                    "value": "id:add-to-cart-button"
+                },
+                {
+                    "weight": 100,
+                    "type": "containsText",
+                    "value": "Add To Cart"
+                }
+            ],
+            "type": "Action",
+            "tags": ["button"],
+            "name": "btnAddToCart",
+            "disabled": false,
+            "autoValidations": ["navigateToCheckoutList"],
+            "info": {}
+        },
+        {
+            "singleton": false,
+            "scanOnePerPage": false,
+            "extractors": ["getElementText"],
+            "validators": ["checkData_001"],
+            "methods": {},
+            "scanOncePerApp": true,
+            "rules": [{
+                "weight": 100,
+                "type": "attrContainsValue",
+                "value": "class:product-body"
+            }],
+            "type": "Hover",
+            "tags": ["div"],
+            "name": "productSquare",
+            "disabled": false,
+            "autoValidations": [],
+            "info": {}
+        },
+        {
+            "singleton": false,
+            "scanOnePerPage": false,
+            "extractors": [],
+            "validators": [],
+            "methods": {},
+            "scanOncePerApp": true,
+            "rules": [{
+                "weight": 100,
+                "type": "parentSmartTag",
+                "value": "divContainer"
+            }],
+            "type": "Navigation",
+            "tags": ["a"],
+            "name": "brandLink",
+            "disabled": false,
+            "autoValidations": [],
+            "info": {}
+        },
+        {
+            "singleton": false,
+            "scanOnePerPage": false,
+            "extractors": [],
+            "validators": [],
+            "methods": {},
+            "scanOncePerApp": false,
+            "rules": [{
+                "weight": 100,
+                "type": "attrContainsValue",
+                "value": "class:list-group"
+            }],
+            "type": "Prop",
+            "tags": ["div"],
+            "name": "divContainer",
+            "disabled": false,
+            "autoValidations": [],
+            "info": {}
+        },
+        {
+            "singleton": false,
+            "scanOnePerPage": false,
+            "extractors": [],
+            "validators": [],
+            "methods": {"getName": "getItemName"},
+            "scanOncePerApp": true,
+            "rules": [
+                {
+                    "weight": 100,
+                    "type": "parent",
+                    "value": "div"
+                },
+                {
+                    "weight": 100,
+                    "type": "attrContainsValue",
+                    "value": "itemprop:url"
+                }
+            ],
+            "type": "Action",
+            "tags": ["a"],
+            "name": "Item",
+            "disabled": false,
+            "autoValidations": [
+                "hasPropertiesChart",
+                "offersSimilars"
+            ],
+            "info": {}
+        },
+        {
+            "singleton": false,
+            "scanOnePerPage": false,
+            "extractors": ["getFrameworkField"],
+            "validators": ["validateFrameworkVar"],
+            "methods": {"getName": "getBestName"},
+            "scanOncePerApp": false,
+            "rules": [{
+                "weight": 100,
+                "type": "attrContainsValue",
+                "value": "class:form-control"
+            }],
+            "type": "Text",
+            "tags": ["input"],
+            "name": "inputField",
+            "disabled": false,
+            "autoValidations": [],
+            "info": {}
+        },
+        {
+            "singleton": false,
+            "scanOnePerPage": false,
+            "extractors": [],
+            "validators": [],
+            "methods": {},
+            "scanOncePerApp": false,
+            "rules": [{
+                "weight": 100,
+                "type": "attrContainsValue",
+                "value": "type:password"
+            }],
+            "type": "Text",
+            "tags": ["input"],
+            "name": "password",
+            "disabled": false,
+            "autoValidations": [],
+            "info": {}
+        },
+        {
+            "singleton": false,
+            "scanOnePerPage": false,
+            "extractors": [],
+            "validators": [],
+            "methods": {},
+            "scanOncePerApp": false,
+            "rules": [{
+                "weight": 100,
+                "type": "attrContainsValue",
+                "value": "type:radio"
+            }],
+            "type": "Check",
+            "tags": ["input"],
+            "name": "btnRadio",
+            "disabled": false,
+            "autoValidations": [],
+            "info": {}
+        },
+        {
+            "singleton": true,
+            "scanOnePerPage": false,
+            "extractors": [],
+            "validators": [],
+            "methods": {},
+            "scanOncePerApp": false,
+            "rules": [{
+                "weight": 100,
+                "type": "attrContainsValue",
+                "value": "class:button-Add-entry"
+            }],
+            "type": "Action",
+            "tags": ["a"],
+            "name": "btnAdd",
+            "disabled": true,
+            "autoValidations": [],
+            "info": {}
+        },
+        {
+            "singleton": false,
+            "scanOnePerPage": false,
+            "extractors": [],
+            "validators": [],
+            "methods": {},
+            "scanOncePerApp": false,
+            "rules": [{
+                "weight": 100,
+                "type": "attrContainsValue",
+                "value": "type:checkbox"
+            }],
+            "type": "Check",
+            "tags": ["input"],
+            "name": "checkBox",
+            "disabled": false,
+            "autoValidations": [],
+            "info": {}
+        },
+        {
+            "singleton": true,
+            "scanOnePerPage": false,
+            "extractors": [],
+            "validators": [],
+            "methods": {},
+            "scanOncePerApp": false,
+            "rules": [{
+                "weight": 100,
+                "type": "attrContainsValue",
+                "value": "class:amount"
+            }],
+            "type": "Hover",
+            "tags": ["span"],
+            "name": "spanTotal",
+            "disabled": false,
+            "autoValidations": [],
+            "info": {}
+        },
+        {
+            "singleton": false,
+            "scanOnePerPage": false,
+            "extractors": [],
+            "validators": [],
+            "methods": {"getName": "getBestName"},
+            "scanOncePerApp": false,
+            "rules": [{
+                "weight": 100,
+                "type": "attrContainsValue",
+                "value": "class:btn"
+            }],
+            "type": "Action",
+            "tags": [
+                "input",
+                "button"
+            ],
+            "name": "btn",
+            "disabled": false,
+            "autoValidations": [],
+            "info": {}
+        }
+    ]
+}

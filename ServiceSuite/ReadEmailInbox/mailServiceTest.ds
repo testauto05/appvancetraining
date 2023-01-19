@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase  name= '' description='' author='' version=''>
+<dpl filename='' exectype='runstepbystep' errorhandling='' type='HashDPL'/>
+<fallback useFallback='false'/>
+<step action='serviceSuite' value='"{ds}/mailServiceSuiteTest.js"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='serviceSuite' value='' selected='true'/>
+</dialect>
+</step>
+<step action='retrieve' value='"Result"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='retrieve' value='casenum' selected='true'/>
+   <accessor type='retrieve' value='result' selected='false'/>
+   <accessor type='retrieve' value='wsdlResult' selected='false'/>
+</dialect>
+</step>
+<step action='addToLocalWhiteboard' value='casenum' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='addToLocalWhiteboard' value='"CaseNumber"' selected='true'/>
+   <accessor type='addToLocalWhiteboard' value='$caseNum' selected='false'/>
+   <accessor type='addToLocalWhiteboard' value='"caseNumber"' selected='false'/>
+</dialect>
+</step>
+<step action='getFromLocalWhiteboard' value='"CaseNumber"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='getFromLocalWhiteboard' value='$caseNum' selected='true'/>
+</dialect>
+</step>
+<step action='log' value='$caseNum' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='log' value='' selected='true'/>
+</dialect>
+</step>
+</testcase>

@@ -1,0 +1,15 @@
+[
+    {
+        "serverURL": "http://localhost:4723/wd/hub",
+        "proxyURL": "",
+        "capabilities": {
+            "platformVersion": "13.2.2",
+            "udid": "54C1CD73-0BB0-4423-A23A-9A7684AA499A",
+            "wdaLocalPort": "8201",
+            "deviceName": "iPhone 8",
+             "useNewWDA":"true",
+            "autoDismissAlerts": "true"
+        },
+        "bundleId": "com.appvance.om.CandySearch"
+    }
+]

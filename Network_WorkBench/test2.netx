@@ -1,0 +1,1 @@
+{"validations":[],"extractions":[{"name":"test2","disabled":false,"regex":".*file-sample_150kB.pdf","hint":"","method":"get","variable":"gDoc","format":"pdf","target":"document","postprocessing":""}]}

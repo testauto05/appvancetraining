@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase  name= '' description='' author='' version=''>
+<dpl filename='' exectype='runstepbystep' errorhandling='' type='HashDPL'/>
+<fallback useFallback='false'/>
+<step action='navigateTo' value='"https://demosite.appvance.com/"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='span(&quot;Ruby on Rails Tote&quot;)' selected='true'/>
+   <accessor type='click' value='span(&quot;info&quot;)' selected='false'/>
+   <accessor type='click' value='span(1)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='' type='web' desc='Using in Relational Accessor' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='span(&quot;Products&quot;,_in(link(&quot;/products&quot;)))' selected='true'/>
+   <accessor type='click' value='' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='span(&quot;Ruby on Rails Tote&quot;)' selected='true'/>
+   <accessor type='click' value='span(&quot;info&quot;)' selected='false'/>
+   <accessor type='click' value='span(1)' selected='false'/>
+</dialect>
+</step>
+<step action='assertExists' value='' type='web' desc='Using rightOf Relational Accessor' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='assertExists' value='cell(&quot;Tote&quot;,_rightOf(strong(&quot;Type&quot;)))' selected='true'/>
+   <accessor type='assertExists' value='' selected='false'/>
+   <accessor type='assertExists' value='cell(&quot;Tote&quot;,_rightOf(strong(&quot;Type&quot;)))' selected='false'/>
+   <accessor type='assertExists' value='strong(&quot;Type&quot;,_leftOf(ds.cell(&quot;Tote&quot;)))' selected='false'/>
+   <accessor type='assertExists' value='strong(&quot;Type&quot;,_above(strong(&quot;Size&quot;)))' selected='false'/>
+   <accessor type='assertExists' value='_ds.strong(&quot;Size&quot;,_ds._below(_ds.strong(&quot;Type&quot;)))' selected='false'/>
+   <accessor type='assertExists' value='strong(&quot;Size&quot;,_ds._below(_ds.strong(&quot;Type&quot;)))' selected='false'/>
+   <accessor type='assertExists' value='strong(&quot;Type&quot;,_leftOf(ds.cell(&quot;Tote&quot;)))' selected='false'/>
+</dialect>
+</step>
+<step action='assertExists' value='' type='web' desc='Using leftOf Relational Accessor' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='assertExists' value='strong(&quot;Type&quot;,_leftOf(cell(&quot;Tote&quot;)))' selected='true'/>
+   <accessor type='assertExists' value='' selected='false'/>
+   <accessor type='assertExists' value='cell(&quot;Tote&quot;,_rightOf(strong(&quot;Type&quot;)))' selected='false'/>
+   <accessor type='assertExists' value='strong(&quot;Type&quot;,_leftOf(ds.cell(&quot;Tote&quot;)))' selected='false'/>
+   <accessor type='assertExists' value='strong(&quot;Type&quot;,_above(strong(&quot;Size&quot;)))' selected='false'/>
+   <accessor type='assertExists' value='_ds.strong(&quot;Size&quot;,_ds._below(_ds.strong(&quot;Type&quot;)))' selected='false'/>
+   <accessor type='assertExists' value='strong(&quot;Size&quot;,_ds._below(_ds.strong(&quot;Type&quot;)))' selected='false'/>
+   <accessor type='assertExists' value='strong(&quot;Type&quot;,_leftOf(ds.cell(&quot;Tote&quot;)))' selected='false'/>
+</dialect>
+</step>
+<step action='assertExists' value='' type='web' desc='Using above Relational Accessor' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='assertExists' value='strong(&quot;Type&quot;,_above(strong(&quot;Size&quot;)))' selected='true'/>
+   <accessor type='assertExists' value='' selected='false'/>
+   <accessor type='assertExists' value='cell(&quot;Tote&quot;,_rightOf(strong(&quot;Type&quot;)))' selected='false'/>
+   <accessor type='assertExists' value='strong(&quot;Type&quot;,_leftOf(ds.cell(&quot;Tote&quot;)))' selected='false'/>
+   <accessor type='assertExists' value='strong(&quot;Type&quot;,_above(strong(&quot;Size&quot;)))' selected='false'/>
+   <accessor type='assertExists' value='_ds.strong(&quot;Size&quot;,_ds._below(_ds.strong(&quot;Type&quot;)))' selected='false'/>
+   <accessor type='assertExists' value='strong(&quot;Size&quot;,_ds._below(_ds.strong(&quot;Type&quot;)))' selected='false'/>
+   <accessor type='assertExists' value='strong(&quot;Type&quot;,_leftOf(ds.cell(&quot;Tote&quot;)))' selected='false'/>
+</dialect>
+</step>
+<step action='assertExists' value='' type='web' desc='Using below Relational Accessor' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='assertExists' value='strong(&quot;Size&quot;,_below(strong(&quot;Type&quot;)))' selected='true'/>
+   <accessor type='assertExists' value='' selected='false'/>
+   <accessor type='assertExists' value='cell(&quot;Tote&quot;,_rightOf(strong(&quot;Type&quot;)))' selected='false'/>
+   <accessor type='assertExists' value='strong(&quot;Type&quot;,_leftOf(ds.cell(&quot;Tote&quot;)))' selected='false'/>
+   <accessor type='assertExists' value='strong(&quot;Type&quot;,_above(strong(&quot;Size&quot;)))' selected='false'/>
+   <accessor type='assertExists' value='_ds.strong(&quot;Size&quot;,_ds._below(_ds.strong(&quot;Type&quot;)))' selected='false'/>
+   <accessor type='assertExists' value='strong(&quot;Size&quot;,_ds._below(_ds.strong(&quot;Type&quot;)))' selected='false'/>
+   <accessor type='assertExists' value='strong(&quot;Type&quot;,_leftOf(ds.cell(&quot;Tote&quot;)))' selected='false'/>
+</dialect>
+</step>
+</testcase>

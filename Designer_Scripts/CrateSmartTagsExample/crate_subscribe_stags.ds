@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase  name= '' description='' author='' version=''>
+<dpl filename='{ds}/crate.csv' exectype='runstepbystep' errorhandling='' type='HashDPL'/>
+<fallback useFallback='true'/>
+<step action='addSmartTagsLibrary' value='"{ds}/crate.stags"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='addSmartTagsLibrary' value='' selected='true'/>
+</dialect>
+</step>
+<step action='include' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='include' value='"{ds}/login.ds"' selected='true'/>
+   <accessor type='include' value='"REPOSITORY/mammothaitraining/InstructorAssets/advanced/Day01/login.ds"' selected='false'/>
+</dialect>
+</step>
+<step action='js' value='setConfirmResponse(true)' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='js' value='' selected='true'/>
+</dialect>
+</step>
+<step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='s_subscribe($crateName)' selected='true'/>
+   <accessor type='click' value='button(&quot;jsx-1228826222[1]&quot;)' selected='false'/>
+   <accessor type='click' value='button(&quot;add Subscribe[1]&quot;)' selected='false'/>
+   <accessor type='click' value='button(0,_in(paragraph(&quot;add Subscribe[1]&quot;)))' selected='false'/>
+   <accessor type='click' value='button(1)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='s_unsubscribe($crateName)' selected='true'/>
+   <accessor type='click' value='button(&quot;jsx-2258186958&quot;)' selected='false'/>
+   <accessor type='click' value='button(&quot;remove_circle_outline Unsubscribe&quot;)' selected='false'/>
+   <accessor type='click' value='button(0,_in(paragraph(&quot;remove_circle_outline Unsubscribe&quot;)))' selected='false'/>
+   <accessor type='click' value='button(0)' selected='false'/>
+   <accessor type='click' value='s_unsubscribe(&apos;Clothes for Women&apos;)' selected='false'/>
+</dialect>
+</step>
+<step action='assertContainsText' value='"You are not subscribed to any crates yet"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='assertContainsText' value='paragraph(0,_in(div(&quot;jsx-230203545[3]&quot;)))' selected='true'/>
+   <accessor type='assertContainsText' value='paragraph(1)' selected='false'/>
+</dialect>
+</step>
+</testcase>

@@ -1,0 +1,470 @@
+{
+	"mobilePlatform": "android",
+	"threshold": "0.75",
+	"smartTags": [
+		{
+			"name": "barElement",
+			"type": "Action",
+			"tags": [
+				"TextView"
+			],
+			"rules": [
+				{
+					"weight": 100,
+					"type": "csv",
+					"value": "//*[contains(@text,'Market')]"
+				}
+			],
+			"singleton": false,
+			"scanOncePerApp": true,
+			"scanOnePerPage": false,
+			"info": {},
+			"methods": {},
+			"validators": [],
+			"extractors": [],
+			"disabled": false,
+			"description": ""
+		},
+		{
+			"name": "Birthday",
+			"type": "Action",
+			"tags": [
+				"Spinner"
+			],
+			"rules": [
+				{
+					"weight": 100,
+					"type": "csv",
+					"value": "BirthDay"
+				}
+			],
+			"singleton": false,
+			"scanOncePerApp": true,
+			"scanOnePerPage": false,
+			"info": {},
+			"methods": {},
+			"validators": [],
+			"extractors": [],
+			"disabled": false,
+			"description": ""
+		},
+		{
+			"name": "BirthMonth",
+			"type": "Action",
+			"tags": [
+				"Spinner"
+			],
+			"rules": [
+				{
+					"weight": 100,
+					"type": "csv",
+					"value": "BirthMonth"
+				}
+			],
+			"singleton": false,
+			"scanOncePerApp": true,
+			"scanOnePerPage": false,
+			"info": {},
+			"methods": {},
+			"validators": [],
+			"extractors": [],
+			"disabled": false,
+			"description": ""
+		},
+		{
+			"name": "BirthYear",
+			"type": "Action",
+			"tags": [
+				"Spinner"
+			],
+			"rules": [
+				{
+					"weight": 100,
+					"type": "csv",
+					"value": "BirthYear"
+				}
+			],
+			"singleton": false,
+			"scanOncePerApp": true,
+			"scanOnePerPage": false,
+			"info": {},
+			"methods": {},
+			"validators": [],
+			"extractors": [],
+			"disabled": false,
+			"description": ""
+		},
+		{
+			"name": "CancelButton",
+			"type": "Action",
+			"tags": [
+				"Button"
+			],
+			"rules": [
+				{
+					"weight": 100,
+					"type": "csv",
+					"value": "android:id/button2"
+				}
+			],
+			"singleton": false,
+			"scanOncePerApp": true,
+			"scanOnePerPage": false,
+			"info": {},
+			"methods": {},
+			"validators": [],
+			"extractors": [],
+			"disabled": false,
+			"description": ""
+		},
+		{
+			"name": "ClickNext",
+			"type": "Action",
+			"tags": [
+				"Button"
+			],
+			"rules": [
+				{
+					"weight": 100,
+					"type": "csv",
+					"value": "iSignupAction"
+				}
+			],
+			"singleton": false,
+			"scanOncePerApp": true,
+			"scanOnePerPage": false,
+			"info": {},
+			"methods": {},
+			"validators": [],
+			"extractors": [],
+			"disabled": false,
+			"description": ""
+		},
+		{
+			"name": "ContinueButton",
+			"type": "Action",
+			"tags": [
+				"TextView"
+			],
+			"rules": [
+				{
+					"weight": 100,
+					"type": "csv",
+					"value": "com.microsoft.amp.apps.bingfinance:id/cont"
+				}
+			],
+			"singleton": false,
+			"scanOncePerApp": true,
+			"scanOnePerPage": false,
+			"info": {},
+			"methods": {},
+			"validators": [],
+			"extractors": [],
+			"disabled": false,
+			"description": ""
+		},
+		{
+			"name": "EmailText",
+			"type": "Text",
+			"tags": [
+				"EditText"
+			],
+			"rules": [
+				{
+					"weight": 100,
+					"type": "csv",
+					"value": "MemberName"
+				}
+			],
+			"singleton": false,
+			"scanOncePerApp": true,
+			"scanOnePerPage": false,
+			"info": {},
+			"methods": {},
+			"validators": [],
+			"extractors": [],
+			"disabled": false,
+			"description": ""
+		},
+		{
+			"name": "FirstName",
+			"type": "Text",
+			"tags": [
+				"EditText"
+			],
+			"rules": [
+				{
+					"weight": 100,
+					"type": "csv",
+					"value": "FirstName"
+				}
+			],
+			"singleton": false,
+			"scanOncePerApp": true,
+			"scanOnePerPage": false,
+			"info": {},
+			"methods": {},
+			"validators": [],
+			"extractors": [],
+			"disabled": false,
+			"description": ""
+		},
+		{
+			"name": "Hamburger",
+			"type": "Action",
+			"tags": [
+				"ImageView"
+			],
+			"rules": [
+				{
+					"weight": 100,
+					"type": "csv",
+					"value": "android:id/up"
+				}
+			],
+			"singleton": false,
+			"scanOncePerApp": true,
+			"scanOnePerPage": false,
+			"info": {},
+			"methods": {},
+			"validators": [],
+			"extractors": [],
+			"disabled": false,
+			"description": ""
+		},
+		{
+			"name": "HomeClick",
+			"type": "Action",
+			"tags": [
+				"TextView"
+			],
+			"rules": [
+				{
+					"weight": 100,
+					"type": "equalsXPath",
+					"value": "//*[contains(@text,'Home')]"
+				}
+			],
+			"singleton": false,
+			"scanOncePerApp": true,
+			"scanOnePerPage": false,
+			"info": {},
+			"methods": {},
+			"validators": [],
+			"extractors": [],
+			"disabled": false,
+			"description": ""
+		},
+		{
+			"name": "HomeScreen",
+			"type": "Action",
+			"tags": [
+				"ImageView"
+			],
+			"rules": [
+				{
+					"weight": 100,
+					"type": "csv",
+					"value": "android:id/home"
+				}
+			],
+			"singleton": false,
+			"scanOncePerApp": true,
+			"scanOnePerPage": false,
+			"info": {},
+			"methods": {},
+			"validators": [],
+			"extractors": [],
+			"disabled": false,
+			"description": ""
+		},
+		{
+			"name": "LastName",
+			"type": "Text",
+			"tags": [
+				"EditText"
+			],
+			"rules": [
+				{
+					"weight": 100,
+					"type": "csv",
+					"value": "LastName"
+				}
+			],
+			"singleton": false,
+			"scanOncePerApp": true,
+			"scanOnePerPage": false,
+			"info": {},
+			"methods": {},
+			"validators": [],
+			"extractors": [],
+			"disabled": false,
+			"description": ""
+		},
+		{
+			"name": "MSNSports",
+			"type": "Action",
+			"tags": [
+				"TextView"
+			],
+			"rules": [
+				{
+					"weight": 100,
+					"type": "equalsXPath",
+					"value": "//*[contains(@text,'MSN Sports')]"
+				}
+			],
+			"singleton": false,
+			"scanOncePerApp": true,
+			"scanOnePerPage": false,
+			"info": {},
+			"methods": {},
+			"validators": [],
+			"extractors": [],
+			"disabled": false,
+			"description": ""
+		},
+		{
+			"name": "MSNWeather",
+			"type": "Action",
+			"tags": [
+				"TextView"
+			],
+			"rules": [
+				{
+					"weight": 100,
+					"type": "equalsXPath",
+					"value": "//*[contains(@text,'MSN Weather')]"
+				}
+			],
+			"singleton": false,
+			"scanOncePerApp": true,
+			"scanOnePerPage": false,
+			"info": {},
+			"methods": {},
+			"validators": [],
+			"extractors": [],
+			"disabled": false,
+			"description": ""
+		},
+		{
+			"name": "PasswordInput",
+			"type": "Text",
+			"tags": [
+				"EditText"
+			],
+			"rules": [
+				{
+					"weight": 100,
+					"type": "csv",
+					"value": "PasswordInput"
+				}
+			],
+			"singleton": false,
+			"scanOncePerApp": true,
+			"scanOnePerPage": false,
+			"info": {},
+			"methods": {},
+			"validators": [],
+			"extractors": [],
+			"disabled": false,
+			"description": ""
+		},
+		{
+			"name": "ShowPasswordCheck",
+			"type": "Action",
+			"tags": [
+				"CheckBox"
+			],
+			"rules": [
+				{
+					"weight": 100,
+					"type": "csv",
+					"value": "ShowHidePasswordCheckbox"
+				}
+			],
+			"singleton": false,
+			"scanOncePerApp": true,
+			"scanOnePerPage": false,
+			"info": {},
+			"methods": {},
+			"validators": [],
+			"extractors": [],
+			"disabled": false,
+			"description": ""
+		},
+		{
+			"name": "SignpButton",
+			"type": "Action",
+			"tags": [
+				"View"
+			],
+			"rules": [
+				{
+					"weight": 100,
+					"type": "csv",
+					"value": "signup"
+				}
+			],
+			"singleton": false,
+			"scanOncePerApp": true,
+			"scanOnePerPage": false,
+			"info": {},
+			"methods": {},
+			"validators": [],
+			"extractors": [],
+			"disabled": false,
+			"description": ""
+		},
+		{
+			"name": "SignUpConfirm",
+			"type": "Action",
+			"tags": [
+				"Button"
+			],
+			"rules": [
+				{
+					"weight": 100,
+					"type": "csv",
+					"value": "iSignupAction"
+				}
+			],
+			"singleton": false,
+			"scanOncePerApp": true,
+			"scanOnePerPage": false,
+			"info": {},
+			"methods": {},
+			"validators": [],
+			"extractors": [],
+			"disabled": false,
+			"description": ""
+		},
+		{
+			"name": "UserInfoMail",
+			"type": "Action",
+			"tags": [
+				"TextView"
+			],
+			"rules": [
+				{
+					"weight": 100,
+					"type": "csv",
+					"value": "com.microsoft.amp.apps.bingfinance:id/user_info_email"
+				}
+			],
+			"singleton": false,
+			"scanOncePerApp": true,
+			"scanOnePerPage": false,
+			"info": {},
+			"methods": {},
+			"validators": [],
+			"extractors": [],
+			"disabled": false,
+			"description": ""
+		}
+	],
+	"actions": [],
+	"customTags": [],
+	"validators": [],
+	"extractors": []
+}

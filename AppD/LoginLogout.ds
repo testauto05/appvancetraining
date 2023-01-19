@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase  name= '' description='' author='' version=''>
+<dpl filename='' exectype='' errorhandling='' type='null'/>
+<fallback useFallback='false'/>
+<shadowdom useShadowDOM='false'/>
+<step action='navigateTo' value='"https://opencart.appvance.com/"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='link(&quot;My Account&quot;)' selected='true'/>
+   <accessor type='click' value='link(&quot;dropdown-toggle&quot;)' selected='false'/>
+   <accessor type='click' value='link(&quot;https://opencart.appvance.com:443/index.php?route=account/account&quot;)' selected='false'/>
+   <accessor type='click' value='link(1)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='link(&quot;https://opencart.appvance.com:443/index.php?route=account/login&quot;)' selected='true'/>
+   <accessor type='click' value='link(&quot;Login&quot;)' selected='false'/>
+   <accessor type='click' value='link(3)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"oscar@appvance.com"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textbox(&quot;form-control&quot;)' selected='true'/>
+   <accessor type='setValue' value='textbox(&quot;input-email&quot;)' selected='false'/>
+   <accessor type='setValue' value='textbox(&quot;email&quot;)' selected='false'/>
+   <accessor type='setValue' value='textbox(1)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"Appvance@123"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='password(&quot;form-control&quot;)' selected='true'/>
+   <accessor type='setValue' value='password(&quot;input-password&quot;)' selected='false'/>
+   <accessor type='setValue' value='password(&quot;password&quot;)' selected='false'/>
+   <accessor type='setValue' value='password(0)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='submit(&quot;btn btn-primary&quot;)' selected='true'/>
+   <accessor type='click' value='submit(&quot;Login&quot;)' selected='false'/>
+   <accessor type='click' value='submit(1)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='link(&quot;dropdown-toggle[1]&quot;)' selected='true'/>
+   <accessor type='click' value='link(&quot;http://opencart.appvance.com:80/index.php?route=product/category&amp;path=20&quot;)' selected='false'/>
+   <accessor type='click' value='link(&quot;Desktops&quot;)' selected='false'/>
+   <accessor type='click' value='link(11)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='link(&quot;http://opencart.appvance.com:80/index.php?route=product/category&amp;path=20_27&quot;)' selected='true'/>
+   <accessor type='click' value='link(&quot;Mac (1)&quot;)' selected='false'/>
+   <accessor type='click' value='link(13)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='span(&quot;hidden-md hidden-sm hidden-xs[2]&quot;)' selected='true'/>
+   <accessor type='click' value='span(&quot;My Account&quot;)' selected='false'/>
+   <accessor type='click' value='span(2)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='link(&quot;https://opencart.appvance.com:443/index.php?route=account/logout&quot;)' selected='true'/>
+   <accessor type='click' value='link(&quot;Logout&quot;)' selected='false'/>
+   <accessor type='click' value='link(6)' selected='false'/>
+</dialect>
+</step>
+</testcase>

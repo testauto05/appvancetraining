@@ -1,0 +1,2 @@
+zip,country,product,quantity,city,lastname,baseURL,phone,street,name,state,cccode,creditCard,exp,email,productAny
+80202,231,jersey,5,Denver,Smith,https://demosite.appvance.com,123-123-1234,123 Main Street,Amy,Colorado,123,5555560000000000,1229,test@email.com,[0]

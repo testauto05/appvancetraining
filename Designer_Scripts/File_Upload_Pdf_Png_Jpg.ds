@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase  name= '' description='' author='' version=''>
+<dpl filename='' exectype='runstepbystep' errorhandling='' type='HashDPL'/>
+<fallback useFallback='false'/>
+<step action='navigateTo' value='"https://filebin.net/"' type='web' desc='Navigate to' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='setFile2' value='"{ds}/Sample_Image.jpg"' type='web' desc='Use setFile2 for JPG Image' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setFile2' value='file(&quot;fileField&quot;)' selected='true'/>
+   <accessor type='setFile2' value='file(0,_in(paragraph(&quot;btn btn-primary fileUpload&quot;)))' selected='false'/>
+   <accessor type='setFile2' value='file(0,_in(paragraph(&quot;Upload files&quot;)))' selected='false'/>
+   <accessor type='setFile2' value='file(0)' selected='false'/>
+   <accessor type='setFile2' value='file(&quot;upload&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='Verify file is uploaded ' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='italic(0,_in(link(&quot;dropdown-0&quot;)))' selected='true'/>
+   <accessor type='click' value='italic(0,_in(link(&quot;small&quot;)))' selected='false'/>
+   <accessor type='click' value='italic(0,_in(link(&quot;More[1]&quot;)))' selected='false'/>
+   <accessor type='click' value='italic(11)' selected='false'/>
+   <accessor type='click' value='italic(&quot;fa fa-caret-down[1]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='Click on delete File' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='link(&quot;Delete file&quot;)' selected='true'/>
+   <accessor type='click' value='link(1,_in(div(&quot;dropdown-menu dropdown-menu-right show&quot;)))' selected='false'/>
+   <accessor type='click' value='link(9)' selected='false'/>
+   <accessor type='click' value='link(&quot;dropdown-item[4]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='Click on Confirm' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='button(&quot;Confirm&quot;)' selected='true'/>
+   <accessor type='click' value='button(&quot;deleteButton-0&quot;)' selected='false'/>
+   <accessor type='click' value='button(0,_in(div(&quot;pull-left&quot;)))' selected='false'/>
+   <accessor type='click' value='button(0,_in(div(&quot;Confirm&quot;)))' selected='false'/>
+   <accessor type='click' value='button(3)' selected='false'/>
+   <accessor type='click' value='button(&quot;btn btn-danger&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='Click on Close' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='link(&quot;Close&quot;)' selected='true'/>
+   <accessor type='click' value='link(&quot;https://filebin.net/k9vsqwj5y5967jgi[1]&quot;)' selected='false'/>
+   <accessor type='click' value='link(0,_in(div(&quot;modal-footer[1]&quot;)))' selected='false'/>
+   <accessor type='click' value='link(13)' selected='false'/>
+   <accessor type='click' value='link(&quot;btn btn-secondary&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='navigateTo' value='"https://filebin.net/"' type='web' desc='Navigate to URL' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='setFile4' value='"{ds}/sample.pdf"' type='web' desc='File Upload' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setFile4' value='file(&quot;fileField&quot;)' selected='true'/>
+   <accessor type='setFile4' value='file(0,_in(paragraph(&quot;btn btn-primary fileUpload&quot;)))' selected='false'/>
+   <accessor type='setFile4' value='file(0,_in(paragraph(&quot;Upload files&quot;)))' selected='false'/>
+   <accessor type='setFile4' value='file(0)' selected='false'/>
+   <accessor type='setFile4' value='file(&quot;upload&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='Verify fie is uploaded' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='italic(0,_in(link(&quot;dropdown-0&quot;)))' selected='true'/>
+   <accessor type='click' value='italic(0,_in(link(&quot;small&quot;)))' selected='false'/>
+   <accessor type='click' value='italic(0,_in(link(&quot;More[1]&quot;)))' selected='false'/>
+   <accessor type='click' value='italic(11)' selected='false'/>
+   <accessor type='click' value='italic(&quot;fa fa-caret-down[1]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='Click on Delete File' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='link(&quot;Delete file&quot;)' selected='true'/>
+   <accessor type='click' value='link(1,_in(div(&quot;dropdown-menu dropdown-menu-right show&quot;)))' selected='false'/>
+   <accessor type='click' value='link(9)' selected='false'/>
+   <accessor type='click' value='link(&quot;dropdown-item[4]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='Click on Confirm' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='button(&quot;Confirm&quot;)' selected='true'/>
+   <accessor type='click' value='button(&quot;deleteButton-0&quot;)' selected='false'/>
+   <accessor type='click' value='button(0,_in(div(&quot;pull-left&quot;)))' selected='false'/>
+   <accessor type='click' value='button(0,_in(div(&quot;Confirm&quot;)))' selected='false'/>
+   <accessor type='click' value='button(3)' selected='false'/>
+   <accessor type='click' value='button(&quot;btn btn-danger&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='Click on Close' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='link(&quot;Close&quot;)' selected='true'/>
+   <accessor type='click' value='link(&quot;https://filebin.net/k9vsqwj5y5967jgi[1]&quot;)' selected='false'/>
+   <accessor type='click' value='link(0,_in(div(&quot;modal-footer[1]&quot;)))' selected='false'/>
+   <accessor type='click' value='link(13)' selected='false'/>
+   <accessor type='click' value='link(&quot;btn btn-secondary&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='navigateTo' value='"https://filebin.net/"' type='web' desc='Navigate to' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='setFile2' value='"{ds}/Sample_Upload.png"' type='web' desc='Use SetFile2 for PNG images' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setFile2' value='file(&quot;upload&quot;)' selected='true'/>
+   <accessor type='setFile2' value='file(0,_in(paragraph(&quot;btn btn-primary fileUpload&quot;)))' selected='false'/>
+   <accessor type='setFile2' value='file(0,_in(paragraph(&quot;Upload files&quot;)))' selected='false'/>
+   <accessor type='setFile2' value='file(0)' selected='false'/>
+   <accessor type='setFile2' value='file(&quot;fileField&quot;)' selected='false'/>
+   <accessor type='setFile2' value='"{ds}/Sample_Upload.png"' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='Verify file is uploaded' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='italic(0,_in(link(&quot;dropdown-0&quot;)))' selected='true'/>
+   <accessor type='click' value='italic(0,_in(link(&quot;small&quot;)))' selected='false'/>
+   <accessor type='click' value='italic(0,_in(link(&quot;More[1]&quot;)))' selected='false'/>
+   <accessor type='click' value='italic(11)' selected='false'/>
+   <accessor type='click' value='italic(&quot;fa fa-caret-down[1]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='Click on Delete File' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='link(&quot;Delete file&quot;)' selected='true'/>
+   <accessor type='click' value='link(1,_in(div(&quot;dropdown-menu dropdown-menu-right show&quot;)))' selected='false'/>
+   <accessor type='click' value='link(9)' selected='false'/>
+   <accessor type='click' value='link(&quot;dropdown-item[4]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='Click on Confirm' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='button(&quot;Confirm&quot;)' selected='true'/>
+   <accessor type='click' value='button(&quot;deleteButton-0&quot;)' selected='false'/>
+   <accessor type='click' value='button(0,_in(div(&quot;pull-left&quot;)))' selected='false'/>
+   <accessor type='click' value='button(0,_in(div(&quot;Confirm&quot;)))' selected='false'/>
+   <accessor type='click' value='button(3)' selected='false'/>
+   <accessor type='click' value='button(&quot;btn btn-danger&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='Click on Close' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='link(&quot;Close&quot;)' selected='true'/>
+   <accessor type='click' value='link(&quot;https://filebin.net/k9vsqwj5y5967jgi[1]&quot;)' selected='false'/>
+   <accessor type='click' value='link(0,_in(div(&quot;modal-footer[1]&quot;)))' selected='false'/>
+   <accessor type='click' value='link(13)' selected='false'/>
+   <accessor type='click' value='link(&quot;btn btn-secondary&quot;)' selected='false'/>
+</dialect>
+</step>
+</testcase>

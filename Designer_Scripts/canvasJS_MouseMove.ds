@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase  name= '' description='' author='' version=''>
+<dpl filename='' exectype='runstepbystep' errorhandling='' type='HashDPL'/>
+<fallback useFallback='false'/>
+<step action='navigateTo' value='"https://canvasjs.com/"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='link(&quot;JavaScript Charts Gallery&quot;)' selected='true'/>
+   <accessor type='click' value='link(&quot;btn btn-lg btn-success mb-3 mr-sm-3 w-280&quot;)' selected='false'/>
+   <accessor type='click' value='link(&quot;/javascript-charts/&quot;)' selected='false'/>
+   <accessor type='click' value='link(0,_in(div(&quot;col-md-10 col-md-offset-1[1]&quot;)))' selected='false'/>
+   <accessor type='click' value='link(10)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='div(&quot;Chart with Index Label[2]&quot;)' selected='true'/>
+   <accessor type='click' value='div(0,_in(div(&quot;card card-shadow mb-5&quot;)))' selected='false'/>
+   <accessor type='click' value='div(0,_in(div(&quot;Chart with Index Label[1]&quot;)))' selected='false'/>
+   <accessor type='click' value='div(41)' selected='false'/>
+   <accessor type='click' value='div(&quot;card-footer text-center&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='selectWindow' value='"JavaScript Charts &amp; Graphs with Index / Data Label | CanvasJS"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='selectWindow' value='' selected='true'/>
+</dialect>
+</step>
+<step action='clickXY' value='"67,180"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='clickXY' value='canvas(&quot;canvasjs-chart-canvas[1]&quot;)' selected='true'/>
+   <accessor type='clickXY' value='canvas(1,_in(div(&quot;canvasjs-chart-container&quot;)))' selected='false'/>
+   <accessor type='clickXY' value='canvas(1)' selected='false'/>
+</dialect>
+</step>
+<step action='mouseOverXY' value='"67,180"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='mouseOverXY' value='canvas(&quot;canvasjs-chart-canvas[1]&quot;)' selected='true'/>
+   <accessor type='mouseOverXY' value='canvas(1,_in(div(&quot;canvasjs-chart-container&quot;)))' selected='false'/>
+   <accessor type='mouseOverXY' value='canvas(1)' selected='false'/>
+</dialect>
+</step>
+<step action='assertExists' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='assertExists' value='div([&quot;10:&quot;,&quot;71&quot;])' selected='true'/>
+</dialect>
+</step>
+<step action='clickXY' value='"116,190"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='clickXY' value='canvas(&quot;canvasjs-chart-canvas[1]&quot;)' selected='true'/>
+   <accessor type='clickXY' value='canvas(1,_in(div(&quot;canvasjs-chart-container&quot;)))' selected='false'/>
+   <accessor type='clickXY' value='canvas(1)' selected='false'/>
+</dialect>
+</step>
+<step action='assertExists' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='assertExists' value='div([&quot;20:&quot;,&quot;55&quot;])' selected='true'/>
+</dialect>
+</step>
+<step action='mouseOverXY' value='"116,190"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='mouseOverXY' value='canvas(&quot;canvasjs-chart-canvas[1]&quot;)' selected='true'/>
+   <accessor type='mouseOverXY' value='canvas(1,_in(div(&quot;canvasjs-chart-container&quot;)))' selected='false'/>
+   <accessor type='mouseOverXY' value='canvas(1)' selected='false'/>
+</dialect>
+</step>
+<step action='clickXY' value='"187,215"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='clickXY' value='canvas(&quot;canvasjs-chart-canvas[1]&quot;)' selected='true'/>
+   <accessor type='clickXY' value='canvas(1,_in(div(&quot;canvasjs-chart-container&quot;)))' selected='false'/>
+   <accessor type='clickXY' value='canvas(1)' selected='false'/>
+</dialect>
+</step>
+<step action='mouseOverXY' value='"187,215"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='mouseOverXY' value='canvas(&quot;canvasjs-chart-canvas[1]&quot;)' selected='true'/>
+   <accessor type='mouseOverXY' value='canvas(1,_in(div(&quot;canvasjs-chart-container&quot;)))' selected='false'/>
+   <accessor type='mouseOverXY' value='canvas(1)' selected='false'/>
+</dialect>
+</step>
+<step action='clickXY' value='"251,227"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='clickXY' value='canvas(&quot;canvasjs-chart-canvas[1]&quot;)' selected='true'/>
+   <accessor type='clickXY' value='canvas(1,_in(div(&quot;canvasjs-chart-container&quot;)))' selected='false'/>
+   <accessor type='clickXY' value='canvas(1)' selected='false'/>
+</dialect>
+</step>
+<step action='mouseOverXY' value='"251,227"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='mouseOverXY' value='canvas(&quot;canvasjs-chart-canvas[1]&quot;)' selected='true'/>
+   <accessor type='mouseOverXY' value='canvas(1,_in(div(&quot;canvasjs-chart-container&quot;)))' selected='false'/>
+   <accessor type='mouseOverXY' value='canvas(1)' selected='false'/>
+</dialect>
+</step>
+</testcase>

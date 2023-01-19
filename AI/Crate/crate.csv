@@ -1,0 +1,7 @@
+newuser,password,newpassword,username
+"='demo'+random(99999)+'@appvance.com'","Appvance","Appvance","demo@appvance.com"
+"='demo'+random(99999)+'@appvance.com'","Appvance","Appvance","demo1@appvance.com"
+"='demo'+random(99999)+'@appvance.com'","Appvance","Appvance","demo2@appvance.com"
+"='demo'+random(99999)+'@appvance.com'","Appvance","Appvance","demo3@appvance.com"
+"='demo'+random(99999)+'@appvance.com'","Appvance","Appvance","demo4@appvance.com"
+"='demo'+random(99999)+'@appvance.com'","Appvance","Appvance","demo5@appvance.com"

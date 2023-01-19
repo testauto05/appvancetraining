@@ -1,0 +1,10 @@
+{
+  "controller": {
+        "instances":["instance ID should be entered here"],
+		"ec2Creds":"ec2.creds",
+		"timeout": 60,
+        "username": "Username of AIQ",
+        "password": "Password of AIQ",
+        "workFolder": "."
+    }
+}

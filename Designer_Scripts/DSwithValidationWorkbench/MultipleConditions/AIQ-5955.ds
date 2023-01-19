@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase  name= '' description='' author='' version=''>
+<dpl filename='' exectype='' errorhandling='' type='HashDPL' locale='null'/>
+<fallback useFallback='false'/>
+<step action='addValidationsWorkbench' value='"{ds}/AIQ-5955.valid"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='addValidationsWorkbench' value='' selected='true'/>
+</dialect>
+</step>
+<step action='navigateTo' value='"https://demosite.appvance.com/"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='assertExists' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='assertExists' value='span({&quot;className&quot;:&quot;info&quot;,&quot;title&quot;:&quot;Ruby on Rails Jr. Spaghetti&quot;})' selected='true'/>
+</dialect>
+</step>
+<step action='assertExists' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='assertExists' value='byJQuery(&quot;span[class=info][title=&apos;Ruby on Rails Bag&apos;]&quot;)' selected='true'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='span(&quot;Ruby on Rails Bag&quot;)' selected='true'/>
+   <accessor type='click' value='span(&quot;info[1]&quot;)' selected='false'/>
+   <accessor type='click' value='span(0,_in(link(&quot;Ruby on Rails Bag&quot;)))' selected='false'/>
+   <accessor type='click' value='span(5)' selected='false'/>
+</dialect>
+</step>
+</testcase>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?><testscenario xmlns="www.pushtotest.com/tm5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0" xsi:schemaLocation="www.pushtotest.com/XSD/testscenario.xsd">
+ <basics>
+    <name>test.scenario</name>
+    <defaultdirectory/>
+    <basicName/>
+    <creator/>
+    <versions/>
+    <categorization/>
+    <links/>
+  </basics>
+  <resources>   
+  <resource name="Test1.stags" path="{scenario}/scripts/Test1.stags" type="properties"/>
+    <resource name="Test1.valid" path="{scenario}/scripts/Test1.valid" type="properties"/>
+    <resource name="dpl.csv" path="{scenario}/scripts/dpl.csv" type="properties"/>
+    <resource name="setup.js" path="{scenario}/scripts/setup.js" type="ds"/>
+    <resource name="Script - 15.ds" path="{scenario}/scripts/Script - 15.ds" type="ds"/>
+    <resource name="Script - 6.ds" path="{scenario}/scripts/Script - 6.ds" type="ds"/>
+    <resource name="Script - 3.ds" path="{scenario}/scripts/Script - 3.ds" type="ds"/>
+    <resource name="Script - 14.ds" path="{scenario}/scripts/Script - 14.ds" type="ds"/>
+    <resource name="Script - 8.ds" path="{scenario}/scripts/Script - 8.ds" type="ds"/>
+    <resource name="Script - 13.ds" path="{scenario}/scripts/Script - 13.ds" type="ds"/>
+    <resource name="Script - 5.ds" path="{scenario}/scripts/Script - 5.ds" type="ds"/>
+    <resource name="Script - 4.ds" path="{scenario}/scripts/Script - 4.ds" type="ds"/>
+    <resource name="Script - 9.ds" path="{scenario}/scripts/Script - 9.ds" type="ds"/>
+    <resource name="Script - 1.ds" path="{scenario}/scripts/Script - 1.ds" type="ds"/>
+    <resource name="Script - 10.ds" path="{scenario}/scripts/Script - 10.ds" type="ds"/>
+    <resource name="Script - 2.ds" path="{scenario}/scripts/Script - 2.ds" type="ds"/>
+    <resource name="Script - 12.ds" path="{scenario}/scripts/Script - 12.ds" type="ds"/>
+    <resource name="Script - 11.ds" path="{scenario}/scripts/Script - 11.ds" type="ds"/>
+    <resource name="Script - 7.ds" path="{scenario}/scripts/Script - 7.ds" type="ds"/>
+  </resources>
+  <testnodes>
+    <node location="http://localhost:8080/TMServer/ws/TestNode" monitor="8080" name="localhost-2" password="" username=""/>
+  </testnodes>
+  <bundles>
+    <bundle name="hibernate" version="3.0"/>
+    <bundle name="mysql" version="5.1.39"/>
+    <bundle name="ds" version="3.0"/>
+    <bundle name="oracle" version="10.2.0.5"/>
+  </bundles>
+  <datasources>
+    <dpl langtype="csv" method="setup" name="dplName" type="HashDPL">
+      <argument dpl="Resources" method="getResourceByName" name="resource">
+        <argument name="file" value="dpl.csv"/>
+      </argument>
+    </dpl>
+  </datasources>
+  <options>
+    <options type="apc">
+      <opt name="SummaryStepIsEmpty" value="false"/>
+      <opt name="DynamicIpAddress" value="false"/>
+      <opt name="EnableSavingLogs" value="true"/>
+      <opt name="PercentageLogsSaved" value="100"/>
+      <opt name="maxSizeReponseSavings" value="false"/>
+      <opt name="sizeValueResponseSavings" value="0"/>
+      <opt name="SleepTime" value="0"/>
+      <opt name="FixedSleepTime" value="0"/>
+      <opt name="MinSleepTime" value="0"/>
+      <opt name="MaxSleepTime" value="0"/>
+      <opt name="ThinkTime" value="default"/>
+      <opt name="FixedThinkTime" value="0"/>
+      <opt name="StandardDeviation" value="0"/>
+      <opt name="ThinkTimeMin" value="0"/>
+      <opt name="ThinkTimeMax" value="0"/>
+      <opt name="IntervalTime" value="0"/>
+      <opt name="FixedIntervalTime" value="0"/>
+      <opt name="MinIntervalTime" value="0"/>
+      <opt name="MaxIntervalTime" value="0"/>
+      <opt name="RampDownUsers" value="0"/>
+      <opt name="MaxRampUpTime" value="0"/>
+      <opt name="RampDownSeconds" value="0"/>
+      <opt name="MaxRampDownTime" value="0"/>
+      <opt name="ReportThinkTime" value="false"/>
+      <opt name="AddThinkTimeToStep" value="false"/>
+    <opt name="global_concurrent_users" value="0"/>
+      <opt name="testnode_concurrent_users" value="10"/>
+      <opt name="PercentageLogsSaved" value="100"/>
+      <opt name="AlwaysSaveLogOnFailure" value="true"/>
+      <opt name="RampUpUsers" value="1"/>
+      <opt name="RampUpSeconds" value="1"/>
+    </options>  
+    <options type="global">
+      <opt name="trustAllSSLCertificates" value="false"/>
+      <opt name="ntlmEnabled" value="false"/>
+      <opt name="EnableHttpTimingDetailsLogging" value="false"/>
+      <opt name="ConsoleAsProxy" value="false"/>
+    </options>
+    <options type="ds3">
+      <opt name="failOnStatusCodes" value="false"/>
+      <opt name="reuseBrowser" value="false"/>
+      <opt name="takeSnapshotDS3" value="true"/>
+      <opt name="takeScriptSnapshot" value="true"/>
+      <opt name="attachDSFile" value="true"/>
+      <opt name="attachInstantReplay" value="true"/>
+      <opt name="saveRequestAndResponseDS3" value="true"/>
+      <opt name="optionsTimings" value="domComplete"/>
+    </options>  
+  </options>
+  <templates>
+  <controller name="Iteration1">
+      <round iterations="1" totalusers="1"/>
+    </controller>
+    <testcase importance="normal" name="Script - 15.ds">
+      <test>
+        <run langtype="ds3" method="ds" name="Script - 15.ds" resource="Script - 15.ds" testclass="Chrome">
+          <argument dpl="dplName" method="getNextData" name="dplName"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase importance="normal" name="Script - 6.ds">
+      <test>
+        <run langtype="ds3" method="ds" name="Script - 6.ds" resource="Script - 6.ds" testclass="Chrome">
+          <argument dpl="dplName" method="getNextData" name="dplName"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase importance="normal" name="Script - 3.ds">
+      <test>
+        <run langtype="ds3" method="ds" name="Script - 3.ds" resource="Script - 3.ds" testclass="Chrome">
+          <argument dpl="dplName" method="getNextData" name="dplName"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase importance="normal" name="Script - 14.ds">
+      <test>
+        <run langtype="ds3" method="ds" name="Script - 14.ds" resource="Script - 14.ds" testclass="Chrome">
+          <argument dpl="dplName" method="getNextData" name="dplName"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase importance="normal" name="Script - 8.ds">
+      <test>
+        <run langtype="ds3" method="ds" name="Script - 8.ds" resource="Script - 8.ds" testclass="Chrome">
+          <argument dpl="dplName" method="getNextData" name="dplName"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase importance="normal" name="Script - 13.ds">
+      <test>
+        <run langtype="ds3" method="ds" name="Script - 13.ds" resource="Script - 13.ds" testclass="Chrome">
+          <argument dpl="dplName" method="getNextData" name="dplName"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase importance="normal" name="Script - 5.ds">
+      <test>
+        <run langtype="ds3" method="ds" name="Script - 5.ds" resource="Script - 5.ds" testclass="Chrome">
+          <argument dpl="dplName" method="getNextData" name="dplName"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase importance="normal" name="Script - 4.ds">
+      <test>
+        <run langtype="ds3" method="ds" name="Script - 4.ds" resource="Script - 4.ds" testclass="Chrome">
+          <argument dpl="dplName" method="getNextData" name="dplName"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase importance="normal" name="Script - 9.ds">
+      <test>
+        <run langtype="ds3" method="ds" name="Script - 9.ds" resource="Script - 9.ds" testclass="Chrome">
+          <argument dpl="dplName" method="getNextData" name="dplName"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase importance="normal" name="Script - 1.ds">
+      <test>
+        <run langtype="ds3" method="ds" name="Script - 1.ds" resource="Script - 1.ds" testclass="Chrome">
+          <argument dpl="dplName" method="getNextData" name="dplName"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase importance="normal" name="Script - 10.ds">
+      <test>
+        <run langtype="ds3" method="ds" name="Script - 10.ds" resource="Script - 10.ds" testclass="Chrome">
+          <argument dpl="dplName" method="getNextData" name="dplName"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase importance="normal" name="Script - 2.ds">
+      <test>
+        <run langtype="ds3" method="ds" name="Script - 2.ds" resource="Script - 2.ds" testclass="Chrome">
+          <argument dpl="dplName" method="getNextData" name="dplName"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase importance="normal" name="Script - 12.ds">
+      <test>
+        <run langtype="ds3" method="ds" name="Script - 12.ds" resource="Script - 12.ds" testclass="Chrome">
+          <argument dpl="dplName" method="getNextData" name="dplName"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase importance="normal" name="Script - 11.ds">
+      <test>
+        <run langtype="ds3" method="ds" name="Script - 11.ds" resource="Script - 11.ds" testclass="Chrome">
+          <argument dpl="dplName" method="getNextData" name="dplName"/>
+        </run>
+      </test>
+    </testcase>
+    <testcase importance="normal" name="Script - 7.ds">
+      <test>
+        <run langtype="ds3" method="ds" name="Script - 7.ds" resource="Script - 7.ds" testclass="Chrome">
+          <argument dpl="dplName" method="getNextData" name="dplName"/>
+        </run>
+      </test>
+    </testcase>
+  </templates>
+  <execution subtype="functional" type="functionaltest">
+    <iteration controller="Iteration1" name="Iteration1">
+      <testcase name="Script - 15.ds" totalexecutions="1" users="1"/>
+      <testcase name="Script - 6.ds" totalexecutions="1" users="1"/>
+      <testcase name="Script - 3.ds" totalexecutions="1" users="1"/>
+      <testcase name="Script - 14.ds" totalexecutions="1" users="1"/>
+      <testcase name="Script - 8.ds" totalexecutions="1" users="1"/>
+      <testcase name="Script - 13.ds" totalexecutions="1" users="1"/>
+      <testcase name="Script - 5.ds" totalexecutions="1" users="1"/>
+      <testcase name="Script - 4.ds" totalexecutions="1" users="1"/>
+      <testcase name="Script - 9.ds" totalexecutions="1" users="1"/>
+      <testcase name="Script - 1.ds" totalexecutions="1" users="1"/>
+      <testcase name="Script - 10.ds" totalexecutions="1" users="1"/>
+      <testcase name="Script - 2.ds" totalexecutions="1" users="1"/>
+      <testcase name="Script - 12.ds" totalexecutions="1" users="1"/>
+      <testcase name="Script - 11.ds" totalexecutions="1" users="1"/>
+      <testcase name="Script - 7.ds" totalexecutions="1" users="1"/>
+    </iteration>
+  </execution>
+  <monitoring enablednodes="true" enabledtarget="false"/>
+  <logs/>
+  <integrations xmlns="www.pushtotest.com/tm5"/>
+  <notifications/>
+</testscenario>

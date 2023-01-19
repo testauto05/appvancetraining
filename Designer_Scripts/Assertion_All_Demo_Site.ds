@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase  name= '' description='' author='' version=''>
+<dpl filename='' exectype='runstepbystep' errorhandling='' type='HashDPL'/>
+<fallback useFallback='false'/>
+<step action='navigateTo' value='"https://demosite.appvance.com/"' type='web' desc='Navigate to Demo Site' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='assertExists' value='"86,25"' type='web' desc='Spree Image exists' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='assertExists' value='image(&quot;Spree 50&quot;)' selected='true'/>
+   <accessor type='assertExists' value='image(&quot;https://demosite.appvance.com/assets/logo/spree_50-0ae687ccd486b63b01687b1df9e5394430f6fce3ab40c28250b179be4363ddc1.png&quot;)' selected='false'/>
+   <accessor type='assertExists' value='image(0)' selected='false'/>
+</dialect>
+</step>
+<step action='assertContainsText' value='"Shop by Categories"' type='web' desc='Assert Contains Text' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='assertContainsText' value='heading4(&quot;Shop by Categories&quot;)' selected='true'/>
+   <accessor type='assertContainsText' value='heading4(&quot;taxonomy-root&quot;)' selected='false'/>
+   <accessor type='assertContainsText' value='heading4(&quot;Shop by Categories&quot;)' selected='false'/>
+   <accessor type='assertContainsText' value='heading4(0,_in(nav(&quot;taxonomies&quot;)))' selected='false'/>
+   <accessor type='assertContainsText' value='heading4(0,_in(nav(&quot;sidebar-item&quot;)))' selected='false'/>
+   <accessor type='assertContainsText' value='heading4(0)' selected='false'/>
+</dialect>
+</step>
+<step action='assertDoesNotContainText' value='"Appvance"' type='web' desc='Assert does not contain text' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='assertDoesNotContainText' value='heading4(&quot;Shop by Categories&quot;)' selected='true'/>
+   <accessor type='assertDoesNotContainText' value='heading4(&quot;taxonomy-root&quot;)' selected='false'/>
+   <accessor type='assertDoesNotContainText' value='heading4(&quot;Shop by Categories&quot;)' selected='false'/>
+   <accessor type='assertDoesNotContainText' value='heading4(0,_in(nav(&quot;taxonomies&quot;)))' selected='false'/>
+   <accessor type='assertDoesNotContainText' value='heading4(0,_in(nav(&quot;sidebar-item&quot;)))' selected='false'/>
+   <accessor type='assertDoesNotContainText' value='heading4(0)' selected='false'/>
+</dialect>
+</step>
+<step action='store' value='getText(heading4(&quot;Shop by Categories&quot;))' type='web' desc='Storing the content into a variable' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='store' value='Equal_Check' selected='true'/>
+</dialect>
+</step>
+<step action='assertEqual' value='"Shop by Categories"' type='web' desc='Assert Equal' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='assertEqual' value='Equal_Check' selected='true'/>
+   <accessor type='assertEqual' value='' selected='false'/>
+</dialect>
+</step>
+<step action='assertNotNull' value='Equal_Check' type='web' desc='AssertNot Null' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='assertNotNull' value='' selected='true'/>
+</dialect>
+</step>
+<step action='store' value='isVisible(heading4(&quot;Shop by Categories&quot;))' type='web' desc='Store in variable' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='store' value='True_Check' selected='true'/>
+</dialect>
+</step>
+<step action='assertTrue' value='True_Check' type='web' desc='AssertTrue check' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='assertTrue' value='' selected='true'/>
+</dialect>
+</step>
+<step action='store' value='isVisible(heading4(&quot;Appvance&quot;))' type='web' desc='Store in variable' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='store' value='False_Check' selected='true'/>
+</dialect>
+</step>
+<step action='assertFalse' value='False_Check' type='web' desc='AssertFalse Check' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='assertFalse' value='' selected='true'/>
+</dialect>
+</step>
+<step action='store' value='getText(link(&quot;1&quot;))' type='web' desc='Get text and store in variable' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='store' value='Greater_Check' selected='true'/>
+</dialect>
+</step>
+<step action='assertGreaterOrEqual' value='1' type='web' desc='Assert Greater or Equal' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='assertGreaterOrEqual' value='Greater_Check' selected='true'/>
+   <accessor type='assertGreaterOrEqual' value='' selected='false'/>
+</dialect>
+</step>
+<step action='assertGreaterThan' value='0' type='web' desc='Assert Greater than' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='assertGreaterThan' value='Greater_Check' selected='true'/>
+   <accessor type='assertGreaterThan' value='' selected='false'/>
+</dialect>
+</step>
+<step action='assertRange' value='1,6' type='web' desc='Assert Range' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='assertRange' value='5' selected='true'/>
+   <accessor type='assertRange' value='' selected='false'/>
+   <accessor type='assertRange' value='Greater_Check' selected='false'/>
+</dialect>
+</step>
+<step action='assertLessThan' value='5' type='web' desc='Assert Less than' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='assertLessThan' value='Greater_Check' selected='true'/>
+   <accessor type='assertLessThan' value='' selected='false'/>
+</dialect>
+</step>
+</testcase>

@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase  name= '' description='' author='' version=''>
+<dpl filename='' exectype='' errorhandling='' type='HashDPL' locale=''/>
+<fallback useFallback='false'/>
+<step action='navigateTo' value='"https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_video"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='play' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='play' value='video([&quot;Your browser does not support HTML &quot;])' selected='true'/>
+   <accessor type='play' value='video(0,_in(body([&quot;Your browser does not support HTML &quot;])))' selected='false'/>
+   <accessor type='play' value='video(0)' selected='false'/>
+</dialect>
+</step>
+<step action='wait' value='2000' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='wait' value='' selected='true'/>
+</dialect>
+</step>
+<step action='stop' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='stop' value='video([&quot;Your browser does not support HTML &quot;])' selected='true'/>
+   <accessor type='stop' value='video(0,_in(body([&quot;Your browser does not support HTML &quot;])))' selected='false'/>
+   <accessor type='stop' value='video(0)' selected='false'/>
+</dialect>
+</step>
+<step action='wait' value='5000' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='wait' value='' selected='true'/>
+</dialect>
+</step>
+<step action='play' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='play' value='video([&quot;Your browser does not support HTML &quot;])' selected='true'/>
+   <accessor type='play' value='video(0,_in(body([&quot;Your browser does not support HTML &quot;])))' selected='false'/>
+   <accessor type='play' value='video(0)' selected='false'/>
+</dialect>
+</step>
+<step action='waitUntilVideoCompleted' value='"15"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='waitUntilVideoCompleted' value='video([&quot;Your browser does not support HTML &quot;])' selected='true'/>
+   <accessor type='waitUntilVideoCompleted' value='video(0,_in(body([&quot;Your browser does not support HTML &quot;])))' selected='false'/>
+   <accessor type='waitUntilVideoCompleted' value='video(0)' selected='false'/>
+</dialect>
+</step>
+</testcase>

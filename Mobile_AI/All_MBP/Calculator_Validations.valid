@@ -1,0 +1,50 @@
+{
+	"customActions": [],
+	"validations": [
+		{
+			"triggerType": "text",
+			"validationType": "text",
+			"disabled": false,
+			"passType": "pass",
+			"name": "byText",
+			"match": "1",
+			"target": "\"6\""
+		},
+		{
+			"triggerType": "element",
+			"validationType": "element",
+			"disabled": false,
+			"passType": "pass",
+			"name": "ElementFound",
+			"match": "byId(\"com.tct.calculator:id/digit_4\")",
+			"target": "byId(\"com.tct.calculator:id/digit_3\")"
+		},
+		{
+			"triggerType": "manual",
+			"validationType": "element",
+			"disabled": false,
+			"passType": "pass",
+			"name": "ManualCall",
+			"target": "byId(\"com.tct.calculator:id/digit_3\")"
+		},
+		{
+			"triggerType": "element",
+			"validationType": "elementText",
+			"disabled": false,
+			"passType": "pass",
+			"name": "TextPresentinElement",
+			"match": "byId(\"com.tct.calculator:id/digit_3\")",
+			"target": "\"6\"",
+			"locator": "byId(\"com.tct.calculator:id/digit_6\")"
+		},
+		{
+			"triggerType": "js",
+			"validationType": "js",
+			"disabled": false,
+			"passType": "pass",
+			"name": "JSreturns",
+			"match": "click(byId(\"com.tct.calculator:id/digit_8\"));\nclick(byAccessibilityId(\"times\"));\n",
+			"target": "assertExists(byId(\"com.tct.calculator:id/digit_2\"));\n"
+		}
+	]
+}

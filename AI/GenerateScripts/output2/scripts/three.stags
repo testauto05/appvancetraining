@@ -1,0 +1,327 @@
+{
+    "customTags": [],
+    "extractors": [
+        {
+            "postprocessing": "",
+            "name": "getHref",
+            "variable": "url",
+            "disabled": false,
+            "type": "attribute",
+            "when": "preAction",
+            "value": "href"
+        },
+        {
+            "postprocessing": "",
+            "name": "getItemProp",
+            "variable": "itemprop",
+            "disabled": false,
+            "type": "attribute",
+            "when": "preAction",
+            "value": "itemprop"
+        }
+    ],
+    "validators": [
+        {
+            "name": "hasHref",
+            "disabled": false,
+            "type": "attribute",
+            "value": "href",
+            "when": "postAction",
+            "operator": "equals",
+            "target": "$url"
+        },
+        {
+            "name": "containPropAttribute",
+            "disabled": false,
+            "type": "attribute",
+            "value": "itemprop",
+            "when": "preAction",
+            "operator": "contains",
+            "target": "$itemprop"
+        }
+    ],
+    "threshold": 0.75,
+    "autoValidations": [
+        {
+            "name": "hasDescriptionForMoreProducts",
+            "disabled": false,
+            "type": "staticText",
+            "value": "\"Look for similar items\"",
+            "locator": "",
+            "target": "wholePage"
+        },
+        {
+            "name": "checkoutButtonExist",
+            "disabled": false,
+            "type": "elementExists",
+            "value": "",
+            "locator": "btnGreen(\"button\")",
+            "target": "locator"
+        }
+    ],
+    "actions": [
+        {
+            "functionString": "var theElement = ds$(element);\nvar name = theElement.attr('id');\n\n// we can change the order, if none of the following is found will try to get name from the text of the element.\nif (typeof name === 'undefined') {\n     name = \"\"; \n}\nif (name === \"\") {\n     name = theElement.attr('name'); \n}\nif (typeof name === 'undefined') {\n     name = \"\"; \n}\nif (name === \"\") {\n     name = theElement.attr('value'); \n}\nif (typeof name === 'undefined') {\n     name = \"\"; \n}\nif (name === \"\") {\n     name = theElement.attr('data-hook'); \n}\nif (name === \"\") {\n     name = theElement.text(); \n}\nreturn name;",
+            "previousActions": [],
+            "name": "getBestName",
+            "postActions": [],
+            "arrayHint": ""
+        },
+        {
+            "functionString": "return ds$(element).click();",
+            "previousActions": [],
+            "name": "clickMyElement",
+            "postActions": [],
+            "arrayHint": "[]"
+        },
+        {
+            "functionString": "var found = false; \n// params\nds$(element).find('a').each(function(idx, theElement){ \n   var theElementText = ds$(theElement).text().trim();\n   if (params === theElementText && !found){ \n           found = true; \n     //theElement.click(); // method 1 \n      //ds$(theElement).click(); // method 2   \n\n    } \n}); \nreturn found; ",
+            "previousActions": ["clickMyElement"],
+            "name": "setBtSelectValue",
+            "postActions": [],
+            "arrayHint": "[]"
+        },
+        {
+            "functionString": "var selectValues = []; \nds$(element).find('a').each(function(idx, theElement){ \n\n\tselectValues.push($(theElement).text().trim()); \n}); \n\nreturn selectValues;",
+            "previousActions": ["clickMyElement"],
+            "name": "getBtSelectValue",
+            "postActions": ["clickMyElement"],
+            "arrayHint": "array"
+        }
+    ],
+    "smartTags": [
+        {
+            "singleton": false,
+            "scanOnePerPage": false,
+            "extractors": [],
+            "validators": [],
+            "methods": {"getName": "getBestName"},
+            "scanOncePerApp": false,
+            "rules": [{
+                "weight": 100,
+                "type": "attrContainsValue",
+                "value": "class:form-control"
+            }],
+            "type": "Text",
+            "tags": ["input"],
+            "name": "inputField",
+            "disabled": false,
+            "autoValidations": [],
+            "info": {}
+        },
+        {
+            "singleton": false,
+            "scanOnePerPage": true,
+            "extractors": [],
+            "validators": [],
+            "methods": {},
+            "scanOncePerApp": false,
+            "rules": [
+                {
+                    "weight": 100,
+                    "type": "attrContainsValue",
+                    "value": "itemprop:url"
+                },
+                {
+                    "weight": 100,
+                    "type": "attrContainsValue",
+                    "value": "href:/products/"
+                }
+            ],
+            "type": "Navigation",
+            "tags": ["a"],
+            "name": "productAny",
+            "disabled": false,
+            "autoValidations": ["checkoutButtonExist"],
+            "info": {}
+        },
+        {
+            "singleton": false,
+            "scanOnePerPage": false,
+            "extractors": [],
+            "validators": [],
+            "methods": {},
+            "scanOncePerApp": false,
+            "rules": [{
+                "weight": 100,
+                "type": "attrContainsValue",
+                "value": "class:form-control"
+            }],
+            "type": "Select",
+            "tags": ["select"],
+            "name": "selectElement",
+            "disabled": false,
+            "autoValidations": [],
+            "info": {}
+        },
+        {
+            "singleton": true,
+            "scanOnePerPage": false,
+            "extractors": [],
+            "validators": [],
+            "methods": {"getName": "getBestName"},
+            "scanOncePerApp": false,
+            "rules": [
+                {
+                    "weight": 100,
+                    "type": "attrContainsValue",
+                    "value": "id:add-to-cart-button"
+                },
+                {
+                    "weight": 100,
+                    "type": "containsText",
+                    "value": "Add To Cart"
+                }
+            ],
+            "type": "Action",
+            "tags": ["button"],
+            "name": "btnCheckout",
+            "disabled": false,
+            "autoValidations": [],
+            "info": {}
+        },
+        {
+            "singleton": false,
+            "scanOnePerPage": false,
+            "extractors": [],
+            "validators": [],
+            "methods": {"getName": "getBestName"},
+            "scanOncePerApp": false,
+            "rules": [{
+                "weight": 100,
+                "type": "attrContainsValue",
+                "value": "type:radio"
+            }],
+            "type": "Navigation",
+            "tags": ["input"],
+            "name": "btnRadio",
+            "disabled": false,
+            "autoValidations": [],
+            "info": {}
+        },
+        {
+            "singleton": true,
+            "scanOnePerPage": false,
+            "extractors": [],
+            "validators": [],
+            "methods": {},
+            "scanOncePerApp": false,
+            "rules": [
+                {
+                    "weight": 100,
+                    "type": "containsText",
+                    "value": "Update"
+                },
+                {
+                    "weight": 100,
+                    "type": "attrContainsValue",
+                    "value": "class:btn-primary"
+                }
+            ],
+            "type": "Action",
+            "tags": ["button"],
+            "name": "btnBlue",
+            "disabled": false,
+            "autoValidations": [],
+            "info": {}
+        },
+        {
+            "singleton": true,
+            "scanOnePerPage": false,
+            "extractors": [],
+            "validators": [],
+            "methods": {},
+            "scanOncePerApp": false,
+            "rules": [{
+                "weight": 100,
+                "type": "attrContainsValue",
+                "value": "class:amount"
+            }],
+            "type": "Hover",
+            "tags": ["span"],
+            "name": "spanTotal",
+            "disabled": false,
+            "autoValidations": [],
+            "info": {}
+        },
+        {
+            "singleton": false,
+            "scanOnePerPage": false,
+            "extractors": [],
+            "validators": [],
+            "methods": {},
+            "scanOncePerApp": false,
+            "rules": [{
+                "weight": 100,
+                "type": "attrContainsValue",
+                "value": "class:drop-down"
+            }],
+            "type": "Navigation",
+            "tags": ["button"],
+            "name": "extendedSelect",
+            "disabled": false,
+            "autoValidations": [],
+            "info": {}
+        },
+        {
+            "singleton": false,
+            "scanOnePerPage": false,
+            "extractors": [],
+            "validators": [],
+            "methods": {"getName": "getBestName"},
+            "scanOncePerApp": false,
+            "rules": [{
+                "weight": 100,
+                "type": "parentSmartTag",
+                "value": "divContainer"
+            }],
+            "type": "Navigation",
+            "tags": ["a"],
+            "name": "brandLink",
+            "disabled": false,
+            "autoValidations": [],
+            "info": {}
+        },
+        {
+            "singleton": false,
+            "scanOnePerPage": false,
+            "extractors": [],
+            "validators": [],
+            "methods": {"getName": "getBestName"},
+            "scanOncePerApp": false,
+            "rules": [{
+                "weight": 100,
+                "type": "attrContainsValue",
+                "value": "class:btn-success"
+            }],
+            "type": "Action",
+            "tags": [
+                "input",
+                "button"
+            ],
+            "name": "btnGreen",
+            "disabled": false,
+            "autoValidations": [],
+            "info": {}
+        },
+        {
+            "singleton": false,
+            "scanOnePerPage": false,
+            "extractors": [],
+            "validators": [],
+            "methods": {},
+            "scanOncePerApp": false,
+            "rules": [{
+                "weight": 100,
+                "type": "attrContainsValue",
+                "value": "class:list-group"
+            }],
+            "type": "Prop",
+            "tags": ["div"],
+            "name": "divContainer",
+            "disabled": false,
+            "autoValidations": [],
+            "info": {}
+        }
+    ]
+}

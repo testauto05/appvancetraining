@@ -1,0 +1,10 @@
+navigateTo("https://demosite.appvance.com/");
+click(span("Ruby on Rails Tote"));
+setValue(numberbox("form-control title"),"15");
+click(submit("btn btn-success[1]"));
+click(submit("btn btn-primary"));
+click(submit("btn btn-lg btn-success"));
+setValue(emailbox("form-control title"),"n@appvance.com");
+click(submit("btn btn-block btn-lg btn-success[1]"));
+setValue(textbox("form-control"),"Naveen");
+click(submit("btn btn-lg btn-success"));

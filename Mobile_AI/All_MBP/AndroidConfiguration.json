@@ -1,0 +1,16 @@
+[
+    {
+        "serverURL": "http://localhost:4723/wd/hub",
+
+        "capabilities": {
+            "orientation": "LANDSCAPE",
+            "noReset": "false",
+            "fullReset": "false",
+			 "udid": "emulator-5554",
+        "platformVersion": "8.1",
+        "deviceName": "Pixel_2_API_27",
+        "port": 8201,
+        },
+        "id": 0
+    }
+]

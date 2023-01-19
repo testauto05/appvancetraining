@@ -1,0 +1,509 @@
+{
+	"threshold": 0.75,
+	"smartTags": [
+		{
+			"name": "divContainer",
+			"type": "Prop",
+			"tags": [
+				"div"
+			],
+			"rules": [
+				{
+					"weight": 100,
+					"type": "attrContainsValue",
+					"value": "class:list-group"
+				}
+			],
+			"singleton": false,
+			"scanOncePerApp": false,
+			"scanOnePerPage": false,
+			"info": {},
+			"methods": {},
+			"autoValidations": [],
+			"validators": [],
+			"extractors": [],
+			"disabled": false,
+			"description": ""
+		},
+		{
+			"name": "spanTotal",
+			"type": "Hover",
+			"tags": [
+				"span"
+			],
+			"rules": [
+				{
+					"weight": 100,
+					"type": "attrContainsValue",
+					"value": "class:amount"
+				}
+			],
+			"singleton": true,
+			"scanOncePerApp": false,
+			"scanOnePerPage": false,
+			"info": {},
+			"methods": {},
+			"autoValidations": [],
+			"validators": [],
+			"extractors": [],
+			"disabled": false,
+			"description": ""
+		},
+		{
+			"name": "checkBox",
+			"type": "Check",
+			"tags": [
+				"input"
+			],
+			"rules": [
+				{
+					"weight": 100,
+					"type": "attrContainsValue",
+					"value": "type:checkbox"
+				}
+			],
+			"singleton": false,
+			"scanOncePerApp": false,
+			"scanOnePerPage": false,
+			"info": {},
+			"methods": {},
+			"autoValidations": [],
+			"validators": [],
+			"extractors": [],
+			"disabled": false,
+			"description": ""
+		},
+		{
+			"name": "password",
+			"type": "Text",
+			"tags": [
+				"input"
+			],
+			"rules": [
+				{
+					"weight": 100,
+					"type": "attrContainsValue",
+					"value": "type:password"
+				}
+			],
+			"singleton": false,
+			"scanOncePerApp": false,
+			"scanOnePerPage": false,
+			"info": {},
+			"methods": {},
+			"autoValidations": [],
+			"validators": [],
+			"extractors": [],
+			"disabled": false,
+			"description": ""
+		},
+		{
+			"name": "btn",
+			"type": "Action",
+			"tags": [
+				"button",
+				"input"
+			],
+			"rules": [
+				{
+					"weight": 100,
+					"type": "attrContainsValue",
+					"value": "class:btn"
+				}
+			],
+			"singleton": false,
+			"scanOncePerApp": false,
+			"scanOnePerPage": false,
+			"info": {},
+			"methods": {
+				"getName": "getBestName"
+			},
+			"autoValidations": [],
+			"validators": [],
+			"extractors": [],
+			"disabled": false,
+			"description": ""
+		},
+		{
+			"name": "inputField",
+			"type": "Text",
+			"tags": [
+				"input"
+			],
+			"rules": [
+				{
+					"weight": 100,
+					"type": "attrContainsValue",
+					"value": "class:form-control"
+				}
+			],
+			"singleton": false,
+			"scanOncePerApp": false,
+			"scanOnePerPage": false,
+			"info": {},
+			"methods": {
+				"getName": "getBestName"
+			},
+			"autoValidations": [],
+			"validators": [
+				"validateFrameworkVar"
+			],
+			"extractors": [
+				"getFrameworkField"
+			],
+			"disabled": false,
+			"description": ""
+		},
+		{
+			"name": "Item",
+			"type": "Action",
+			"tags": [
+				"a"
+			],
+			"rules": [
+				{
+					"weight": 100,
+					"type": "attrContainsValue",
+					"value": "itemprop:url"
+				},
+				{
+					"weight": 100,
+					"type": "parent",
+					"value": "div"
+				}
+			],
+			"singleton": false,
+			"scanOncePerApp": true,
+			"scanOnePerPage": false,
+			"info": {},
+			"methods": {
+				"getName": "getItemName"
+			},
+			"autoValidations": [
+				"hasPropertiesChart",
+				"offersSimilars"
+			],
+			"validators": [],
+			"extractors": [],
+			"disabled": false,
+			"description": ""
+		},
+		{
+			"name": "btnAddToCart",
+			"type": "Action",
+			"tags": [
+				"button"
+			],
+			"rules": [
+				{
+					"weight": 100,
+					"type": "containsText",
+					"value": "Add To Cart"
+				},
+				{
+					"weight": 100,
+					"type": "attrContainsValue",
+					"value": "id:add-to-cart-button"
+				}
+			],
+			"singleton": true,
+			"scanOncePerApp": false,
+			"scanOnePerPage": false,
+			"info": {},
+			"methods": {
+				"getName": "getBestName"
+			},
+			"autoValidations": [
+				"navigateToCheckoutList"
+			],
+			"validators": [],
+			"extractors": [],
+			"disabled": false,
+			"description": ""
+		},
+		{
+			"name": "btnRadio",
+			"type": "Check",
+			"tags": [
+				"input"
+			],
+			"rules": [
+				{
+					"weight": 100,
+					"type": "attrContainsValue",
+					"value": "type:radio"
+				}
+			],
+			"singleton": false,
+			"scanOncePerApp": false,
+			"scanOnePerPage": false,
+			"info": {},
+			"methods": {},
+			"autoValidations": [],
+			"validators": [],
+			"extractors": [],
+			"disabled": false,
+			"description": ""
+		},
+		{
+			"name": "btnAdd",
+			"type": "Action",
+			"tags": [
+				"a"
+			],
+			"rules": [
+				{
+					"weight": 100,
+					"type": "attrContainsValue",
+					"value": "class:button-Add-entry"
+				}
+			],
+			"singleton": true,
+			"scanOncePerApp": false,
+			"scanOnePerPage": false,
+			"info": {},
+			"methods": {},
+			"autoValidations": [],
+			"validators": [],
+			"extractors": [],
+			"disabled": true,
+			"description": ""
+		},
+		{
+			"name": "productSquare",
+			"type": "Hover",
+			"tags": [
+				"div"
+			],
+			"rules": [
+				{
+					"weight": 100,
+					"type": "attrContainsValue",
+					"value": "class:product-body"
+				}
+			],
+			"singleton": false,
+			"scanOncePerApp": true,
+			"scanOnePerPage": false,
+			"info": {},
+			"methods": {},
+			"autoValidations": [],
+			"validators": [
+				"checkData_001"
+			],
+			"extractors": [
+				"getElementText"
+			],
+			"disabled": false,
+			"description": ""
+		},
+		{
+			"name": "select",
+			"type": "Select",
+			"tags": [
+				"select"
+			],
+			"rules": [],
+			"singleton": false,
+			"scanOncePerApp": false,
+			"scanOnePerPage": false,
+			"info": {},
+			"methods": {},
+			"autoValidations": [],
+			"validators": [],
+			"extractors": [],
+			"disabled": false,
+			"description": ""
+		},
+		{
+			"name": "brandLink",
+			"type": "Navigation",
+			"tags": [
+				"a"
+			],
+			"rules": [
+				{
+					"weight": 100,
+					"type": "parentSmartTag",
+					"value": "divContainer"
+				}
+			],
+			"singleton": false,
+			"scanOncePerApp": true,
+			"scanOnePerPage": false,
+			"info": {},
+			"methods": {},
+			"autoValidations": [],
+			"validators": [],
+			"extractors": [],
+			"disabled": false,
+			"description": ""
+		}
+	],
+	"actions": [
+		{
+			"name": "clickHref",
+			"functionString": "return ds$(element).find('a').click();",
+			"arrayHint": "",
+			"previousActions": [],
+			"postActions": []
+		},
+		{
+			"name": "getItemName",
+			"functionString": "var theElement = ds$(element);\nvar name = $(theElement).find('img').attr('alt');\nreturn name.trim();",
+			"arrayHint": "",
+			"previousActions": [],
+			"postActions": []
+		},
+		{
+			"name": "clickMyElement",
+			"functionString": "ds$(element).css('background', 'yellow');\nds$(element).click();\n",
+			"arrayHint": "",
+			"previousActions": [],
+			"postActions": []
+		},
+		{
+			"name": "getBestName",
+			"functionString": "var responseText = ds$(element).attr('value');\nif (typeof responseText === 'undefined') {\n  responseText = \"\";  \n}\nif (responseText === '') {\n  responseText = ds$(element).text();  \n}\n\nif (responseText === \"\") {\n  responseText = ds$(element).attr('data-title');\n}\nif (typeof responseText === 'undefined') {\n  responseText = \"\";  \n}\nif (responseText === \"\") {\n  responseText = ds$(element).attr('id');\n}\nif (typeof responseText === 'undefined') {\n  responseText = \"\";  \n}\n\n\nds$(element).css('background','yellow');\n\nreturn responseText.trim();",
+			"arrayHint": "",
+			"previousActions": [],
+			"postActions": []
+		}
+	],
+	"customTags": [],
+	"autoValidations": [
+		{
+			"name": "loginEnabled",
+			"value": "",
+			"type": "elementExists",
+			"disabled": false,
+			"target": "locator",
+			"locator": "success(\"Login\")",
+			"postprocessing": ""
+		},
+		{
+			"name": "transactionCreated",
+			"value": "\"Entry was created\"",
+			"type": "staticText",
+			"disabled": true,
+			"target": "wholePage",
+			"locator": "",
+			"postprocessing": ""
+		},
+		{
+			"name": "FailedCreatingEntry",
+			"value": "\"Email must be unique\"",
+			"type": "staticText",
+			"disabled": false,
+			"target": "wholePage",
+			"locator": "",
+			"postprocessing": ""
+		},
+		{
+			"name": "checkLoginExist",
+			"value": "",
+			"type": "elementExists",
+			"disabled": false,
+			"target": "locator",
+			"locator": "btn(\"Login\")",
+			"postprocessing": ""
+		},
+		{
+			"name": "entryWasCreated",
+			"value": "\"User was created successfully\"",
+			"type": "staticText",
+			"disabled": true,
+			"target": "wholePage",
+			"locator": "",
+			"postprocessing": ""
+		},
+		{
+			"name": "hasPropertiesChart",
+			"value": "\"Properties\"",
+			"type": "staticText",
+			"disabled": false,
+			"target": "wholePage",
+			"locator": "",
+			"postprocessing": ""
+		},
+		{
+			"name": "offersSimilars",
+			"value": "\"Look for similar items\"",
+			"type": "staticText",
+			"disabled": false,
+			"target": "wholePage",
+			"locator": "",
+			"postprocessing": ""
+		},
+		{
+			"name": "navigateToCheckoutList",
+			"value": "\"Shopping Cart\"",
+			"type": "staticText",
+			"disabled": false,
+			"target": "wholePage",
+			"locator": "",
+			"postprocessing": ""
+		}
+	],
+	"validators": [
+		{
+			"name": "checkData_001",
+			"when": "postAction",
+			"value": "",
+			"operator": "contains",
+			"type": "text",
+			"target": "$productPrice",
+			"disabled": false,
+			"postprocessing": ""
+		},
+		{
+			"name": "checkData_002",
+			"when": "postAction",
+			"value": "",
+			"operator": "contains",
+			"type": "text",
+			"target": "\"$\"",
+			"disabled": false,
+			"postprocessing": ""
+		},
+		{
+			"name": "validateFrameworkVar",
+			"when": "postAction",
+			"value": "id",
+			"operator": "equals",
+			"type": "attribute",
+			"target": "$_name",
+			"disabled": false,
+			"postprocessing": ""
+		}
+	],
+	"extractors": [
+		{
+			"name": "getElementText",
+			"when": "postAction",
+			"value": "",
+			"type": "text",
+			"variable": "productPrice",
+			"disabled": false,
+			"postprocessing": "/**You can add JS code here.\n*\t\tUse standard functions to manipulate the variable.\n*\t\t\tVariable must be referenced with $.\n*\t\tUse functions available in JS Edit & Play to extract data.\n*\t\t\tReference of functions is in https://appvance.atlassian.net/wiki/spaces/EN/pages/596967438/DS3+JS+Commands+Reference\n\n*\t\tNote: First line must return value.\n**/\n"
+		},
+		{
+			"name": "getFrameworkField",
+			"when": "postAction",
+			"value": "name",
+			"type": "attribute",
+			"variable": "_name",
+			"disabled": false,
+			"postprocessing": "/**You can add JS code here.\n*\t\tUse standard functions to manipulate the variable.\n*\t\t\tVariable must be referenced with $.\n*\t\tUse functions available in JS Edit & Play to extract data.\n*\t\t\tReference of functions is in https://appvance.atlassian.net/wiki/spaces/EN/pages/596967438/DS3+JS+Commands+Reference\n\n*\t\tNote: First line must return value.\n**/\n"
+		},
+		{
+			"name": "getSpanTextpost",
+			"when": "postAction",
+			"value": "",
+			"type": "text",
+			"variable": "price",
+			"disabled": false,
+			"postprocessing": "/**You can add JS code here.\n*\t\tUse standard functions to manipulate the variable.\n*\t\t\tVariable must be referenced with $.\n*\t\tUse functions available in JS Edit & Play to extract data.\n*\t\t\tReference of functions is in https://appvance.atlassian.net/wiki/spaces/EN/pages/596967438/DS3+JS+Commands+Reference\n\n*\t\tNote: First line must return value.\n**/\n"
+		}
+	]
+}
